@@ -53,11 +53,11 @@ jobs:
       needs.changes.outputs.infra == 'true' || github.event_name != 'pull_request'
     steps:
       - uses: actions/checkout@v4
-      - name: Setup git 
-        run: |
-          git config --global url."https://ci:${TOKEN}@github.com".insteadOf "ssh://git@github.com"
-        env:
-          TOKEN: ${{ github.token }}
+      # - name: Setup git 
+      #   run: |
+      #     git config --global url."https://ci:${TOKEN}@github.com".insteadOf "ssh://git@github.com"
+      #   env:
+      #     TOKEN: ${{ github.token }}
       
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v4
