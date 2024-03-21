@@ -1,0 +1,27 @@
+name: Dependabot fetch metadata
+on: pull_request
+
+permissions:
+  pull-requests: write
+  issues: write
+  repository-projects: write
+
+jobs:
+  dependabot:
+    runs-on: ubuntu-latest
+    if: github.actor == 'dependabot[bot]'
+    steps:
+      - name: Fetch Dependabot metadata
+        id: dependabot-metadata
+        uses: dependabot/fetch-metadata@v1
+        with:
+          alert-lookup: true
+          compat-lookup: true
+          github-token: ${{ secrets.DEPENDABOT_PAT }}
+
+      - name: Add a label for semver upgrade type
+        run: |
+          gh pr edit "${PR_URL}" --add-label "${UPGRADE_TYPE://version-update:/}"
+        env:
+          UPGRADE_TYPE: ${{ steps.dependabot-metadata.outputs.update-type }}
+          PR_URL: ${{ github.event.pull_request.html_url }}
