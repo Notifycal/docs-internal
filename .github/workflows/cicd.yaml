@@ -53,6 +53,10 @@ jobs:
       needs.changes.outputs.infra == 'true' || github.event_name != 'pull_request'
     steps:
       - uses: actions/checkout@v4
+      - name: Setup git 
+        run: |
+          git config --global url."https://github.com/Notifycal".insteadOf "git://github.com/Notifycal"
+      
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
