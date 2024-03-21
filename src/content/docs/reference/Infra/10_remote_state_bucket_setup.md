@@ -11,8 +11,8 @@ sidebar:
 It's still not clear whether we want to use `terragrunt` for this project. If we don't, this would still be useful. If we do, `terragrunt` is able to handle the state bucket creation exactly as we want (encryption, versioning, access_logs...).
 :::
 
-
 ### Define variables
+
 ```bash
 # Define variables
 $ RANDOM_SUFFIX="6rvuikl3"
@@ -22,6 +22,7 @@ $ STATE_BUCKET_REGION="eu-west-1"
 ```
 
 ### Create the bucket
+
 ```bash
 $ aws s3api create-bucket \
   --bucket "${STATE_BUCKET_NAME}" \
@@ -30,6 +31,7 @@ $ aws s3api create-bucket \
 ```
 
 ### Enable encryption
+
 ```bash
 $ aws s3api put-bucket-encryption \
   --bucket "${STATE_BUCKET_NAME}" \
@@ -37,6 +39,7 @@ $ aws s3api put-bucket-encryption \
 ```
 
 ### Enable versioning
+
 ```bash
 $ aws s3api put-bucket-versioning \
   --bucket "${STATE_BUCKET_NAME}" \
@@ -44,6 +47,7 @@ $ aws s3api put-bucket-versioning \
 ```
 
 ### Create dynamo table for lock
+
 ```bash
 $ aws dynamodb create-table \
     --table-name "${DYNAMO_TABLE_NAME}" \

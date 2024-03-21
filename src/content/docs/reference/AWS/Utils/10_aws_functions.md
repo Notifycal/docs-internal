@@ -3,7 +3,6 @@ title: aws_functions.zsh
 description: Useful AWS functions for the terminal
 ---
 
-
 ```bash
 // aws_functions.zsh
 #!/usr/bin/env bash
@@ -57,7 +56,7 @@ function mfa() {
     echo "You need to provide the AWS profile using the environment variable 'AWS_PROFILE'";
     return 1;
   fi
-  
+
   if [[ -z ${AWS_MFA_SERIAL+x} ]]; then
     # Get MFA Serial
     #
@@ -70,7 +69,7 @@ function mfa() {
   else
     mfa_serial=${AWS_MFA_SERIAL}
   fi
-  
+
   # Call AWS-MFA to get the session credentials
   # https://github.com/broamski/aws-mfa
   # Assumes "sts get-session-token" is permitted without MFA

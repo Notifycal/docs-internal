@@ -18,8 +18,8 @@ Once the Role has been created, it’s time to add it to API Gateway so that it 
 1. On the left-hand menu, click on Settings.
 1. In the Settings page, locate the CloudWatch Logs role ARN field. Paste the ARN from the role created earlier.
 
+Role created:
 
-Role created: 
 ```
 AWSRoleForAPIGatewayPushToCloudWatch
 ```

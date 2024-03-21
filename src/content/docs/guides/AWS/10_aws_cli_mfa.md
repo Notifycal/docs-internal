@@ -5,7 +5,7 @@ description: This guide details how to use AWS CLI and MFA
 
 ## Setup aws-mfa
 
-Assuming you've followed the previous instructions for setting up the AWS CLI: 
+Assuming you've followed the previous instructions for setting up the AWS CLI:
 
 ```bash
 $ ~/pyvenvs/aws/bin/pip install aws-mfa
@@ -62,7 +62,7 @@ output = json
 aws_access_key_id = <redacted>
 aws_secret_access_key = <redacted>
 
-[notifycal]   
+[notifycal]
 ```
 
 Yes, the `notifical` (short-term) profile is defined, but empty.

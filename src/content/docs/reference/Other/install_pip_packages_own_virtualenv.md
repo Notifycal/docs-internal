@@ -12,7 +12,7 @@ $ cd ~
 # Create a folder for Python virtualenvs
 $ mkdir -p ~/pyvenvs
 
-# Create a virtualenv 
+# Create a virtualenv
 $ virtualenv ~/pyvenvs/aws
 created virtual environment CPython3.12.1.final.0-64 in 346ms
   creator CPython3macOsBrew(dest=/Users/dan/pyvenvs/aws, clear=False, no_vcs_ignore=False, global=False)
