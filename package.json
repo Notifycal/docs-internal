@@ -8,9 +8,9 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "lint": "eslint src --format=table --no-error-on-unmatched-pattern",
+    "lint": "eslint . --format=table --no-error-on-unmatched-pattern",
     "lint:fix": "$npm_execpath run lint -- --fix",
-    "prettier": "prettier src --check",
+    "prettier": "prettier . --check",
     "prettier:fix": "$npm_execpath run prettier -- --write"
   },
   "dependencies": {
