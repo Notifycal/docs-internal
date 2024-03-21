@@ -54,6 +54,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # TODO: Extract from here
       - name: Get GH token from Github App
         id: gh-app-auth
         uses: getsentry/action-github-app-token@v3
@@ -77,6 +78,8 @@ jobs:
       - uses: opentofu/setup-opentofu@v1
         with:
           tofu_version: ${{ steps.get_tofu_version.outputs.tofu_version }}
+      # TODO: Extract until here
+
       - run: tofu init && tofu validate
         working-directory: tf
       - run: tofu plan -out plan.tfplan
@@ -107,7 +110,7 @@ jobs:
         id: lintcheck
         with:
           reporter: github-pr-review
-          eslint_flags: 'src/'
+          eslint_flags: 'src/ --no-error-on-unmatched-pattern'
           fail_on_error: true
         continue-on-error: true
       - uses: EPMatt/reviewdog-action-prettier@v1
