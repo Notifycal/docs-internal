@@ -70,14 +70,6 @@ resource "aws_lambda_function" "auth" {
   timeout = 5
   memory_size = 128
 
-  # These aren't supported in Lambda@Edge
-  # environment {
-  #   variables = {
-  #     USER = "foo"
-  #     PASS = "bar"
-  #   }
-  # }
-
   logging_config {
     log_group = aws_cloudwatch_log_group.auth_lambda_logs.name
     log_format = "JSON"
