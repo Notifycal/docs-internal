@@ -9,7 +9,7 @@ export const handler = async (event) => {
   const authPass = 'pass';
 
   // Construct the Basic Auth string
-  const authString = 'Basic ' + new Buffer(authUser + ':' + authPass).toString('base64');
+  const authString = 'Basic ' + Buffer.from(`${authUser}:${authPass}`).toString('base64');
 
   // Require Basic authentication
   if (typeof headers.authorization == 'undefined' || headers.authorization[0].value != authString) {
