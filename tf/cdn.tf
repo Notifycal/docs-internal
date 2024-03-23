@@ -67,7 +67,7 @@ resource "aws_cloudfront_distribution" "cdn" {
 
     lambda_function_association {
       event_type = "origin-request"
-      lambda_arn = aws_lambda_function.auth.qualified_arn
+      lambda_arn = module.lambda_edge_auth.lambda_function_qualified_arn
     }
 
     min_ttl     = 0

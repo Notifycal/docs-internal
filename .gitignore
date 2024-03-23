@@ -3,6 +3,7 @@ dist/
 
 # lambdas build output
 tf/dist/
+tf/builds/
 
 # generated types
 .astro/
