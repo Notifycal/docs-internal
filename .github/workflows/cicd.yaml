@@ -89,7 +89,9 @@ jobs:
         if: github.event_name != 'pull_request'
         with:
           name: tf
-          path: tf/plan.tfplan
+          path: |
+            tf/plan.tfplan
+            tf/dist/
 
   build:
     runs-on: ubuntu-latest
