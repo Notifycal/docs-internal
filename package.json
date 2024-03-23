@@ -1,5 +1,5 @@
 {
-  "name": "docs",
+  "name": "docs-internal",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -7,11 +7,24 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "lint": "eslint . --format=table --no-error-on-unmatched-pattern",
+    "lint:fix": "$npm_execpath run lint -- --fix",
+    "prettier": "prettier . --check",
+    "prettier:fix": "$npm_execpath run prettier -- --write"
   },
   "dependencies": {
     "@astrojs/starlight": "^0.21.1",
     "astro": "^4.3.5",
     "sharp": "^0.32.5"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-formatter-table": "^7.32.1",
+    "eslint-plugin-astro": "^0.31.4",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "prettier": "^3.2.5",
+    "prettier-plugin-astro": "^0.13.0"
   }
 }

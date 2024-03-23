@@ -1,0 +1,205 @@
+name: CI/CD
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+concurrency:
+  # github.head_ref is only set when the workflow was triggered by a pull_request and it
+  # contains the value of the source branch of the PR.
+  group: ${{ github.workflow }}-${{ github.head_ref || github.ref_name }}
+  cancel-in-progress: true
+
+env:
+  AWS_REGION: eu-west-1
+
+jobs:
+  changes:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: read
+    # Set job outputs to values from filter step
+    outputs:
+      infra: ${{ steps.filter.outputs.tf }}
+      web: ${{ steps.filter.outputs.web }}
+    steps:
+      # For pull requests it's not necessary to checkout the code
+      - uses: dorny/paths-filter@v3
+        # Skip the filter if there is no PR to filter
+        if: github.event_name == 'pull_request'
+        id: filter
+        with:
+          filters: |
+            tf:
+              - 'tf/**'
+            web:
+              - '**'
+              - '!tf/**'
+              - '!README.md'
+
+  plan:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+    needs: changes
+    # Runs if there are changes to the infra (PR) or the event isn't PR
+    if: |
+      needs.changes.outputs.infra == 'true' || github.event_name != 'pull_request'
+    steps:
+      - uses: actions/checkout@v4
+
+      # TODO: Extract from here
+      - name: Get GH token from Github App
+        id: gh-app-auth
+        uses: getsentry/action-github-app-token@v3
+        with:
+          app_id: ${{ secrets.NOTIFYCAL_CICD_APP_ID }}
+          private_key: ${{ secrets.NOTIFYCAL_CICD_APP_SECRET }}
+      - name: Hack for github internal repo access :(
+        run: git config --global url."https://foo:${{ steps.gh-app-auth.outputs.token }}@github.com".insteadOf ssh://git@github.com
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-region: ${{ env.AWS_REGION }}
+          role-to-assume: ${{ secrets.AWS_IAM_ROLE_CI }}
+          role-session-name: run-${{ github.run_id }}
+      - run: aws sts get-caller-identity
+      - name: Get tofu version from .opentofu-version
+        run: echo "tofu_version=$(cat .opentofu-version)" >> $GITHUB_OUTPUT
+        id: get_tofu_version
+        working-directory: tf
+      - uses: opentofu/setup-opentofu@v1
+        with:
+          tofu_version: ${{ steps.get_tofu_version.outputs.tofu_version }}
+      # TODO: Extract until here
+
+      - run: tofu init && tofu validate
+        working-directory: tf
+      - run: tofu plan -out plan.tfplan
+        working-directory: tf
+      - uses: actions/upload-artifact@v4
+        # Only produces artifacts when running on push or manually
+        if: github.event_name != 'pull_request'
+        with:
+          name: tf
+          path: tf/plan.tfplan
+
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+    needs: changes
+    if: |
+      needs.changes.outputs.web == 'true' || github.event_name != 'pull_request'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: '.nvmrc'
+          cache: 'npm'
+      - run: npm ci
+      - uses: reviewdog/action-eslint@v1
+        id: lintcheck
+        with:
+          reporter: github-pr-review
+          eslint_flags: 'src/ --no-error-on-unmatched-pattern'
+          fail_on_error: true
+        continue-on-error: true
+      - uses: EPMatt/reviewdog-action-prettier@v1
+        id: formatcheck
+        # Want to run this regardless of the state of the previous step
+        if: success() || failure()
+        with:
+          reporter: github-pr-review
+          level: warning
+          fail_on_error: true
+        continue-on-error: true
+
+      # Testing would go here, but maybe not on PR checks (time and money)
+
+      - run: npm run build
+        id: build
+        continue-on-error: true
+      - name: Pass or fail?
+        # Check previous step outcomes (only if the step has an id)
+        run: |
+          if [[ ${{ contains(steps.*.outcome, 'failure') }} == "true" ]]; then exit 1; else exit 0; fi
+      - uses: actions/upload-artifact@v4
+        # Only produces artifacts when running on push or manually
+        if: github.event_name != 'pull_request'
+        with:
+          name: build
+          path: dist/
+
+  cd:
+    runs-on: ubuntu-latest
+    needs:
+      - plan
+      - build
+    # environment: prod
+    permissions:
+      contents: read
+      id-token: write
+    if: github.event_name != 'pull_request'
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Get GH token from Github App
+        id: gh-app-auth
+        uses: getsentry/action-github-app-token@v3
+        with:
+          app_id: ${{ secrets.NOTIFYCAL_CICD_APP_ID }}
+          private_key: ${{ secrets.NOTIFYCAL_CICD_APP_SECRET }}
+      - name: Hack for github internal repo access :(
+        run: git config --global url."https://foo:${{ steps.gh-app-auth.outputs.token }}@github.com".insteadOf ssh://git@github.com
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-region: ${{ env.AWS_REGION }}
+          role-to-assume: ${{ secrets.AWS_IAM_ROLE_CI }}
+          role-session-name: run-${{ github.run_id }}
+      - run: aws sts get-caller-identity
+      - name: Get tofu version from .opentofu-version
+        run: echo "tofu_version=$(cat .opentofu-version)" >> $GITHUB_OUTPUT
+        id: get_tofu_version
+        working-directory: tf
+      - uses: opentofu/setup-opentofu@v1
+        with:
+          tofu_version: ${{ steps.get_tofu_version.outputs.tofu_version }}
+          tofu_wrapper: false # https://github.com/jqlang/jq/issues/2287
+      - uses: actions/download-artifact@v4
+        with:
+          name: tf
+          path: tf/
+      - run: tofu init && tofu apply plan.tfplan
+        working-directory: tf
+      - uses: actions/download-artifact@v4
+        with:
+          name: build
+          path: dist/
+      - name: Display structure of downloaded files
+        run: ls -R
+      - name: Get bucket name from outputs
+        id: getbucketname
+        run: |
+          tofu output -raw bucket_name
+          s3_bucket="$(tofu output -raw bucket_name)"
+          echo "S3 Bucket name: ${s3_bucket}"
+          echo "s3_bucket=${s3_bucket}" >> $GITHUB_OUTPUT
+        working-directory: tf
+      - name: Deploy to S3
+        run: aws s3 sync --delete ./dist/ s3://${{ env.BUCKET }}
+        env:
+          BUCKET: ${{ steps.getbucketname.outputs.s3_bucket }}
+      - name: Display URL
+        run: tofu output -raw site_url
+        working-directory: tf
