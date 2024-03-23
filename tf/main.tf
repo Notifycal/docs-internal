@@ -1,7 +1,7 @@
 resource "random_string" "resource_suffix" {
-  length = 5
-  lower = true
-  upper = false
+  length  = 5
+  lower   = true
+  upper   = false
   numeric = true
   special = false
 }
@@ -38,10 +38,10 @@ data "aws_iam_policy_document" "bucket_policydoc" {
     effect = "Allow"
 
     principals {
-      type = "AWS"
+      type        = "AWS"
       identifiers = [aws_cloudfront_origin_access_identity.oai.iam_arn]
     }
-    
+
     actions = ["s3:GetObject"]
 
     resources = [

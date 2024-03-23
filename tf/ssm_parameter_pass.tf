@@ -5,7 +5,7 @@ resource "random_password" "docs_password" {
 }
 
 resource "aws_ssm_parameter" "docs_auth_password" {
-  name        = "/notifycal/internal_docs/password"
-  type        = "SecureString"
-  value       = random_password.docs_password.result
+  name  = "/notifycal/internal_docs/password"
+  type  = "SecureString"
+  value = random_password.docs_password.result
 }

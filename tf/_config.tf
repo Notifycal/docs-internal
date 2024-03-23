@@ -15,24 +15,24 @@ provider "aws" {
 
   default_tags {
     tags = {
-      Project = var.project
-      Region = var.aws_region
+      Project    = var.project
+      Region     = var.aws_region
       Managed-By = "Terragrunt"
-      Stack = var.stack
+      Stack      = var.stack
     }
   }
 }
 
 provider "aws" {
-  alias = "cdn"
+  alias  = "cdn"
   region = "us-east-1"
 
   default_tags {
     tags = {
-      Project = var.project
-      Region = "us-east-1"
+      Project    = var.project
+      Region     = "us-east-1"
       Managed-By = "Terragrunt"
-      Stack = var.stack
+      Stack      = var.stack
     }
   }
 }
