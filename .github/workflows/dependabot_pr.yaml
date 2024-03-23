@@ -17,7 +17,7 @@ jobs:
         with:
           alert-lookup: true
           compat-lookup: true
-          github-token: ${{ secrets.DEPENDABOT_PAT }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Add a label for semver upgrade type
         run: |
