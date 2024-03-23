@@ -37,6 +37,7 @@ jobs:
           filters: |
             tf:
               - 'tf/**'
+              - '.github/workflows/*.yaml'
             web:
               - '**'
               - '!tf/**'
