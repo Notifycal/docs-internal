@@ -93,6 +93,7 @@ jobs:
           path: |
             tf/plan.tfplan
             tf/dist/
+            tf/builds/
 
   build:
     runs-on: ubuntu-latest
