@@ -23,7 +23,7 @@ resource "aws_iam_role" "auth_lambda" {
   assume_role_policy = data.aws_iam_policy_document.auth_lambda_assume_role_policydoc.json
 }
 
-data "aws_iam_policy_document" "log_policy_document" {
+data "aws_iam_policy_document" "auth_lambda_policydoc" {
   statement {
     actions = [
       "logs:CreateLogGroup",
@@ -37,11 +37,22 @@ data "aws_iam_policy_document" "log_policy_document" {
 
     effect = "Allow"
   }
+  statement {
+    actions = [
+      "ssm:GetParameter",
+    ]
+
+    resources = [
+      aws_ssm_parameter.docs_auth_password.arn,
+    ]
+
+    effect = "Allow"
+  }
 }
 
 resource "aws_iam_policy" "auth_lambda_policy" {
-  name   = "notifycal-docs-auth-lambda-log-policy"
-  policy = data.aws_iam_policy_document.log_policy_document.json
+  name   = "notifycal-docs-auth-lambda-policy"
+  policy = data.aws_iam_policy_document.auth_lambda_policydoc.json
 }
 
 resource "aws_iam_role_policy_attachment" "auth_lambda_role_policies" {

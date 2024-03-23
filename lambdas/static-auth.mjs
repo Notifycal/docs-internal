@@ -1,3 +1,28 @@
+import { SSMClient, GetParameterCommand } from '@aws-sdk/client-ssm';
+
+const client = new SSMClient({
+  // The parameter lives here, regardless of where the function lives (edge location)
+  region: 'eu-west-1'
+});
+const PASSWORD_SSM_NAME = '/notifycal/internal_docs/password';
+
+async function loadParameter(parameterName) {
+  const input = {
+    Name: parameterName,
+    WithDecryption: true || false
+  };
+
+  try {
+    const command = new GetParameterCommand(input);
+    const { Parameter } = await client.send(command);
+
+    return Parameter.Value || null;
+  } catch (e) {
+    console.error(e);
+    return null;
+  }
+}
+
 export const handler = async (event) => {
   // Get request and request headers
   const request = event.Records[0].cf.request;
@@ -6,7 +31,7 @@ export const handler = async (event) => {
   // Configure authentication
   // TODO: Get user and pass from SSM?
   const authUser = 'user';
-  const authPass = 'pass';
+  const authPass = await loadParameter(PASSWORD_SSM_NAME);
 
   // Construct the Basic Auth string
   const authString = 'Basic ' + Buffer.from(`${authUser}:${authPass}`).toString('base64');
