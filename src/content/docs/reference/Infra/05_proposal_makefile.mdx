@@ -1,0 +1,67 @@
+---
+title: Makefile
+description: 'Proposal: Makefile'
+sidebar:
+  badge:
+    text: PROPOSAL
+    variant: tip
+---
+import { FileTree, Code } from '@astrojs/starlight/components';
+import makefileCode from '/src/files/Makefile?raw';
+
+After playing for the last 2 weeks with different tools I've come to the realization that:
+
+- Terragrunt is bulky and slow
+- [AWS SAM](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/what-is-sam.html) (w/ TF support) is dark magic.
+- [ATMOS](https://atmos.tools/) looked good on the surface but it's more dark magic than AWS SAM. Also they mount your home folder into their ~magic~ container by default.
+
+
+Looking back, at some point I've used a Makefile based approach that worked well.
+
+
+
+## Tree structure
+
+<FileTree>
+- common      common definitions across all envs and stacks
+  - variables.tf    
+  - locals.tf       
+- configs     tfvars only: `<env>/<stack>.tfvars`
+  - dev
+    - frontend.tfvars
+    - api.tfvars
+    - notification-processor.tfvars
+  - prod
+    - frontend.tfvars
+    - api.tfvars
+    - notification-processor.tfvars
+- stacks      environment-level
+  - frontend
+    - main.tf   these might just use a module (separate repo)
+  - api
+    - main.tf
+  - notification-processor
+    - main.tf
+- Makefile
+</FileTree>
+
+## Invocation sample
+```
+make stack="frontend" environment="dev" "plan"
+```
+
+
+## Makefile sample
+Note this file is a bit legacy and might need some tweaks to accomodate for newer versions of TF. We might also want to swap `tfstate_key` from:
+
+```
+tfstate_key := ${region}/${stack}.tfstate
+```
+
+to:
+
+```
+tfstate_key := ${environment}/${stack}.tfstate
+```
+
+<Code code={makefileCode} lang="make" />
