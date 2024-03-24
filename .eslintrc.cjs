@@ -5,6 +5,10 @@ module.exports = {
     'plugin:astro/jsx-a11y-strict',
     'prettier' // This should be the last
   ],
+  env: {
+    browser: true,
+    node: true,
+  },
   parserOptions: {
     sourceType: 'module',
     ecmaVersion: 2020
