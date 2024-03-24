@@ -117,15 +117,15 @@ jobs:
           eslint_flags: 'src/ --no-error-on-unmatched-pattern'
           fail_on_error: true
         continue-on-error: true
-      - uses: EPMatt/reviewdog-action-prettier@v1
-        id: formatcheck
-        # Want to run this regardless of the state of the previous step
-        if: success() || failure()
-        with:
-          reporter: github-pr-review
-          level: warning
-          fail_on_error: true
-        continue-on-error: true
+      # - uses: EPMatt/reviewdog-action-prettier@v1
+      #   id: formatcheck
+      #   # Want to run this regardless of the state of the previous step
+      #   if: success() || failure()
+      #   with:
+      #     reporter: github-pr-review
+      #     level: warning
+      #     fail_on_error: true
+      #   continue-on-error: true
 
       # Testing would go here, but maybe not on PR checks (time and money)
 

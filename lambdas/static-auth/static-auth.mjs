@@ -53,7 +53,7 @@ export const handler = async (event) => {
   // Rewrite URLs
   if (request.uri.endsWith('/')) {
     request.uri += 'index.html';
-  } 
+  }
 
   // Continue request processing if authentication passed
   return request;
