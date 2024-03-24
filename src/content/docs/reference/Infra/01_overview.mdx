@@ -62,14 +62,13 @@ Some examples of resources in this layer are:
   [...]
   ```
 
-We should scope the resource name, using the environment name. An exception might be production.
+  We should scope the resource name, using the environment name. An exception might be production.
 
-```
-[...]
-function_name = "auth-service-post-authorize-${var.environment}"
-[...]
-```
-
+  ```
+  [...]
+  function_name = "auth-service-post-authorize-${var.environment}"
+  [...]
+  ```
 </Aside>
 
 ## No layer?
