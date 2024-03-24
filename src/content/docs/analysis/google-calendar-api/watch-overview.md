@@ -1,6 +1,6 @@
 ---
-title: Google Calendar
-description: Docs, links, and notes to work out how to create a stream of events from Google Calendar API
+title: Watch overview
+description: Docs, links, and notes to work out how to create a more efficient stream of events from Google Calendar API
 ---
 
 Google Calendar is a product that allows people to manage an agenda. The intention here is to create an stream of events/notifications to react to them and provide some sort of notification service that Google does not provide.
