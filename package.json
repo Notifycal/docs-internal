@@ -21,8 +21,6 @@
   "devDependencies": {
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
-    "eslint-formatter-rdjson": "^1.0.6",
-    "eslint-formatter-table": "^7.32.1",
     "eslint-plugin-astro": "^0.32.0",
     "eslint-plugin-jsx-a11y": "^6.8.0",
     "prettier": "^3.2.5",
