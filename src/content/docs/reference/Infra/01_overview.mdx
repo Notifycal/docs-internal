@@ -11,7 +11,6 @@ Makes sense to split the infrastructure into multiple layers, mostly depending o
 - [Layer 1](#layer-1)
 - [No layer?](#no-layer)
 
-
 ## Layer 0
 
 - Uses its own state bucket.
@@ -41,7 +40,6 @@ Some of these resources like DNS and Certificates might have a "specialization" 
 
 `notifycal.com` Route53 Hosted Zone is a Layer 0 resource, but we might create a `dev.notifycal.com` Hosted Zone in Layer 1, that is specific for the environment. Same would apply to ACM (SSL) certificates.
 
-
 ## Layer 1
 
 - It's environment-scoped (dev, qa, prod).
@@ -54,8 +52,6 @@ Some examples of resources in this layer are:
 - DynamoDB tables and generally any kind of storage that's related to a backend
 - SQS and SNS
 
-
-
 <Aside type="caution" title="Resource naming!">
   As these resources are environment-scoped, we need to be aware of it when naming them, and use some kind of suffix or prefix to avoid name clashing.
   
@@ -66,21 +62,21 @@ Some examples of resources in this layer are:
   [...]
   ```
 
-  We should scope the resource name, using the environment name. An exception might be production.
-  ```
-  [...]
-  function_name = "auth-service-post-authorize-${var.environment}"
-  [...]
-  ```
+We should scope the resource name, using the environment name. An exception might be production.
+
+```
+[...]
+function_name = "auth-service-post-authorize-${var.environment}"
+[...]
+```
+
 </Aside>
-
-
 
 ## No layer?
 
-Does it make sense that some components don't belong to any layer and have their own lifecycle? 
+Does it make sense that some components don't belong to any layer and have their own lifecycle?
 I am thinking for example about the docs site, as:
+
 - It's not really critical (or even impactful) to the business.
 - Its contents are always readable from Github.
 - It's 100% internal.
-

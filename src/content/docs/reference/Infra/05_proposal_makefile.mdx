@@ -6,6 +6,7 @@ sidebar:
     text: PROPOSAL
     variant: tip
 ---
+
 import { FileTree, Code } from '@astrojs/starlight/components';
 import makefileCode from '/src/files/Makefile?raw';
 
@@ -15,10 +16,7 @@ After playing for the last 2 weeks with different tools I've come to the realiza
 - [AWS SAM](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/what-is-sam.html) (w/ TF support) is dark magic.
 - [ATMOS](https://atmos.tools/) looked good on the surface but it's more dark magic than AWS SAM. Also they mount your home folder into their ~magic~ container by default.
 
-
 Looking back, at some point I've used a Makefile based approach that worked well.
-
-
 
 ## Tree structure
 
@@ -46,12 +44,13 @@ Looking back, at some point I've used a Makefile based approach that worked well
 </FileTree>
 
 ## Invocation sample
+
 ```
 make stack="frontend" environment="dev" "plan"
 ```
 
-
 ## Makefile sample
+
 Note this file is a bit legacy and might need some tweaks to accomodate for newer versions of TF. We might also want to swap `tfstate_key` from:
 
 ```
