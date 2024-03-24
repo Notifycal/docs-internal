@@ -1,0 +1,88 @@
+---
+title: Layers
+description: Overview of infra layers
+---
+
+import { Aside } from '@astrojs/starlight/components';
+
+Makes sense to split the infrastructure into multiple layers, mostly depending on the criticality of the resources that live in that layer, their impact to the business and how often they see changes.
+
+- [Layer 0](#layer-0)
+- [Layer 1](#layer-1)
+- [No layer?](#no-layer)
+
+## Layer 0
+
+- Uses its own state bucket.
+
+Also, the resources in this layer meet the following criteria:
+
+- Don't belong to any environment.
+- They aren't changed frequently.
+- They're highly critical and the foundation of the rest of the infra.
+
+Some examples of resources in this layer are (but not limited to):
+
+- Project-level Hosted zones
+  - `notifycal.es`
+  - `notifycal.com`
+- Project-level ACM (SSL) Certificates
+  - `*.notifycal.es`
+  - `*.notifycal.com`
+- Account-wise IAM policies, roles...
+- CI/CD setup
+  - OIDC trust against Github
+  - IAM policies for CI/CD...
+  - Repository secrets and variables
+- Project S3 state bucket
+
+Some of these resources like DNS and Certificates might have a "specialization" in one of the next layers. For example:
+
+`notifycal.com` Route53 Hosted Zone is a Layer 0 resource, but we might create a `dev.notifycal.com` Hosted Zone in Layer 1, that is specific for the environment. Same would apply to ACM (SSL) certificates.
+
+## Layer 1
+
+- It's environment-scoped (dev, qa, prod).
+
+Some examples of resources in this layer are:
+
+- Static landing site
+- REST API (API GW + Lambdas)
+- Scheduled processes (Scheduled Lambdas)
+- DynamoDB tables and generally any kind of storage that's related to a backend
+- SQS and SNS
+
+<Aside type="caution" title="Resource naming!">
+  As these resources are environment-scoped, we need to be aware of it when naming them, and use some kind of suffix or prefix to avoid name clashing.
+  
+  This will be a problem when creating more environments:
+  ```
+  [...]
+  function_name = "auth-service-post-authorize"
+  [...]
+  ```
+
+We should scope the resource name, using the environment name. An exception might be production.
+
+```
+[...]
+function_name = "auth-service-post-authorize-${var.environment}"
+[...]
+```
+
+```
+[...]
+function_name = "auth-service-post-authorize-${var.environment}"
+[...]
+```
+
+</Aside>
+
+## No layer?
+
+Does it make sense that some components don't belong to any layer and have their own lifecycle?
+I am thinking for example about the docs site, as:
+
+- It's not really critical (or even impactful) to the business.
+- Its contents are always readable from Github.
+- It's 100% internal.

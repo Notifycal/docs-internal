@@ -13,7 +13,7 @@ concurrency:
   # github.head_ref is only set when the workflow was triggered by a pull_request and it
   # contains the value of the source branch of the PR.
   group: ${{ github.workflow }}-${{ github.head_ref || github.ref_name }}
-  cancel-in-progress: true
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 env:
   AWS_REGION: eu-west-1
@@ -110,25 +110,15 @@ jobs:
           node-version-file: '.nvmrc'
           cache: 'npm'
       - run: npm ci
-      - uses: reviewdog/action-eslint@v1
-        id: lintcheck
-        with:
-          reporter: github-pr-review
-          eslint_flags: 'src/ --no-error-on-unmatched-pattern'
-          fail_on_error: true
+      - name: Lint files
+        id: lint
+        run: npm run lint
         continue-on-error: true
-      - uses: EPMatt/reviewdog-action-prettier@v1
-        id: formatcheck
-        # Want to run this regardless of the state of the previous step
-        if: success() || failure()
-        with:
-          reporter: github-pr-review
-          level: warning
-          fail_on_error: true
+      - name: Check formatting
+        id: format
+        run: npm run prettier
         continue-on-error: true
-
       # Testing would go here, but maybe not on PR checks (time and money)
-
       - run: npm run build
         id: build
         continue-on-error: true
