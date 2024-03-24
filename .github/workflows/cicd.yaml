@@ -117,6 +117,7 @@ jobs:
 
       # Run eslint (through npm script) and report
       - name: Lint files
+        id: lint
         run: npm run ci:lint | reviewdog -f=rdjson \
           -name=eslint \
           -reporter=github-pr-review \

@@ -6,6 +6,11 @@ const client = new SSMClient({
 });
 const PASSWORD_SSM_NAME = '/notifycal/internal_docs/password';
 
+const foo = {
+  bar: 123,
+  bar: "test"
+};
+
 async function loadParameter(parameterName) {
   const input = {
     Name: parameterName,
