@@ -5,6 +5,10 @@ module.exports = {
     'plugin:astro/jsx-a11y-strict',
     'prettier' // This should be the last
   ],
+  parserOptions: {
+    sourceType: 'module',
+    ecmaVersion: 2020
+  },
   overrides: [
     {
       // Define the configuration for `.astro` file.
@@ -23,5 +27,5 @@ module.exports = {
       }
     }
   ],
-  ignorePatterns: ['dist/**']
+  ignorePatterns: ['dist/**', '.eslintrc.cjs', 'tf/**']
 };

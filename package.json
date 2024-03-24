@@ -8,8 +8,10 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "lint": "eslint . --format=table --no-error-on-unmatched-pattern",
+    "_lint": "eslint '**/*.{js,ts,jsx,tsx,cjs,mjs}' --no-error-on-unmatched-pattern",
+    "lint": "$npm_execpath run _lint -- --format=table",
     "lint:fix": "$npm_execpath run lint -- --fix",
+    "ci:lint": "$npm_execpath run _lint -- --format=rdjson",
     "prettier": "prettier . --check",
     "prettier:fix": "$npm_execpath run prettier -- --write"
   },
@@ -21,6 +23,7 @@
   "devDependencies": {
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
+    "eslint-formatter-rdjson": "^1.0.6",
     "eslint-formatter-table": "^7.32.1",
     "eslint-plugin-astro": "^0.32.0",
     "eslint-plugin-jsx-a11y": "^6.8.0",
