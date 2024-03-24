@@ -1,11 +1,16 @@
+---
+title: Implementation
+description: Implementation
+---
+
 This is going to be fun.
 
 # Arquitecture
 
- - A lambda that calls Calendar watch after user pays and let us know what calendar they want us to integrate with and what message they want to sent to their customers. Somehow this will be fed by some event coming off a SNS/SQS (not sure at this time).
- - A lambda for Google to callback
- - A lambda to fetch events from Google Calendar API and store them when above lambda is invoked by Google. This can be probably the same as above. As Google gives a whistle we call Google and store the events in some persistance unit.
- - TBD. As we get the events and store them we have to determine if we need to send a reminder. This needs to be background processing because no notification is sent down the channel to indicate a reminder is being triggered. This makes me thing if it is really worthy the watch business... Compute time vs complexity
+- A lambda that calls Calendar watch after user pays and let us know what calendar they want us to integrate with and what message they want to sent to their customers. Somehow this will be fed by some event coming off a SNS/SQS (not sure at this time).
+- A lambda for Google to callback
+- A lambda to fetch events from Google Calendar API and store them when above lambda is invoked by Google. This can be probably the same as above. As Google gives a whistle we call Google and store the events in some persistance unit.
+- TBD. As we get the events and store them we have to determine if we need to send a reminder. This needs to be background processing because no notification is sent down the channel to indicate a reminder is being triggered. This makes me thing if it is really worthy the watch business... Compute time vs complexity
 
 # Calendar/event data to store
 
@@ -14,7 +19,9 @@ Since the end goal here is to send notifications to people based on calendar eve
 [When brain isn't boiling I will put here my idea]
 
 These are about all the data we are interested in:
+
 ## Calendar
+
 ```
 etag - this changes as some event gets modified in the calendar.
 updated - same as above
@@ -24,6 +31,7 @@ nextPageToken
 nextSyncToken
 items - see below section.
 ```
+
 ```json
 {
   "kind": "calendar#events",
@@ -46,6 +54,7 @@ items - see below section.
   ]
 }
 ```
+
 ## Event
 
 ```
@@ -61,7 +70,9 @@ originalStartTime
 atendees
 reminders
 ```
+
 extracted from below:
+
 ```json
 {
   "kind": "calendar#event",
