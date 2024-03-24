@@ -121,7 +121,8 @@ jobs:
           -name=eslint \
           -reporter=github-pr-review \
           -fail-on-error=true \
-          -level=error \
+          -level=error
+          exit $?;
         continue-on-error: true
       # Run prettier (through npm script) and report
       
