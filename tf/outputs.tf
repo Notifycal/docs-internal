@@ -1,7 +1,7 @@
 output "bucket_name" {
-  value = aws_s3_bucket.docs_static_site.id
+  value = module.docs.bucket_name
 }
 
 output "site_url" {
-  value = "http://${aws_cloudfront_distribution.cdn.domain_name}"
+  value = module.docs.site_url
 }
