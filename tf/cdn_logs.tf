@@ -16,5 +16,5 @@ module "cdn_logs" {
   prefix = "notifycal-docs"
 
   cloudfront_log_bucket      = aws_s3_bucket.cdn_logs.id
-  cloudfront_distribution_id = aws_cloudfront_distribution.cdn.id
+  cloudfront_distribution_id = module.docs.cf_distribution_id
 }
