@@ -1,0 +1,24 @@
+---
+title: Localstack
+description: Develop locally using localstack and Terraform
+---
+
+import { LinkCard, Card } from '@astrojs/starlight/components';
+
+## Ways of running LocalStack
+
+Options
+
+- [Localstack CLI](https://docs.localstack.cloud/getting-started/installation/#localstack-cli) (seems to be just a wrapper around docker)
+- [Localstack Desktop](https://docs.localstack.cloud/getting-started/installation/#localstack-desktop) Need to log in to download it
+- [Docker](https://docs.localstack.cloud/getting-started/installation/#docker)
+- [Docker Compose](https://docs.localstack.cloud/getting-started/installation/#docker-compose)
+
+
+Docker (and Compose) are ubiquitous nowadays so we can use a Docker Compose stack to spin up LocalStack.
+
+<LinkCard
+  title="Notifycal/poc-localstack-tofu"
+  description="This repo contains a PoC of using LocalStack to develop a serverless application locally."
+  href="https://github.com/Notifycal/poc-localstack-tofu"
+/>
