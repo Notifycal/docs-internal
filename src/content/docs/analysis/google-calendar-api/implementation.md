@@ -7,8 +7,8 @@ Google Calendar is a product that allows people to manage an agenda. The intenti
 
 # Arquitecture
 
- - An scheduled lambda that fetches active users' calendars and puts an event on a queue for each one of them
- - An lambda that pops items from the queue fetches actionable events from Google Calendar API and works out if a reminder needs to be sent based on a fixed distance to the start time of the event. 
+- An scheduled lambda that fetches active users' calendars and puts an event on a queue for each one of them
+- An lambda that pops items from the queue fetches actionable events from Google Calendar API and works out if a reminder needs to be sent based on a fixed distance to the start time of the event.
 
 # Implementation
 
