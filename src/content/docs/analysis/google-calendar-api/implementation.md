@@ -13,9 +13,10 @@ Google Calendar is a product that allows people to manage an agenda. The intenti
 # Implementation
 
 Although Google Calendar has sort sort of on change notification API - the calendar watch endpoint - we have decided not to use it for now until there is a real need to cut down on costs. There is also a way of [syncronizing resources efficiently](https://developers.google.com/calendar/api/guides/sync) - which watch implementation approach relies on as well - we are not gonna use for now for the sake of getting something out quickly. At this point, we really think there are 3 factors that make it not worthy:
- - low cost of compute time and the existance of a wide free tier.
- - an avoidable way of needing some background processing - at least for a PoC.
- - complexity
+
+- low cost of compute time and the existance of a wide free tier.
+- an avoidable way of needing some background processing - at least for a PoC.
+- complexity
 
 Therefore, we are gonna go with a simple implementation based on polling to [calendar events list](https://developers.google.com/calendar/api/v3/reference/events/list) passing some parameters that cut down the amount of data to fetch and, as a result, it provides actionable events without requiring any persistance unit.
 
