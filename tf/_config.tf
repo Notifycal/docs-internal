@@ -39,10 +39,10 @@ provider "aws" {
 
 terraform {
   backend "s3" {
-    bucket         = "tofu-state-notifycal-r3h5d3gp"
-    dynamodb_table = "tofu-lock-notifycal-r3h5d3gp"
+    bucket         = "tofu-state-notifycal-docs-internal"
+    dynamodb_table = "tofu-lock-notifycal-docs-internal"
     encrypt        = true
-    key            = "docs/terraform.tfstate"
+    key            = "terraform.tfstate"
     region         = "eu-west-1"
   }
   required_providers {
