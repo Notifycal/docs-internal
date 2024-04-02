@@ -3,7 +3,7 @@ module.exports = {
     'eslint:recommended',
     'plugin:astro/recommended',
     'plugin:astro/jsx-a11y-strict',
-    'prettier' // This should be the last
+    'plugin:prettier/recommended' // This should be the last
   ],
   env: {
     browser: true,
