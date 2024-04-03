@@ -1,165 +1,255 @@
 ---
-title: Google Calendar
+title: Overview
 description: Docs, links, and notes to work out how to create a stream of events from Google Calendar API
 ---
 
 Google Calendar is a product that allows people to manage an agenda. The intention here is to create an stream of events/notifications to react to them and provide some sort of notification service that Google does not provide.
 
-As you google it, one of the first things coming up is [Push Notification](https://developers.google.com/calendar/api/guides/push#overview). At the first glance it seems that's exactly what you are looking for although Google have more difficult plans for developers to integrate with it. All this API provides is a channel a [calendar watch endpoint](https://developers.google.com/calendar/api/v3/reference/events/watch) which accepts a callback to tap into by Google when something changes to the interrogated calendar. Whereas that is true, the events going through the channel don't have the granularity one would expect. Aside from the fact you have to make an initial request to fetch all the events, when Google notifies "something" has changed in the calendar one has to make another call to Google to receive the whole state of the event as opposed to the actual bit changing. This is as good as it gets in order to provide a stream of changes.
+# Terminology
 
-## Open channel and use it
+- Google user. For now the only type of user it is going to be allowed due to the nature of the product. These are Notifycal's clients.
+- Client's calendars. A google user can have multiple calendars. For now, we are only integrating with primary calendar.
+- Client's calendar events. A calendar consists of a set of events taking place at a particular time involving some guests and having some reminders configured some time ahead of the start time event - amongst other typical details.
+- Actionable events. An event that Notifycal can immediately send a reminder for. Initially to the client's customer, and down the road, on behalf of the client to the client's customer.
 
-At this point, it clear that we have to compute the stream of changes by ourselves. The plan so far is - leaving authentication/authorization aside:
+# Arquitecture
 
-1. Call Calendar watch API to create a channel of notifications. This channel has an configurable and limited expiration time. By default, it lasts about a week.
-   Neither stopping a channel nor a channel expiring by itself make Google send a last notification - this has been tested.
+- An scheduled lambda that fetches active users' calendars and puts an event on a queue for each one of them
+- An lambda that pops items from the queue fetches actionable events from Google Calendar API and works out if a reminder needs to be sent based on a fixed distance to the start time of the event.
 
-Request example:
+# Proposed implementation
 
-```
-POST https://www.googleapis.com/calendar/v3/calendars/my_calendar@gmail.com/events/watch
-Authorization: Bearer auth_token_for_current_user
-Content-Type: application/json
-```
+Although Google Calendar has sort sort of on change notification API - the calendar watch endpoint - we have decided not to use it for now until there is a real need to cut down on costs. There is also a way of [syncronizing resources efficiently](https://developers.google.com/calendar/api/guides/sync) - which watch implementation approach relies on as well - we are not gonna use for now for the sake of getting something out quickly. At this point, we really think there are 3 factors that make it not worthy:
 
-```json
-{
-  "id": "01234567-89ab-cdef-0123456789ab", // Your made-up channel ID.
-  "type": "web_hook",
-  "address": "https://mydomain.com/notifications", // Your callback URL.
-  //... (see Docs for further info)
-  "token": "target=myApp-myCalendarChannelDest", // (Optional) Your channel token.
-  "expiration": 1426325213000 // (Optional) Your requested channel expiration time.
-}
-```
+- low cost of compute time and the existance of a wide free tier.
+- an avoidable way of needing some background processing - at least for a PoC.
+- complexity
 
-Response example:
+Therefore, we are gonna go with a simple implementation based on polling to [calendar events list](https://developers.google.com/calendar/api/v3/reference/events/list) passing some parameters that cut down the amount of data to fetch and, as a result, it provides actionable events without requiring any persistance unit.
 
-```json
-{
-  "kind": "api#channel",
-  "id": "01234567-89ab-cdef-0123456789ab", // ID you specified for this channel.
-  "resourceId": "o3hgv1538sdjfh", // ID of the watched resource.
-  "resourceUri": "https://www.googleapis.com/calendar/v3/calendars/my_calendar@gmail.com/events", // Version-specific ID of the watched resource.
-  "token": "target=myApp-myCalendarChannelDest", // Present only if one was provided.
-  "expiration": 1426325213000 // Actual expiration time as Unix timestamp (in ms), if applicable.
-}
-```
+Because of the nature of the reminder, i.e. urging somebody to attend some appointment, the schedule can be somehow relaxed and make the sliding window be something like 30 minutes or even 1h. It really doesn't make a difference to send a reminder 23h or 23.5h before the appointment. Note: Although we are gonna use this simplistic approach, chances are the number of result retrieved by this endpoint is larger than maxResults upper limit(2500). In this scenario, we need to iterate over `pageToken` as many times as required.
 
-2. As real world events happen in the calendar - i.e. Calendar user uses their calendar - Google will invoke the callback specified in 1).
+## Important Calendar/event data to act upon
 
-Request example:
+Since the end goal here is to send notifications to people based on calendar events we can stablish a 1 to 1 relationship (1 calendar event 1 reminder). This decision is based on the design decision of using a fixed reminder time of 24h. It all really translates into is that 1 calendar N Notifycal events.
+
+These are about all the data we are interested in:
+
+## Calendar
 
 ```
-POST https://mydomain.com/notifications // Your callback URL.
-Headers:
-X-Goog-Channel-ID: channel-ID-value // Your made-up channel ID from 1)
-X-Goog-Channel-Token: channel-token-value // Not sure what this is for yet. This is necessary for closing the channel. See section Stop notifications.
-X-Goog-Channel-Expiration: expiration-date-and-time // In human-readable format. Present only if the channel expires.
-X-Goog-Resource-ID: identifier-for-the-watched-resource // This is necessary for closing the channel. See section Stop notifications.
-X-Goog-Resource-URI: version-specific-URI-of-the-watched-resource // Keep this one safe, it will be used in 3)
-X-Goog-Resource-State: sync // There are 3 types as per Docs state: sync (only to indicate the channel has opened), exist (something changed) and not_exist (not sure yet)
-X-Goog-Message-Number: 1
+timeZone
+defaultReminders
+items - see below section.
 ```
-
-3. Call ${X-Goog-Resource-URI}, which is basically the [event list endpoint](https://developers.google.com/calendar/api/v3/reference/events/list) to fetch all the events from the target calendar. It is a necessary initial call so that later you can fetch only events that have actually changed. Whether or not we receive `X-Goog-Resource-State: sync` we need to make this call.
-
-Request example:
-
-```
-GET https://www.googleapis.com/calendar/v3/calendars/calendarId/events
-Authorization: Bearer auth_token_for_current_user
-Content-Type: application/json
-```
-
-Note: I have read [online](https://stackoverflow.com/questions/78030802/google-calendar-watch-doesnt-send-notifications-after-the-initial-sync-notifica) that it is necessary to pass [eventTypes](https://developers.google.com/calendar/api/v3/reference/events/list?#:~:text=Deprecated%20and%20ignored.-,eventTypes,-string) =default parameter because Google devs are mentally impaired.
-
-Response example:
 
 ```json
 {
   "kind": "calendar#events",
-  "etag": "\"p32sfjgfnpa38a0o\"",
-  "summary": "notifycal@gmail.com",
-  "description": "",
-  "updated": "2024-03-22T00:12:46.115Z",
-  "timeZone": "Europe/Madrid",
-  "accessRole": "owner",
+  "etag": etag,
+  "summary": string,
+  "description": string,
+  "updated": datetime,
+  "timeZone": string,
+  "accessRole": string,
   "defaultReminders": [
     {
-      "method": "popup",
-      "minutes": 30
+      "method": string,
+      "minutes": integer
     }
   ],
-  "nextSyncToken": "CLj5wffKhoUDELj5wffKhoUDGAUgnOOFpgIonOOFpgI=",
+  "nextPageToken": string,
+  "nextSyncToken": string,
   "items": [
-    {
-      "kind": "calendar#event",
-      "etag": "\"3422132730590000\"",
-      "id": "1vk76ch9q0e0b4v13ku0rklsnr",
-      "status": "confirmed",
-      "htmlLink": "https://www.google.com/calendar/event?eid=MXZrNzZjaDlxMGUwYjR2MTNrdTBya2xzbnIgbm90aWZ5Y2FsQG0",
-      "created": "2024-03-22T00:12:45.000Z",
-      "updated": "2024-03-22T00:12:45.295Z",
-      "summary": "event created",
-      "creator": {
-        "email": "notifycal@gmail.com",
-        "self": true
-      },
-      "organizer": {
-        "email": "notifycal@gmail.com",
-        "self": true
-      },
-      "start": {
-        "dateTime": "2024-03-22T02:00:00+01:00",
-        "timeZone": "Europe/Madrid"
-      },
-      "end": {
-        "dateTime": "2024-03-22T03:00:00+01:00",
-        "timeZone": "Europe/Madrid"
-      },
-      "iCalUID": "1vk76ch9q0e0b4v13ku0rklsnr@google.com",
-      "sequence": 0,
-      "reminders": {
-        "useDefault": true
-      },
-      "eventType": "default"
-    }
+    events Resource
   ]
 }
 ```
 
-Here is the reference anyway:
-
-- [Calendar](https://developers.google.com/calendar/api/v3/reference/events/list?#response)
-- [Event](https://developers.google.com/calendar/api/v3/reference/events#resource)
-
-To be able to fetch changed events, it is necessary to keep `.nextSyncToken` for 4). When the amount of fetched events is to large [the API provides pagination](https://developers.google.com/calendar/api/guides/sync#incremental_sync). This means you have to make subsequent request passing `pageToken` as well as `syncToken` until server doesn't return a `pageToken` anymore. Max number of results can be 2500, however, by default the value is 250.
-Keep reading, we are "almost" there.
-
-Note: past events get also fetched. Maybe timeMin parameter could help.
-Note2: there is an orderBy and it accepts: "startTime" and "updated" values.
-Note3: there are options around recurring events. I reckon the way it works by default is that you don't get a recurring event but instead you get all the instances of it.
-
-4. On next notification from channel - same as in 2) -, which presumably `X-Goog-Resource-State` will contain `exist` as a value this time, we need to repeat 3) passing the inmmeditate and previous `nextSyncToken` received so that we get a delta instead.
-
-## Stop channel
-
-Although the channel has an inherent expiration time, you can choose to stop it manually by calling this API.
+## Event
 
 ```
-POST https://www.googleapis.com/calendar/v3/channels/stop
-Authorization: Bearer CURRENT_USER_AUTH_TOKEN
-Content-Type: application/json
+id
+summary(optional - it depends how the phone number is obtained)
+description(optional - it depends how the phone number is obtained)
+start
+recurrence
+originalStartTime
+atendees
+reminders
 ```
+
+extracted from below:
 
 ```json
 {
-  "id": "4ba78bf0-6a47-11e2-bcfd-0800200c9a66", // See headers from request in 2)
-  "resourceId": "ret08u3rv24htgh289g" // See headers from request in 2). I suspect this id is not stable and it changes as things flow through the channel.
+  "kind": "calendar#event",
+  "etag": etag,
+  "id": string,
+  "status": string,
+  "htmlLink": string,
+  "created": datetime,
+  "updated": datetime,
+  "summary": string,
+  "description": string,
+  "location": string,
+  "colorId": string,
+  "creator": {
+    "id": string,
+    "email": string,
+    "displayName": string,
+    "self": boolean
+  },
+  "organizer": {
+    "id": string,
+    "email": string,
+    "displayName": string,
+    "self": boolean
+  },
+  "start": {
+    "date": date,
+    "dateTime": datetime,
+    "timeZone": string
+  },
+  "end": {
+    "date": date,
+    "dateTime": datetime,
+    "timeZone": string
+  },
+  "endTimeUnspecified": boolean,
+  "recurrence": [
+    string
+  ],
+  "recurringEventId": string,
+  "originalStartTime": {
+    "date": date,
+    "dateTime": datetime,
+    "timeZone": string
+  },
+  "transparency": string,
+  "visibility": string,
+  "iCalUID": string,
+  "sequence": integer,
+  "attendees": [
+    {
+      "id": string,
+      "email": string,
+      "displayName": string,
+      "organizer": boolean,
+      "self": boolean,
+      "resource": boolean,
+      "optional": boolean,
+      "responseStatus": string,
+      "comment": string,
+      "additionalGuests": integer
+    }
+  ],
+  "attendeesOmitted": boolean,
+  "extendedProperties": {
+    "private": {
+      (key): string
+    },
+    "shared": {
+      (key): string
+    }
+  },
+  "hangoutLink": string,
+  "conferenceData": {
+    "createRequest": {
+      "requestId": string,
+      "conferenceSolutionKey": {
+        "type": string
+      },
+      "status": {
+        "statusCode": string
+      }
+    },
+    "entryPoints": [
+      {
+        "entryPointType": string,
+        "uri": string,
+        "label": string,
+        "pin": string,
+        "accessCode": string,
+        "meetingCode": string,
+        "passcode": string,
+        "password": string
+      }
+    ],
+    "conferenceSolution": {
+      "key": {
+        "type": string
+      },
+      "name": string,
+      "iconUri": string
+    },
+    "conferenceId": string,
+    "signature": string,
+    "notes": string,
+  },
+  "gadget": {
+    "type": string,
+    "title": string,
+    "link": string,
+    "iconLink": string,
+    "width": integer,
+    "height": integer,
+    "display": string,
+    "preferences": {
+      (key): string
+    }
+  },
+  "anyoneCanAddSelf": boolean,
+  "guestsCanInviteOthers": boolean,
+  "guestsCanModify": boolean,
+  "guestsCanSeeOtherGuests": boolean,
+  "privateCopy": boolean,
+  "locked": boolean,
+  "reminders": {
+    "useDefault": boolean,
+    "overrides": [
+      {
+        "method": string,
+        "minutes": integer
+      }
+    ]
+  },
+  "source": {
+    "url": string,
+    "title": string
+  },
+  "workingLocationProperties": {
+    "type": string,
+    "homeOffice": (value),
+    "customLocation": {
+      "label": string
+    },
+    "officeLocation": {
+      "buildingId": string,
+      "floorId": string,
+      "floorSectionId": string,
+      "deskId": string,
+      "label": string
+    }
+  },
+  "outOfOfficeProperties": {
+    "autoDeclineMode": string,
+    "declineMessage": string
+  },
+  "focusTimeProperties": {
+    "autoDeclineMode": string,
+    "declineMessage": string,
+    "chatStatus": string
+  },
+  "attachments": [
+    {
+      "fileUrl": string,
+      "title": string,
+      "mimeType": string,
+      "iconLink": string,
+      "fileId": string
+    }
+  ],
+  "eventType": string
 }
 ```
-
-## Reference
-
-[This](https://stackoverflow.com/questions/31932239/how-to-handle-google-calendar-api-push-notifications) helped to connect the dots.
