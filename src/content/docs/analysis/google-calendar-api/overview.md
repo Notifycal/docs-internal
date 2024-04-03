@@ -5,12 +5,19 @@ description: Docs, links, and notes to work out how to create a stream of events
 
 Google Calendar is a product that allows people to manage an agenda. The intention here is to create an stream of events/notifications to react to them and provide some sort of notification service that Google does not provide.
 
+# Terminology
+
+- Google user. For now the only type of user it is going to be allowed due to the nature of the product. These are Notifycal's clients.
+- Client's calendars. A google user can have multiple calendars. For now, we are only integrating with primary calendar.
+- Client's calendar events. A calendar consists of a set of events taking place at a particular time involving some guests and having some reminders configured some time ahead of the start time event - amongst other typical details.
+- Actionable events. An event that Notifycal can immediately send a reminder for. Initially to the client's customer, and down the road, on behalf of the client to the client's customer.
+
 # Arquitecture
 
 - An scheduled lambda that fetches active users' calendars and puts an event on a queue for each one of them
 - An lambda that pops items from the queue fetches actionable events from Google Calendar API and works out if a reminder needs to be sent based on a fixed distance to the start time of the event.
 
-# Implementation
+# Proposed implementation
 
 Although Google Calendar has sort sort of on change notification API - the calendar watch endpoint - we have decided not to use it for now until there is a real need to cut down on costs. There is also a way of [syncronizing resources efficiently](https://developers.google.com/calendar/api/guides/sync) - which watch implementation approach relies on as well - we are not gonna use for now for the sake of getting something out quickly. At this point, we really think there are 3 factors that make it not worthy:
 
