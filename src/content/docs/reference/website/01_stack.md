@@ -9,6 +9,7 @@ description: frontend stack
 - Icons?
 - Cookies
 - Google Analytics and Tag Manager
+- Microsoft Clarity
 - Integration with Google SSO
 - Color scheme
 
