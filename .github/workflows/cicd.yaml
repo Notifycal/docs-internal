@@ -194,6 +194,9 @@ jobs:
         run: aws s3 sync --delete ./dist/ s3://${{ env.BUCKET }}
         env:
           BUCKET: ${{ steps.getbucketname.outputs.s3_bucket }}
-      - name: Display URL
-        run: tofu output -raw site_url
+      - name: Display URL and set it as the repo URL homepage
+        run: |
+          DOCS_URL="$(tofu output -raw site_url)"
+          gh repo edit --homepage="${DOCS_URL}"
+          echo "Access the documentation on the following URL: ${DOCS_URL}"
         working-directory: tf
