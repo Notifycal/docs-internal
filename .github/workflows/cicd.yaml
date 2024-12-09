@@ -199,4 +199,6 @@ jobs:
           DOCS_URL="$(tofu output -raw site_url)"
           gh repo edit --homepage="${DOCS_URL}"
           echo "Access the documentation on the following URL: ${DOCS_URL}"
+        env:
+          GH_TOKEN: ${{ github.token }}
         working-directory: tf
