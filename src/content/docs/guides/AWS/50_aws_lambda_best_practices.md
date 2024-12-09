@@ -64,3 +64,11 @@ These (and any other AWS XRay SDK methods) need to be accessed through `tracer.p
 ## Logging
 
 ## Metrics
+
+What to instrument in a service?
+
+- Latency from/to other services
+  - AWS Services
+  - Other 3rd party services
+    - Google
+    - Whatsapp
