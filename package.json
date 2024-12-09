@@ -14,9 +14,12 @@
     "prettier:fix": "$npm_execpath run prettier -- --write"
   },
   "dependencies": {
+    "@astrojs/check": "^0.9.4",
     "@astrojs/starlight": "^0.21.5",
-    "astro": "^4.5.16",
-    "sharp": "^0.33.5"
+    "astro": "^4.16.17",
+    "globals": "^15.13.0",
+    "sharp": "^0.33.5",
+    "typescript": "^5.7.2"
   },
   "devDependencies": {
     "eslint": "^9.16.0",
