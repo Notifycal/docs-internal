@@ -142,7 +142,7 @@ jobs:
     permissions:
       contents: read
       id-token: write
-    outputs: 
+    outputs:
       site_url: ${{ steps.get_site_url.outputs.site_url }}
     if: github.event_name != 'pull_request'
     steps:
