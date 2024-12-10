@@ -213,7 +213,7 @@ jobs:
     steps:
       - name: Update repository URL homepage
         run: |
-          gh repo edit --homepage="${SITE_URL}"
+          gh repo edit "${GITHUB_REPOSITORY}" --homepage="${SITE_URL}"
         env:
           GH_TOKEN: ${{ github.token }}
       - name: Set Job summary
