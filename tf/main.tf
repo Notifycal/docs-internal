@@ -1,3 +1,8 @@
+locals {
+  base_domain = "notifycal.com"
+  domain_prefix = "docs-internal"
+}
+
 resource "random_string" "resource_suffix" {
   length  = 5
   lower   = true
@@ -6,26 +11,24 @@ resource "random_string" "resource_suffix" {
   special = false
 }
 
+data "cloudflare_zone" "main" {
+  name = local.base_domain
+}
+
 module "docs" {
-  source = "git@github.com:Notifycal/tofu-module-static-website.git?ref=v0.1.1"
+  source = "git@github.com:Notifycal/tofu-module-static-website.git?ref=v1.0.1"
 
-  bucket_name = "notifycal-docs-${random_string.resource_suffix.result}"
-  enable_cdn  = true
+  bucket_name = "${local.domain_prefix}.${local.base_domain}"
 
-  cf_default_cache_behavior = {
-    default_ttl = 86400
-    max_ttl     = 31536000
+  enable_www_redirect = false
+  enable_s3_public_access = false
+}
 
-    forwarded_headers = ["Origin", "Authorization"]
-  }
-
-  cf_lambda_associations = {
-    origin-request = {
-      lambda_arn = module.lambda_edge_auth.lambda_function_qualified_arn
-    }
-  }
-
-  cf_logging_config = {
-    bucket = aws_s3_bucket.cdn_logs.bucket_domain_name
-  }
+resource "cloudflare_record" "main" {
+  zone_id = data.cloudflare_zone.main.id
+  # @ is how Cloudflare calls the naked domain
+  name    = local.domain_prefix
+  content = module.docs.site_urls.main
+  type    = "CNAME"
+  proxied = true
 }

@@ -10,6 +10,10 @@ variable "stack" {
   type = string
 }
 
+variable "cloudflare_api_token" {
+  type = string
+}
+
 provider "aws" {
   region = var.aws_region
 
@@ -37,6 +41,10 @@ provider "aws" {
   }
 }
 
+provider "cloudflare" {
+  api_token = var.cloudflare_api_token
+}
+
 terraform {
   backend "s3" {
     bucket         = "tofu-state-notifycal-docs-internal"
@@ -49,6 +57,10 @@ terraform {
     aws = {
       source  = "hashicorp/aws"
       version = "~> 5.0"
+    }
+    cloudflare = {
+      source  = "cloudflare/cloudflare"
+      version = "~> 4.0"
     }
   }
 }

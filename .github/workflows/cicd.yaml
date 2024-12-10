@@ -48,6 +48,8 @@ jobs:
     permissions:
       contents: read
       id-token: write
+    env:
+      TF_VAR_cloudflare_api_token: ${{ secrets.CLOUDFLARE_API_TOKEN }}
     needs: changes
     # Runs if there are changes to the infra (PR) or the event isn't PR
     if: |
@@ -177,6 +179,8 @@ jobs:
           name: tf
           path: tf/
       - run: tofu init && tofu apply plan.tfplan
+        env:
+          TF_VAR_cloudflare_api_token: ${{ secrets.CLOUDFLARE_API_TOKEN }}
         working-directory: tf
       - uses: actions/download-artifact@v4
         with:
