@@ -211,11 +211,6 @@ jobs:
     env:
       SITE_URL: ${{ needs.cd.outputs.site_url }}
     steps:
-      - name: Update repository URL homepage
-        run: |
-          gh repo edit "${GITHUB_REPOSITORY}" --homepage="${SITE_URL}"
-        env:
-          GH_TOKEN: ${{ github.token }}
       - name: Set Job summary
         run: |
           echo "Access the documentation on the following URL: ${SITE_URL}" >> $GITHUB_STEP_SUMMARY
