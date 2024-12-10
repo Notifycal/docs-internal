@@ -1,4 +1,4 @@
-import { SSMClient, GetParameterCommand } from '@aws-sdk/client-ssm';
+import { GetParameterCommand, SSMClient } from '@aws-sdk/client-ssm';
 
 const client = new SSMClient({
   // The parameter lives here, regardless of where the function lives (edge location)
@@ -9,7 +9,7 @@ const PASSWORD_SSM_NAME = '/notifycal/internal_docs/password';
 async function loadParameter(parameterName) {
   const input = {
     Name: parameterName,
-    WithDecryption: true || false
+    WithDecryption: true
   };
 
   try {

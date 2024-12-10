@@ -142,6 +142,8 @@ jobs:
     permissions:
       contents: read
       id-token: write
+    outputs:
+      site_url: ${{ steps.get_site_url.outputs.site_url }}
     if: github.event_name != 'pull_request'
     steps:
       - uses: actions/checkout@v4
@@ -194,6 +196,21 @@ jobs:
         run: aws s3 sync --delete ./dist/ s3://${{ env.BUCKET }}
         env:
           BUCKET: ${{ steps.getbucketname.outputs.s3_bucket }}
-      - name: Display URL
-        run: tofu output -raw site_url
+      - name: Retrieve site URL
+        id: get_site_url
+        run: |
+          SITE_URL="$(tofu output -raw site_url)"
+          echo "site_url=${SITE_URL}" >> "$GITHUB_OUTPUT"
         working-directory: tf
+  info:
+    runs-on: ubuntu-latest
+    needs: cd
+    permissions:
+      contents: write
+    if: github.event_name != 'pull_request'
+    env:
+      SITE_URL: ${{ needs.cd.outputs.site_url }}
+    steps:
+      - name: Set Job summary
+        run: |
+          echo "Access the documentation on the following URL: ${SITE_URL}" >> $GITHUB_STEP_SUMMARY
