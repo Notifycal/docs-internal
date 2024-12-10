@@ -2,8 +2,7 @@ data "cloudflare_accounts" "this" {
   name = "notifycal.com"
 }
 
-
-data "cloudflare_access_identity_provider" "github" {
+data "cloudflare_zero_trust_access_identity_provider" "github" {
   name       = "Github"
   account_id = data.cloudflare_accounts.this.accounts[0].id
 }
@@ -15,7 +14,7 @@ resource "cloudflare_zero_trust_access_application" "private_docs" {
   type    = "self_hosted"
 
   allowed_idps = [
-    data.cloudflare_access_identity_provider.github.id,
+    data.cloudflare_zero_trust_access_identity_provider.github.id,
   ]
   session_duration          = "24h"
   auto_redirect_to_identity = true
@@ -30,7 +29,7 @@ resource "cloudflare_zero_trust_access_policy" "gh_org" {
 
   include {
     github {
-      identity_provider_id = data.cloudflare_access_identity_provider.github.id
+      identity_provider_id = data.cloudflare_zero_trust_access_identity_provider.github.id
       name                 = "Notifycal"
     }
   }
