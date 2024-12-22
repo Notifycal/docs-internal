@@ -1,5 +1,5 @@
-import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
@@ -17,6 +17,10 @@ export default defineConfig({
           // 	// Each item here is one entry in the navigation menu.
           // 	{ label: 'Example Guide', link: '/guides/example/' },
           // ],
+        },
+        {
+          label: 'Analysis',
+          autogenerate: { directory: 'analysis' }
         },
         {
           label: 'Reference',
