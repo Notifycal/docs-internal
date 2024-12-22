@@ -11,8 +11,8 @@ description: React resources
 - [ALL React Hooks Explained in 12 Minutes](https://www.youtube.com/watch?v=LOH1l-MP_9k)
 - [10 React Antipatterns to Avoid - Code This, Not That!](https://www.youtube.com/watch?v=b0IZo2Aho9Y&t=112s)
 
-
 ### Bytegrad videos
+
 They are denser and longer, but the guy goes straight to the point w/o trying to be funny.
 
 - [All 12 useState & useEffect Mistakes Junior React Developers Still Make in 2024](https://www.youtube.com/watch?v=-yIsQPp31L0)
