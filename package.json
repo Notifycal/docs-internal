@@ -17,7 +17,7 @@
     "@astrojs/check": "^0.9.4",
     "@astrojs/starlight": "^0.29.3",
     "astro": "^4.16.17",
-    "globals": "^15.13.0",
+    "globals": "^15.14.0",
     "sharp": "^0.33.5",
     "typescript": "^5.7.2"
   },
