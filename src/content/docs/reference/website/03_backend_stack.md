@@ -13,7 +13,7 @@ description: backend stack
 - [Google authentication](https://www.npmjs.com/package/google-auth-library)
 - [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken)
 - [zod for schema validation](https://zod.dev/)
-- [jest](https://jestjs.io/)
+- [Vitest](https://vitest.dev/)
 
 And for mimicking API Gateway during local development, we use:
 
