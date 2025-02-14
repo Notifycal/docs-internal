@@ -15,7 +15,7 @@ https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-completion.html#c
 
 You should have a .csv file with an `Access key ID` and a `Secret access key`.
 
-```bast
+```bash
 $ AWS_PROFILE=notifycal aws configure
 AWS Access Key ID [None]: AXXXXXXXXXXXXXXXXXXX
 AWS Secret Access Key [None]: <redacted>
