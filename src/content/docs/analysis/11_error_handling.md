@@ -1,4 +1,7 @@
-# Lambda using SQS Trigger Error Handling Strategy
+---
+title: Lambda using SQS Trigger Error Handling Strategy
+description: Principles to follow to handle errors in lambdas which use SQS trigger
+---
 
 ## Context
 
@@ -10,20 +13,20 @@ The core of our error handling strategy revolves around the reliability and beha
 
 ### 1. Recoverable Errors
 
-- If `publishEvent` to SNS fails, it is often due to transient issues like a temporary SNS outage.
+- If publishing to SNS fails, it is often due to transient issues like a temporary SNS outage.
 - In such cases, we throw an error and let AWS reinsert the event for reprocessing.
 - Although this may lead to event duplication, it is mitigated by downstream idempotent consumers.
 - The trade-off here is minimal confusion in the audit logs in exchange for guaranteed event delivery.
 
 ### 2. Non-Recoverable Errors
 
-- If the failure is deemed non-recoverable (e.g., due to invalid event data), we publish the event to the DLQ.
+- If the failure is deemed non-recoverable (e.g., due to invalid event data), we send the event to the DLQ.
 - The DLQ, utilizing SQS, ensures these events are captured for later inspection and manual intervention.
 - This approach helps isolate persistent issues from transient failures.
 
 ### 3. DLQ Failure
 
-- If publishing to the DLQ also fails, we treat it as a critical infrastructure issue.
+- If sending to the DLQ also fails, we treat it as a critical infrastructure issue. Note that here we are talking about sending to DLQ from lambda code.
 - In this scenario, we throw an error and let AWS reprocess the entire event.
 - This decision is based on the premise that simultaneous SNS and SQS failures indicate broader connectivity problems best handled by retrying later.
 
@@ -34,4 +37,3 @@ The core of our error handling strategy revolves around the reliability and beha
 - **Balancing Retry and Duplication:** By allowing retries on recoverable failures, we maximize event delivery success, even at the cost of some duplication.
 
 This strategy ensures robust event processing, leveraging AWS's retry mechanisms to handle transient failures while safely capturing persistent issues for manual resolution.
-
