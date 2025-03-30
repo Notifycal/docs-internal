@@ -3,5 +3,5 @@ output "bucket_name" {
 }
 
 output "site_url" {
-  value = "https://${local.domain_prefix}.${local.base_domain}"
+  value = "https://${var.domain_prefix}.${var.base_domain}"
 }
