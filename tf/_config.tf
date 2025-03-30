@@ -1,19 +1,3 @@
-variable "aws_region" {
-  type = string
-}
-
-variable "project" {
-  type = string
-}
-
-variable "stack" {
-  type = string
-}
-
-variable "cloudflare_api_token" {
-  type = string
-}
-
 provider "aws" {
   region = var.aws_region
 
