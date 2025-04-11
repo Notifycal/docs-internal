@@ -16,6 +16,7 @@ A face-to-face demo. This demo is meant to help sell promotors with selling the 
 - needs to minimize down to zero the error probabilities.[promotor on their own device]
 
 Non-functional requirements:
+
 - avoid adding unnecessary scopes/permissions
 
 ### Decisions in favour of ticking off requirements:
@@ -37,7 +38,7 @@ Non-functional requirements:
 
 ### Implementation:
 
-- frontend. Send sample reminder step. 
+- frontend. Send sample reminder step.
 - backend. Some endpoint that queues an event on lambda 3.
 - "Configure reminder" so we can loop over
 
@@ -52,6 +53,7 @@ This demo is meant to convince notifycal.com visitors they should buy us.
 - needs to be end-to-end, meaning, it needs to present what notifycal does i.e. reading on some of your calendar and sending SMS to people to remind them about their appointments.
 
 Non-functional requirements:
+
 - avoid adding unnecessary scopes/permissions
 
 ### Decisions in favour of ticking off requirements:
@@ -63,6 +65,5 @@ Non-functional requirements:
 ### User experience:
 
 Same as face-to-face demo without needing to loop over as the client will be doing it on its own device and won;t have to reconfigure the reminder.
-
 
 No message sending cap until Payment integration is done.
