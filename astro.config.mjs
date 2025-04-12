@@ -6,9 +6,13 @@ export default defineConfig({
   integrations: [
     starlight({
       title: 'Notifycal Docs',
-      social: {
-        github: 'https://github.com/Notifycal/docs'
-      },
+      social: [
+        {
+          label: 'Github',
+          icon: 'github',
+          href: 'https://github.com/Notifycal/docs'
+        }
+      ],
       sidebar: [
         {
           label: 'Guides',
