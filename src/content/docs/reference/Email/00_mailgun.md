@@ -90,4 +90,4 @@ Not implemented yet. Emails are being sent in fire and forget fashion due to:
 
 ## Observability
 
-Not implemented yet.
+Becuase of the fact emails are not a critical part/primary business of Notifycal we agreed on taking a shortcut and relying on vendor responses for metrics and alerting. Therefore, a generic mechanism for all vendors [Implementation](https://github.com/Notifycal/backend/pull/584)
