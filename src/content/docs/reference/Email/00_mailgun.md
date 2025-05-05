@@ -68,9 +68,7 @@ Follow these steps to configure a Mailgun account for our environments:
 
 The API keys should be stored in the appropriate environment parameter stores:
 
-- **Dev**: [SSM parameter](https://eu-west-1.console.aws.amazon.com/systems-manager/parameters/%252Fnotifycal%252Fdev%252Fproviders%252Fmailgun%252Fauth%252Fapi-key/description?region=eu-west-1&tab=Table)
-- **Qa**: TBD
-- **Production**: TBDpath
+`/notifycal/${environment}/providers/mailgun/auth/api-key`
 
 ## Security Considerations
 
