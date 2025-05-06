@@ -1,4 +1,9 @@
-# Mailgun Configuration for Astro
+---
+title: Email integration - Mailgun
+description: Vendor choice and setup
+---
+
+# Email integration - Mailgun
 
 ## Overview
 
