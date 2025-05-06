@@ -59,6 +59,7 @@ Follow these steps to configure a Mailgun account for our environments:
 5. **Generate API Key**
 
    Once verified, create an API key from the domain settings page:
+
    - For production: https://app.eu.mailgun.com/mg/sending/mail.notifycal.com/settings?tab=keys
    - For non-production: https://app.eu.mailgun.com/mg/sending/nonprod.notifycal.com/settings?tab=keys
 
@@ -75,7 +76,6 @@ The API keys should be stored in the appropriate environment parameter stores:
 - API keys should never be committed to repositories
 - Mailgun allegedly will Rotate DKIM keys every 120 days (refer to [Mailgun's official documentation](https://help.mailgun.com/hc/en-us/articles/16956951504539-How-can-I-rotate-my-DKIM-key))
 
-
 ## Additional Resources
 
 - [Mailgun API Documentation](https://documentation.mailgun.com/en/latest/api_reference.html)
@@ -83,8 +83,9 @@ The API keys should be stored in the appropriate environment parameter stores:
 ## Webhook
 
 Not implemented yet. Emails are being sent in fire and forget fashion due to:
- - time constraints
- - not being the primary business. In other words, if we weren't able to send emails at this stage, you objectively argue the service is half degraded.
+
+- time constraints
+- not being the primary business. In other words, if we weren't able to send emails at this stage, you objectively argue the service is half degraded.
 
 ## Observability
 
