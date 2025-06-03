@@ -58,18 +58,19 @@ Implement seamless Stripe-based payment infrastructure to support:
 
 ## ✅ Functional Requirements
 
-| ID   | Requirement                                    | Priority | Owner                 |
-| ---- | ---------------------------------------------- | -------- | --------------------- |
-| RF1  | Users must subscribe to a plan via UI          | High     | Frontend              |
-| RF2  | Stripe Checkout must be used for payment       | High     | Backend               |
-| RF3  | Credit must update on payment success          | High     | Backend               |
-| RF4  | Users must be able to top up credits           | High     | Backend               |
-| RF5  | Auto-generate invoice with Spanish VAT         | High     | Stripe + Backend      |
-| RF6  | Users manage subs via Stripe portal            | Medium   | Stripe config         |
-| RF7  | UI shows credit left + estimated SMS           | High     | Frontend              |
-| RF8  | Backend handles Stripe events                  | High     | Backend + EventBridge |
-| RF9  | Alerting on failed/cancelled payments          | Medium   | Observability         |
-| RF10 | Payment via cards + wallets (Apple/Google Pay) | High     | Stripe config         |
+| ID   | Requirement                                      | Priority | Owner                 |
+| ---- | ------------------------------------------------ | -------- | --------------------- |
+| RF1  | Users must subscribe to a plan via UI            | High     | Frontend              |
+| RF2  | Stripe Checkout must be used for payment         | High     | Backend               |
+| RF3  | Credit must update on payment success            | High     | Backend               |
+| RF4  | Users must be able to top up credits             | High     | Backend               |
+| RF5  | User need to be alerted via email on low balance | Medium   | Backend               |
+| RF6  | Auto-generate invoice with Spanish VAT           | High     | Stripe + Backend      |
+| RF7  | Users manage subs via Stripe portal              | Medium   | Stripe config         |
+| RF8  | UI shows credit left + estimated SMS             | High     | Frontend              |
+| RF9  | Backend handles Stripe events                    | High     | Backend + EventBridge |
+| RF10 | Alerting on failed/cancelled payments            | Medium   | Observability         |
+| RF11 | Payment via cards + wallets (Apple/Google Pay)   | High     | Stripe config         |
 
 ---
 
