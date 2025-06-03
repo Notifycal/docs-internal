@@ -7,4 +7,3 @@ Link to GPT: [Notifycal Github Project manager](https://chatgpt.com/g/g-682f6bdb
 ## How-to video
 
 <video src="/videos/create_tickets_with_gpt.mkv" controls />
-
