@@ -64,7 +64,6 @@ Follow these steps to configure a Mailgun account for our environments:
 5. **Generate API Key**
 
    Once verified, create an API key from the domain settings page:
-
    - For production: https://app.eu.mailgun.com/mg/sending/mail.notifycal.com/settings?tab=keys
    - For non-production: https://app.eu.mailgun.com/mg/sending/nonprod.notifycal.com/settings?tab=keys
 
