@@ -73,7 +73,6 @@ description: Comparison between different auth methods
 ### 8. Practical Differences
 
 - **Cookie-Based**:
-
   - Great for traditional web apps or scenarios where the browser handles most of the authentication complexity.
   - Easier to manage session state, especially for short-lived sessions.
   - Requires server-side storage of sessions or user state.
