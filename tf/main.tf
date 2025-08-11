@@ -1,5 +1,5 @@
 module "docs" {
-  source = "git@github.com:Notifycal/tofu-module-static-website.git?ref=v2.2.1"
+  source = "git@github.com:Notifycal/tofu-module-static-website.git?ref=v2.2.2"
 
   base_domain   = var.base_domain
   domain_prefix = var.domain_prefix
