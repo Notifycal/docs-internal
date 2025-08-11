@@ -55,7 +55,7 @@ jobs:
     if: |
       needs.changes.outputs.infra == 'true' || github.event_name != 'pull_request'
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       # TODO: Extract from here
       - name: Get GH token from Github App
@@ -131,7 +131,7 @@ jobs:
     if: |
       needs.changes.outputs.web == 'true' || github.event_name != 'pull_request'
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - uses: actions/setup-node@v4
         with:
           node-version-file: '.nvmrc'
@@ -173,7 +173,7 @@ jobs:
       site_url: ${{ steps.get_site_url.outputs.site_url }}
     if: github.event_name != 'pull_request'
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Get GH token from Github App
         id: gh-app-auth
@@ -199,7 +199,7 @@ jobs:
         with:
           tofu_version: ${{ steps.get_tofu_version.outputs.tofu_version }}
           tofu_wrapper: false # https://github.com/jqlang/jq/issues/2287
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v5
         with:
           name: tf
           path: tf/
@@ -207,7 +207,7 @@ jobs:
         env:
           TF_VAR_cloudflare_api_token: ${{ secrets.CLOUDFLARE_API_TOKEN }}
         working-directory: tf
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v5
         with:
           name: build
           path: dist/
