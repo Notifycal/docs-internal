@@ -5,13 +5,13 @@
 ## DATOS DE CONTACTO Y EMPRESA
 
 ```
-RAZÓN SOCIAL: [PENDIENTE COMPLETAR]
+RAZÓN SOCIAL: [PENDIENTE]
 NOMBRE COMERCIAL: Notifycal
-NIF/CIF: [PENDIENTE COMPLETAR]
-DOMICILIO SOCIAL: [PENDIENTE COMPLETAR]
-CÓDIGO POSTAL: [PENDIENTE COMPLETAR]
-LOCALIDAD: [PENDIENTE COMPLETAR]
-PROVINCIA: [PENDIENTE COMPLETAR]
+NIF/CIF: [PENDIENTE]
+DOMICILIO SOCIAL: [PENDIENTE]
+CÓDIGO POSTAL: [PENDIENTE]
+LOCALIDAD: [PENDIENTE]
+PROVINCIA: [PENDIENTE]
 
 EMAIL PRIVACIDAD: privacidad@notifycal.com
 EMAIL SOPORTE: soporte@notifycal.com
@@ -19,7 +19,7 @@ EMAIL BAJA: baja@notifycal.com
 SITIO WEB: www.notifycal.com
 ```
 
-**Fecha de última actualización**: [FECHA ACTUAL]  
+**Fecha de última actualización**: 11 de agosto de 2025  
 **Versión**: 1.0
 
 ---
@@ -28,7 +28,7 @@ SITIO WEB: www.notifycal.com
 
 ### Introducción
 
-En **Notifycal** nos tomamos muy en serio la privacidad y la protección de los datos personales. Esta Política de Privacidad describe de manera detallada cómo recopilamos, utilizamos, almacenamos y protegemos la información personal en el contexto de nuestro servicio de envío automatizado de recordatorios.
+En **Notifycal** nos tomamos muy en serio la privacidad y la protección de los datos personales. Esta Política de Privacidad describe de manera detallada cómo recopilamos, utilizamos, almacenamos y protegemos la información personal en el contexto de nuestro servicio.
 
 Nuestro servicio se basa en la confianza que depositan en nosotros tanto los profesionales y empresas que utilizan nuestra plataforma como sus clientes que reciben los recordatorios. Por ello, hemos diseñado nuestros procesos siguiendo los principios de privacidad desde el diseño y por defecto, minimizando la recopilación de datos a lo estrictamente necesario para prestar el servicio.
 
@@ -38,9 +38,9 @@ Para facilitar la comprensión de esta política, es importante aclarar algunos 
 
 Cuando hablamos de **"Usuario"** o **"Cliente"**, nos referimos a los profesionales, autónomos o empresas que contratan directamente nuestros servicios para automatizar el envío de recordatorios a sus propios clientes. Son quienes tienen una cuenta activa en Notifycal y configuran los recordatorios.
 
-El término **"Destinatario"** o **"Cliente Final"** hace referencia a las personas que reciben los mensajes SMS de recordatorio. Estos son los clientes de nuestros Usuarios, y es importante destacar que Notifycal no tiene una relación contractual directa con ellos.
+El término **"Destinatario"** o **"Cliente Final"** hace referencia a las personas que reciben los recordatorios. Estos son los clientes de nuestros Usuarios, y es importante destacar que Notifycal no tiene una relación contractual directa con ellos.
 
-El **"Servicio"** comprende toda nuestra plataforma tecnológica que permite la lectura automatizada de eventos desde Google Calendar y el envío programado de recordatorios por SMS.
+El **"Servicio"** comprende toda nuestra plataforma tecnológica que permite la lectura automatizada de eventos desde Google Calendar y el envío programado de recordatorios.
 
 ### Nuestro rol en el tratamiento de datos
 
@@ -58,29 +58,29 @@ Por otro lado, actuamos como **Encargado del Tratamiento** respecto a los datos 
 
 Cuando un profesional o empresa decide utilizar Notifycal, necesitamos recopilar cierta información para poder prestar el servicio adecuadamente. Esta recopilación se produce en diferentes momentos y para distintas finalidades.
 
-Durante el proceso de registro y creación de cuenta, solicitamos datos básicos de identificación como el nombre comercial del negocio, la dirección física del negocio necesaria para la facturación, el sector y tamaño de la empresa para personalizar mejor el servicio, y el idioma preferido que permite adaptar las comunicaciones. También recopilamos información de contacto esencial como el identificador para el envío de SMS y el tipo de canal de comunicación preferido.
+Durante el proceso de registro y creación de cuenta, solicitamos datos básicos de identificación como el nombre comercial del negocio, la dirección física del negocio necesaria para la facturación, el sector y tamaño de la empresa para personalizar mejor el servicio, y el idioma preferido que permite adaptar las comunicaciones. También recopilamos información de contacto esencial como el identificador para el envío de recordatorios y el tipo de canal de comunicación preferido.
 
 La integración con Google constituye una parte esencial de nuestro servicio. Cuando el Usuario autoriza la conexión, recibimos y almacenamos de forma segura el token de acceso proporcionado por Google OAuth, que nos permite acceder a los calendarios en nombre del Usuario. También guardamos el identificador único de la cuenta de Google y los permisos específicos otorgados, que incluyen acceso a Google Calendar y, opcionalmente, a Google Contacts. Es importante señalar que estos permisos pueden ser revocados en cualquier momento desde la configuración de Google del Usuario.
 
 Durante el uso continuado del servicio, recopilamos información sobre cómo se configura y utiliza la plataforma. Esto incluye la configuración de los calendarios conectados y las plantillas de mensajes seleccionadas, el historial completo de mensajes enviados para poder ofrecer estadísticas y resolver posibles incidencias, los logs de actividad que nos permiten detectar y prevenir usos inadecuados del servicio, y las fechas de aceptación de términos y condiciones y política de privacidad.
 
-Para la gestión de pagos y facturación, trabajamos con Stripe como procesador de pagos. Es importante destacar que no almacenamos ninguna información sensible de pago. Únicamente guardamos tu identificador de cliente de Stripe (Customer ID), el producto o plan al que estás suscrito, y el saldo de créditos disponibles para el envío de mensajes. Toda la información financiera sensible es gestionada directamente por Stripe bajo los más altos estándares de seguridad PCI-DSS.
+Para la gestión de pagos y facturación, trabajamos con un proveedor de pagos certificado. Es importante destacar que no almacenamos ninguna información sensible de pago. Únicamente guardamos tu identificador de cliente del proveedor, el producto o plan al que estás suscrito, y el saldo de créditos disponibles para el envío de mensajes. Toda la información financiera sensible es gestionada directamente por nuestro proveedor de pagos bajo los más altos estándares de seguridad PCI-DSS, incluyendo medidas de autenticación fuerte según los requerimientos regulatorios aplicables en cada mercado.
 
 ### 2.2. Información de los Destinatarios de recordatorios
 
 Es crucial entender que Notifycal no recopila información directamente de los Destinatarios. Todos los datos que procesamos sobre ellos provienen exclusivamente de los calendarios de nuestros Usuarios o de la información que estos introducen manualmente en sus eventos.
 
-La información típica que procesamos incluye el nombre del destinatario cuando está disponible en el evento del calendario, el número de teléfono (que puede estar en el campo de invitados o en la descripción del evento), la dirección de correo electrónico si está presente (aunque actualmente no la utilizamos para envíos), y por supuesto, la fecha y hora de la cita o evento para poder enviar el recordatorio en el momento adecuado.
+La información que procesamos incluye los datos de contacto del destinatario cuando están disponibles en el evento del calendario, y la fecha y hora de la cita o evento para poder enviar el recordatorio en el momento adecuado.
 
-También procesamos cualquier información adicional que el Usuario haya incluido en el evento, como la descripción del servicio a realizar, la ubicación donde tendrá lugar la cita, o cualquier nota especial que el Usuario considere relevante incluir en el recordatorio.
+También procesamos cualquier información adicional que el Usuario haya incluido en el evento y considere relevante para el recordatorio.
 
-Como estrategia de respaldo, cuando un evento no tiene invitados específicos, nuestro sistema busca automáticamente números de teléfono en el título y la descripción del evento. Si se detecta un número válido, se utiliza para el envío del recordatorio. Esta funcionalidad opcional utiliza Google Contacts del Usuario para enriquecer la información cuando está disponible.
+Cuando la información de contacto no está explícitamente disponible, nuestro sistema identifica la información de contacto necesaria del evento cuando está disponible. Esta funcionalidad **opcional** puede utilizar Google Contacts del Usuario para enriquecer la información cuando sea necesario, accediendo únicamente al número de teléfono y dirección de email del contacto.
 
 ### 2.3. Información técnica y de navegación
 
 Como la mayoría de servicios web modernos, recopilamos automáticamente cierta información técnica cuando se accede a nuestra plataforma. Esta información incluye la dirección IP desde la que se accede, el tipo y versión del navegador utilizado, el sistema operativo del dispositivo, las páginas visitadas dentro de nuestra plataforma y el tiempo de permanencia en cada una, los enlaces desde los que se llegó a nuestro sitio, y diversos parámetros del dispositivo que nos ayudan a optimizar la experiencia.
 
-Además, utilizamos herramientas especializadas de análisis para entender mejor cómo se utiliza nuestra plataforma y poder mejorarla continuamente. Google Analytics nos proporciona métricas agregadas y anonimizadas sobre el uso general del servicio, mientras que Microsoft Clarity nos permite ver grabaciones de sesiones (sin información personal identificable) y generar mapas de calor que muestran las zonas más utilizadas de la interfaz.
+Además, utilizamos herramientas especializadas de análisis para entender mejor cómo se utiliza nuestra plataforma y poder mejorarla continuamente. Estas herramientas nos proporcionan métricas agregadas y anonimizadas sobre el uso general del servicio, así como análisis de experiencia de usuario que nos permiten optimizar la interfaz sin comprometer información personal identificable.
 
 ---
 
@@ -92,7 +92,7 @@ El Reglamento General de Protección de Datos (RGPD) exige que todo tratamiento 
 
 | **Finalidad del tratamiento** | **Base legal (RGPD)** | **Explicación detallada** |
 |-------------------------------|------------------------|---------------------------|
-| Prestación del servicio de recordatorios | Art. 6.1.b - Ejecución de contrato | El tratamiento es necesario para proporcionar el servicio que el Usuario ha contratado, incluyendo la lectura de calendarios y el envío de SMS |
+| Prestación del servicio de recordatorios | Art. 6.1.b - Ejecución de contrato | El tratamiento es necesario para proporcionar el servicio que el Usuario ha contratado, incluyendo la lectura de calendarios y el envío de recordatorios |
 | Gestión y administración de la cuenta | Art. 6.1.b - Ejecución de contrato | Necesario para mantener la cuenta activa, gestionar las configuraciones y preferencias del Usuario |
 | Procesamiento de pagos y facturación | Art. 6.1.b - Ejecución de contrato | Imprescindible para cobrar por nuestros servicios y emitir las facturas correspondientes |
 | Cumplimiento de obligaciones legales | Art. 6.1.c - Obligación legal | Conservación de facturas y datos fiscales según la legislación española |
@@ -105,9 +105,9 @@ El Reglamento General de Protección de Datos (RGPD) exige que todo tratamiento 
 
 Respecto a los datos de los Destinatarios de los recordatorios, nuestra posición legal es diferente. Actuamos exclusivamente como **Encargados del Tratamiento** bajo las instrucciones de nuestros Usuarios, quienes son los verdaderos Responsables del Tratamiento de estos datos.
 
-Esto significa que procesamos estos datos únicamente para cumplir con el servicio contratado por el Usuario: enviar recordatorios según la configuración establecida. No tomamos decisiones sobre estos datos, no los utilizamos para fines propios, y no los compartimos con terceros más allá de lo estrictamente necesario para el envío del SMS (es decir, con nuestro proveedor de telecomunicaciones Vonage).
+Esto significa que procesamos estos datos únicamente para cumplir con el servicio contratado por el Usuario: enviar recordatorios según la configuración establecida. No tomamos decisiones sobre estos datos, no los utilizamos para fines propios, y no los compartimos con terceros más allá de lo estrictamente necesario para el envío de recordatorios (es decir, con nuestro proveedor de comunicaciones).
 
-La base legal para este tratamiento recae en nuestros Usuarios, quienes deben asegurarse de tener el consentimiento o cualquier otra base legal válida para compartir con nosotros los números de teléfono de sus clientes y autorizarnos a enviarles recordatorios.
+La base legal para este tratamiento recae en nuestros Usuarios, quienes deben asegurarse de tener el consentimiento o cualquier otra base legal válida para compartir con nosotros los datos de contacto de sus clientes y autorizarnos a enviarles recordatorios.
 
 ---
 
@@ -123,15 +123,15 @@ Las únicas cookies que encontrarás en nuestra plataforma son las de terceros p
 
 Para mejorar continuamente nuestro servicio, utilizamos dos herramientas de análisis que nos ayudan a entender cómo los usuarios interactúan con nuestra plataforma:
 
-**Microsoft Clarity** nos permite ver grabaciones anónimas de sesiones y generar mapas de calor que muestran qué áreas de la interfaz son más utilizadas. Es importante destacar que Clarity está configurado para no capturar ninguna información que permita identificar personalmente a un usuario, como textos introducidos en formularios o datos personales visibles en pantalla.
+**Herramientas de análisis de experiencia** nos permiten ver comportamientos de uso anónimos y generar análisis sobre áreas de la interfaz más utilizadas. Estas herramientas están configuradas para no capturar ninguna información que permita identificar personalmente a un usuario.
 
-**Google Analytics** recopila estadísticas agregadas sobre el uso de la plataforma, como el número de visitantes, las páginas más vistas, o el tiempo medio de sesión. Toda esta información se procesa de forma agregada y anónima.
+**Herramientas de métricas web** recopilan estadísticas agregadas sobre el uso de la plataforma, como el número de visitantes, las páginas más vistas, o el tiempo medio de sesión. Toda esta información se procesa de forma agregada y anónima.
 
 Ambas herramientas solo se activan si aceptas las cookies de análisis en el banner de consentimiento que aparece en tu primera visita.
 
 ### Almacenamiento local del navegador
 
-Además de las cookies, utilizamos el almacenamiento local (localStorage) del navegador para mejorar tu experiencia de usuario. Esta tecnología nos permite guardar temporalmente en tu dispositivo información como el token de autenticación de Google (para no tener que iniciar sesión constantemente), tus preferencias de interfaz (como el idioma seleccionado o el tema visual), y los datos de formularios no enviados (para no perder información si refrescas la página accidentalmente).
+Además de las cookies, utilizamos el almacenamiento local del navegador para mejorar tu experiencia de usuario. Esta tecnología nos permite guardar temporalmente en tu dispositivo información como credenciales de autenticación (para mantener la sesión activa), tus preferencias de interfaz, y los datos de formularios no enviados (para no perder información durante la navegación).
 
 Es importante saber que tienes control total sobre estos datos. Puedes eliminarlos en cualquier momento desde la configuración de tu navegador, aunque esto podría requerir que vuelvas a iniciar sesión y configurar tus preferencias.
 
@@ -149,21 +149,21 @@ Si decides rechazar las cookies de análisis, podrás seguir utilizando Notifyca
 
 Para poder ofrecer un servicio robusto y de calidad, trabajamos con proveedores cuidadosamente seleccionados que actúan como encargados del tratamiento bajo estrictos acuerdos de procesamiento de datos (DPA) que garantizan la protección de tu información:
 
-| **Proveedor** | **Servicio que presta** | **Datos compartidos** | **Ubicación de procesamiento** |
-|---------------|-------------------------|----------------------|--------------------------------|
-| Amazon Web Services (AWS) | Infraestructura y hosting | Todos los datos de la plataforma | Irlanda (EU-West-1) |
-| Google Cloud | Autenticación y acceso a calendarios | Tokens OAuth, datos de calendario | Unión Europea |
-| Stripe | Procesamiento de pagos | Información de facturación y pagos | Unión Europea |
-| Vonage | Envío de SMS | Números de teléfono y contenido de mensajes | Unión Europea |
-| Mailgun | Correos transaccionales | Direcciones email y contenido de correos | Unión Europea |
-| Microsoft Clarity | Análisis de experiencia de usuario | Datos de navegación anonimizados | UE/EE.UU. |
-| Google Analytics | Métricas web | Datos agregados de uso | UE/EE.UU. |
+| **Tipo de proveedor** | **Servicio que presta** | **Datos compartidos** | **Ubicación de procesamiento** |
+|------------------------|-------------------------|----------------------|--------------------------------|
+| Proveedor de infraestructura y hosting | Alojamiento y procesamiento de datos | Todos los datos de la plataforma | Unión Europea |
+| Proveedor de autenticación | Integración con servicios de calendario | Tokens OAuth, datos de calendario | UE/EE.UU. (con SCC) |
+| Proveedor de procesamiento de pagos | Gestión de pagos y facturación | Información de facturación y pagos | UE/EE.UU. (con SCC) |
+| Proveedor de comunicaciones | Envío de recordatorios | Información de contacto y contenido de mensajes | UE (verificación en curso) |
+| Proveedor de correos transaccionales | Envío de correos del sistema | Direcciones email y contenido de correos | UE/EE.UU. (verificar DPA) |
+| Herramientas de análisis de experiencia | Análisis de usabilidad | Datos de navegación anonimizados | EE.UU. (con SCC) |
+| Herramientas de métricas web | Estadísticas de uso | Datos agregados de uso | EE.UU. (con SCC) |
 
 Todos estos proveedores han sido seleccionados no solo por la calidad de sus servicios, sino también por su compromiso con la protección de datos y su cumplimiento con el RGPD. Mantenemos con cada uno de ellos acuerdos contractuales que les obligan a proteger los datos con el mismo nivel de seguridad que aplicamos nosotros y a no utilizarlos para ningún fin distinto al servicio que nos prestan.
 
 ### Transferencias internacionales de datos
 
-Aunque priorizamos el uso de proveedores que procesan datos dentro de la Unión Europea, algunos de nuestros proveedores (como Microsoft para Clarity o Google para Analytics) pueden ocasionalmente procesar datos en Estados Unidos u otros países fuera del Espacio Económico Europeo.
+Aunque priorizamos el uso de proveedores que procesan datos dentro de la Unión Europea, algunos de nuestros proveedores pueden ocasionalmente procesar datos en Estados Unidos u otros países fuera del Espacio Económico Europeo.
 
 Cuando esto ocurre, nos aseguramos de que existan las garantías adecuadas para proteger tus datos. Esto incluye la aplicación de las Cláusulas Contractuales Tipo aprobadas por la Comisión Europea, la verificación de garantías adicionales según las directrices del Comité Europeo de Protección de Datos, y cuando es necesario, la realización de evaluaciones de impacto en la protección de datos para asegurar que el nivel de protección no se ve comprometido.
 
@@ -191,9 +191,11 @@ La seguridad de los datos es una de nuestras principales prioridades. Hemos impl
 
 Todas las comunicaciones entre tu navegador y nuestros servidores están cifradas mediante TLS 1.3, el estándar más moderno de cifrado en tránsito. Esto significa que incluso si alguien interceptara la comunicación, no podría leer su contenido.
 
-La autenticación en nuestra plataforma se realiza exclusivamente a través de Google OAuth 2.0, lo que significa que no almacenamos contraseñas en nuestros sistemas. Esto elimina el riesgo de que las contraseñas puedan ser comprometidas en caso de un incidente de seguridad.
+La autenticación en nuestra plataforma se realiza exclusivamente a través de sistemas OAuth seguros, lo que significa que no almacenamos contraseñas en nuestros sistemas. Esto elimina el riesgo de que las contraseñas puedan ser comprometidas en caso de un incidente de seguridad.
 
-Nuestra infraestructura está alojada en Amazon Web Services (AWS) en la región de Irlanda, utilizando una arquitectura serverless que proporciona seguridad y escalabilidad inherentes. Realizamos copias de seguridad automáticas y periódicas de todos los datos. Las credenciales y secretos se almacenan de forma segura con cifrado. Además, implementamos monitorización continua de nuestros sistemas para detectar actividades anómalas o intentos de acceso no autorizado, con alertas automáticas que nos permiten responder rápidamente a cualquier incidente potencial.
+Nuestra infraestructura está alojada en proveedores de servicios en la nube de primer nivel en la Unión Europea, utilizando arquitecturas modernas que proporcionan seguridad y escalabilidad inherentes. Realizamos copias de seguridad automáticas y periódicas de todos los datos. Las credenciales y secretos se almacenan de forma segura con cifrado. Además, implementamos monitorización continua de nuestros sistemas para detectar actividades anómalas o intentos de acceso no autorizado, con alertas automáticas que nos permiten responder rápidamente a cualquier incidente potencial.
+
+Respecto al procesamiento de pagos, reiteramos que no almacenamos ningún dato financiero sensible como números de tarjeta, códigos de seguridad o información bancaria. Toda esta información es procesada directamente por nuestro proveedor de pagos certificado.
 
 ### Medidas organizativas
 
@@ -227,12 +229,12 @@ Aplicamos el principio de limitación del plazo de conservación, manteniendo lo
 |-------------------|---------------------------|-------------------|
 | Datos de cuenta de Usuario | Mientras la cuenta esté activa + 30 días | Permitir reactivación y resolver incidencias pendientes |
 | Información de facturación | 5 años desde la emisión de la factura | Obligación legal según normativa fiscal española |
-| Logs de SMS enviados | 6 meses desde el envío | Resolución de incidencias y reclamaciones |
+| Logs de recordatorios enviados | 6 meses desde el envío | Resolución de incidencias y reclamaciones |
 | Historial de eventos procesados | 6 meses desde el procesamiento | Auditoría del servicio y resolución de problemas |
 | Datos de Destinatarios | 6 meses desde el último envío | Trazabilidad del servicio y gestión de incidencias |
 | Logs técnicos del sistema | 1 año | Debugging y análisis de seguridad |
-| Grabaciones de Microsoft Clarity | 30 días | Análisis de experiencia de usuario |
-| Datos de navegación (Analytics) | 26 meses | Estándar de Google Analytics |
+| Grabaciones de herramientas de experiencia | 30 días | Análisis de experiencia de usuario |
+| Datos de navegación (métricas web) | 26 meses | Estándar de herramientas de analítica |
 
 ### Proceso de eliminación
 
@@ -331,7 +333,7 @@ Al finalizar la prestación de los servicios, eliminaremos o te devolveremos tod
 
 ### Uso apropiado del servicio
 
-Te comprometes a utilizar Notifycal únicamente para fines legítimos y legales. Esto significa no utilizar el servicio para enviar spam o comunicaciones no solicitadas, respetar las normativas sobre comunicaciones comerciales y horarios de contacto, no incluir en los mensajes contenido ilegal, ofensivo o engañoso, y verificar que los números de teléfono corresponden realmente a las personas que han concertado citas contigo.
+Te comprometes a utilizar Notifycal únicamente para fines legítimos y legales. Esto significa no utilizar el servicio para enviar comunicaciones no solicitadas, respetar las normativas sobre comunicaciones comerciales y horarios de contacto, no incluir en los recordatorios contenido ilegal, ofensivo o engañoso, y verificar que la información de contacto corresponde realmente a las personas que han concertado citas contigo.
 
 Es tu responsabilidad mantener actualizados y exactos los datos de tus clientes en tu calendario, así como eliminar o actualizar los eventos cuando sea necesario para evitar el envío de recordatorios incorrectos o a personas equivocadas.
 
@@ -379,7 +381,7 @@ Mantenemos un archivo de las versiones anteriores de esta Política de Privacida
 
 ### Enlaces a sitios de terceros
 
-Nuestra plataforma puede contener enlaces a sitios web de terceros, como la documentación de Google Calendar, el panel de control de Stripe, o recursos de ayuda externos. Es importante que sepas que no somos responsables de las prácticas de privacidad de estos sitios web.
+Nuestra plataforma puede contener enlaces a sitios web de terceros, como documentación de servicios integrados, paneles de control de proveedores, o recursos de ayuda externos. Es importante que sepas que no somos responsables de las prácticas de privacidad de estos sitios web.
 
 Te recomendamos que leas las políticas de privacidad de cualquier sitio de terceros que visites a través de enlaces desde nuestra plataforma, especialmente si vas a proporcionarles información personal. El hecho de que incluyamos un enlace no implica que respaldemos las prácticas de privacidad de ese sitio.
 
@@ -447,7 +449,7 @@ Para facilitar la comprensión de esta política, incluimos un glosario de los t
 
 **OAuth**: Open Authorization, protocolo estándar que permite autorizar de forma segura el acceso a recursos sin compartir contraseñas.
 
-**SMS**: Short Message Service (Servicio de Mensajes Cortos), sistema de mensajería de texto para teléfonos móviles.
+**Recordatorios**: Mensajes enviados a través de canales de comunicación para notificar sobre citas próximas.
 
 **API**: Application Programming Interface (Interfaz de Programación de Aplicaciones), conjunto de definiciones y protocolos que permite la comunicación entre diferentes software.
 

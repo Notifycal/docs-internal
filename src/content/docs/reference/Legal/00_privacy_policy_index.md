@@ -16,7 +16,7 @@ CONTACTO:
 - Web: www.notifycal.com
 
 ACTUALIZACIÓN:
-- Fecha última actualización: [FECHA]
+- Fecha última actualización: 11 de agosto de 2025
 - Versión: 1.0
 ```
 
@@ -55,22 +55,22 @@ ACTUALIZACIÓN:
 
 ## 5. COMPARTICIÓN CON TERCEROS
 ### 5.1. Proveedores (Encargados)
-- Tabla: Proveedor | Servicio | Datos | Ubicación
-- AWS (Irlanda), Google, Stripe, Vonage, Mailgun, Analytics
+- Tabla: Tipo proveedor | Servicio | Datos | Ubicación
 
 ### 5.2. Transferencias internacionales
 - Cláusulas contractuales tipo
 - Garantías adicionales
 
 ## 6. SEGURIDAD
-- Medidas técnicas (cifrado, OAuth, arquitectura serverless)
+- Medidas técnicas (cifrado, OAuth, cloud computing)
 - Copias de seguridad
+- No almacenamiento datos financieros
 - Medidas organizativas
 - Notificación brechas
 
 ## 7. CONSERVACIÓN DE DATOS
 - Tabla: Tipo datos | Plazo | Justificación
-- 6 meses logs SMS y eventos
+- 6 meses logs recordatorios y eventos
 - 5 años facturación
 - 1 año logs técnicos
 - Eliminación automática
