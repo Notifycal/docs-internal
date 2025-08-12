@@ -40,7 +40,7 @@ Cuando hablamos de **"Usuario"** o **"Cliente"**, nos referimos a los profesiona
 
 El término **"Destinatario"** o **"Cliente Final"** hace referencia a las personas que reciben los recordatorios. Estos son los clientes de nuestros Usuarios, y es importante destacar que Notifycal no tiene una relación contractual directa con ellos.
 
-El **"Servicio"** comprende toda nuestra plataforma tecnológica que permite la lectura automatizada de eventos desde Google Calendar y el envío programado de recordatorios.
+El **"Servicio"** comprende toda nuestra plataforma tecnológica que permite la lectura automatizada de eventos desde un calendario/agenda y el envío programado de recordatorios.
 
 ### Nuestro rol en el tratamiento de datos
 
@@ -58,7 +58,7 @@ Por otro lado, actuamos como **Encargado del Tratamiento** respecto a los datos 
 
 Cuando un profesional o empresa decide utilizar Notifycal, necesitamos recopilar cierta información para poder prestar el servicio adecuadamente. Esta recopilación se produce en diferentes momentos y para distintas finalidades.
 
-Durante el proceso de registro y creación de cuenta, solicitamos datos básicos de identificación como el nombre comercial del negocio, la dirección física del negocio necesaria para la facturación, el sector y tamaño de la empresa para personalizar mejor el servicio, y el idioma preferido que permite adaptar las comunicaciones. También recopilamos información de contacto esencial como el identificador para el envío de recordatorios y el tipo de canal de comunicación preferido.
+Durante el proceso de registro y creación de cuenta, solicitamos datos básicos de identificación como el nombre comercial del negocio, la dirección física del negocio necesaria para los recordatorios, el sector y tamaño de la empresa para personalizar mejor el servicio, y el idioma preferido que permite adaptar las comunicaciones. También recopilamos información de contacto esencial como el identificador para el envío de recordatorios y el tipo de canal de comunicación preferido.
 
 La integración con Google constituye una parte esencial de nuestro servicio. Cuando el Usuario autoriza la conexión, recibimos y almacenamos de forma segura el token de acceso proporcionado por Google OAuth, que nos permite acceder a los calendarios en nombre del Usuario. También guardamos el identificador único de la cuenta de Google y los permisos específicos otorgados, que incluyen acceso a Google Calendar y, opcionalmente, a Google Contacts. Es importante señalar que estos permisos pueden ser revocados en cualquier momento desde la configuración de Google del Usuario.
 
