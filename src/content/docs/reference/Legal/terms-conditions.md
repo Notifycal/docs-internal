@@ -46,7 +46,7 @@ Para una comprensión clara de estos términos, definimos los siguientes concept
 
 **"Usuario"**, **"tú"** o **"tu"** se refiere a cualquier persona física mayor de edad o entidad jurídica que accede o utiliza nuestros servicios, ya sea como visitante o como cliente registrado.
 
-**"Servicio"** comprende toda nuestra plataforma tecnológica que permite la integración con calendarios digitales y el envío automatizado de recordatorios por SMS.
+**"Servicio"** comprende toda nuestra plataforma tecnológica que permite la integración con calendarios digitales y el envío automatizado de recordatorios.
 
 **"Destinatario"** son las personas que reciben los recordatorios enviados a través de nuestra plataforma. Son los clientes de nuestros Usuarios, sin relación contractual directa con Notifycal.
 
@@ -84,12 +84,12 @@ Nos reservamos el derecho de mantener cuentas en esta fase de forma indefinida o
 
 ### Términos de Servicio Completo
 
-Al completar el proceso de onboarding, aceptas automáticamente los **Términos de Servicio Completo**, que incluyen y extienden los Términos de Acceso Básico, otorgándote derechos adicionales:
+Al completar el proceso de onboarding, debes aceptar expresamente los **Términos de Servicio Completo** junto con nuestra Política de Privacidad. Esta aceptación te otorga derechos adicionales:
 
-- Acceso a todas las funcionalidades de la plataforma
+- Acceso completo a la configuración de la plataforma
 - Envío de un recordatorio de demostración
 - Procesamiento de tus datos de calendario
-- Configuración completa de plantillas y preferencias
+- Posibilidad de crear una suscripción de pago para el servicio completo
 
 Estos mismos Términos de Servicio Completo son los que se aplican cuando procedes a la suscripción de pago a través de nuestro proveedor de pagos, y constituyen el contrato definitivo entre las partes.
 
@@ -105,7 +105,7 @@ Al utilizar nuestros servicios, confirmas que:
 
 ### Modificaciones de términos
 
-Nos reservamos el derecho de modificar estos términos en cualquier momento. Las modificaciones sustanciales se notificarán con al menos 30 días de antelación y requerirán tu aceptación expresa para continuar utilizando el servicio. El uso continuado del servicio tras la entrada en vigor de los nuevos términos constituye aceptación de los mismos.
+Nos reservamos el derecho de modificar estos términos en cualquier momento. Las modificaciones sustanciales se notificarán con al menos 30 días de antelación. El uso continuado del servicio tras la entrada en vigor de los nuevos términos constituye aceptación de los mismos. Si no estás conforme con los cambios, puedes cancelar tu cuenta antes de que entren en vigor.
 
 ---
 
@@ -121,27 +121,19 @@ Notifycal ofrece un servicio integral de automatización de recordatorios que in
 
 **Envío automatizado de recordatorios**: Sistema de programación que envía mensajes SMS en los momentos configurados por el Usuario, con plantillas personalizables según el tipo de negocio y servicio.
 
-**Panel de control y estadísticas**: Herramientas de gestión que permiten monitorizar envíos, configurar preferencias, y acceder a métricas básicas de funcionamiento del servicio.
+**Panel de control**: Herramientas de gestión que permiten configurar preferencias, gestionar tu subscripcion y saldo de creditos, y gestionar la configuración de recordatorios.
 
-### Fases del servicio
+### Características del sistema
 
-Nuestro servicio opera en tres fases claramente diferenciadas:
+Nuestro servicio presenta las siguientes características operativas:
 
-**Fase de Navegación**: Tras autenticarse con Google OAuth, el Usuario puede explorar la plataforma y completar la configuración inicial. En esta fase no se procesan calendarios ni se envían comunicaciones.
+**Integración con Google**: El servicio depende del correcto funcionamiento de la API de Google Calendar y de la continuidad de los permisos OAuth otorgados por el Usuario. Cualquier interrupción, modificación o revocación de estos permisos afectará a la capacidad de prestar el servicio.
 
-**Fase Demo**: Una vez completado el onboarding, el Usuario tiene acceso a enviar un único recordatorio de demostración, diseñado para verificar que el sistema funciona correctamente con su configuración específica.
+**Cobertura geográfica**: En esta versión, el servicio está optimizado para números de teléfono españoles (prefijo +34). No procesamos ni enviamos mensajes a números internacionales, aunque esto podrá cambiar en futuras actualizaciones.
 
-**Fase Live**: Tras suscribirse al servicio de pago, el Usuario accede a todas las funcionalidades sin limitaciones, incluyendo el procesamiento continuo de calendarios y envío ilimitado de recordatorios según su plan contratado.
+**Recordatorio de demostración**: Está limitado a una longitud máxima de 480 caracteres. Los mensajes que excedan esta longitud se truncarán automáticamente.
 
-### Limitaciones técnicas
-
-Como servicio basado en integraciones con terceros, nuestro funcionamiento está sujeto a limitaciones inherentes:
-
-Dependemos completamente del correcto funcionamiento de la API de Google Calendar y de la continuidad de los permisos OAuth otorgados por el Usuario. Cualquier interrupción, modificación o revocación de estos permisos afectará directamente a la capacidad de prestar el servicio.
-
-Nuestro servicio está optimizado para números de teléfono españoles (prefijo +34). En esta primera versión, no procesamos ni enviamos mensajes a números internacionales, aunque esta limitación podrá modificarse en futuras actualizaciones.
-
-Los recordatorios están limitados a una longitud máxima de 480 caracteres (equivalente a 3 mensajes SMS en codificación GSM 7-bit). Los mensajes que excedan esta longitud se truncarán automáticamente.
+**Recordatorios del servicio completo**: No tienen limitación de longitud, pero el coste varía según la longitud y codificación del mensaje conforme al protocolo GSM y las tarifas de nuestros proveedores de telecomunicaciones.
 
 ### Disponibilidad del servicio
 
@@ -155,7 +147,7 @@ Operamos bajo una arquitectura de servicios en la nube que nos permite ofrecer a
 
 El registro en Notifycal se realiza exclusivamente mediante autenticación OAuth 2.0 con Google. No ofrecemos otros métodos de registro o autenticación alternativa. Este proceso implica que:
 
-Debes tener una cuenta válida de Google activa para poder utilizar nuestros servicios. Al autorizar el acceso, Google nos proporciona únicamente la información mínima necesaria para la operación del servicio, que incluye tu identificador único de Google, permisos de acceso a Google Calendar y, opcionalmente, a Google Contacts.
+Debes tener una cuenta válida de Google activa para poder utilizar nuestros servicios. Al autorizar el acceso, obtenemos los permisos necesarios para acceder a Google Calendar y Google Contacts. Aunque técnicamente puedes limitar el consentimiento solo a Google Calendar, nos reservamos el derecho de que la plataforma no funcione al 100% de su capacidad. Para un funcionamiento óptimo, recomendamos otorgar ambos permisos.
 
 El proceso de autorización debe completarse voluntariamente y con pleno conocimiento de los permisos que estás otorgando. Puedes revisar y revocar estos permisos en cualquier momento desde tu panel de control de Google.
 
@@ -165,7 +157,7 @@ La seguridad de tu cuenta depende del mantenimiento de la integridad de tu cuent
 
 Eres responsable de mantener la seguridad de tu cuenta de Google, incluyendo el uso de autenticación de doble factor cuando esté disponible y la protección de tus dispositivos de acceso.
 
-Si detectas acceso no autorizado a tu cuenta de Google o sospechas que la seguridad ha sido comprometida, debes revocar inmediatamente los permisos otorgados a Notifycal desde tu panel de Google y contactar con nuestro soporte.
+Si detectas acceso no autorizado a tu cuenta de Google o sospechas que la seguridad ha sido comprometida, debes revocar inmediatamente los permisos otorgados a Notifycal desde tu panel de Google y contactar con nuestro soporte. En estos casos, nos reservamos el derecho de suspender o congelar tu cuenta preventivamente para evitar cualquier interferencia mientras se resuelve la incidencia de seguridad.
 
 ### Requisitos de elegibilidad
 
@@ -247,21 +239,13 @@ Te comprometes a utilizar Notifycal exclusivamente para fines legítimos y legal
 
 Enviar únicamente recordatorios relacionados con citas, reservas o servicios realmente programados con destinatarios que mantienen una relación comercial contigo.
 
-Respetar los horarios apropiados para el envío de comunicaciones comerciales, evitando mensajes en horarios nocturnos, festivos o que puedan resultar molestos para los destinatarios.
+Comprender que los recordatorios se envían automáticamente según la programación establecida en el calendario, lo que puede incluir envíos en días festivos o en diferentes horarios según la naturaleza de cada cita. Los horarios de envío dependen de la configuración temporal de cada evento programado.
 
 Mantener la veracidad y exactitud de la información incluida en los recordatorios, incluyendo fechas, horarios, ubicaciones y detalles del servicio.
 
 ### Responsabilidad sobre datos de terceros
 
-Como Usuario de Notifycal, actúas como **Responsable del Tratamiento** de los datos personales de tus clientes (los Destinatarios), mientras que nosotros actuamos como **Encargados del Tratamiento** siguiendo tus instrucciones.
-
-Esto implica que tienes las siguientes obligaciones ineludibles:
-
-**Base legal válida**: Garantizas que tienes una base legal apropiada (consentimiento, ejecución de contrato, interés legítimo, etc.) para compartir con nosotros los datos personales de tus clientes y para que les enviemos recordatorios en tu nombre.
-
-**Información previa**: Te comprometes a informar adecuadamente a tus clientes sobre el uso de Notifycal como herramienta de comunicación automatizada, incluyendo esta información en tu propia política de privacidad o términos de servicio.
-
-**Derechos de los interesados**: Eres el responsable principal de atender las solicitudes de acceso, rectificación, supresión y demás derechos de protección de datos de tus clientes. Nosotros te proporcionaremos las herramientas necesarias para cumplir con estas obligaciones.
+Como Usuario de Notifycal, tienes responsabilidades específicas respecto a los datos de tus clientes. Los detalles completos sobre tratamiento de datos, roles de responsabilidad, y obligaciones se establecen en nuestra Política de Privacidad, que constituye parte integral de estos términos.
 
 ### Obligaciones de información a destinatarios
 
@@ -361,15 +345,13 @@ Estas actividades se realizarán procurando minimizar el impacto, pero **NO NOS 
 
 ### Limitación de daños
 
-En cualquier caso, y en la máxima medida permitida por la ley aplicable, **NUESTRA RESPONSABILIDAD TOTAL** hacia ti, por cualquier concepto y bajo cualquier teoría legal (contractual, extracontractual, o de cualquier otra naturaleza), **QUEDA LIMITADA** al importe total pagado por ti por nuestros servicios en los 12 meses inmediatamente anteriores al evento que da lugar a la reclamación.
+En cualquier caso, y en la máxima medida permitida por la ley aplicable, nuestra responsabilidad total hacia ti, por cualquier concepto y bajo cualquier teoría legal (contractual, extracontractual, o de cualquier otra naturaleza), queda limitada al importe total pagado por ti por nuestros servicios en los 6 meses inmediatamente anteriores al evento que da lugar a la reclamación.
 
-**EN NINGÚN CASO** seremos responsables de:
+En ningún caso seremos responsables de:
 
-**Daños indirectos, especiales, incidentales o consecuenciales**, incluyendo pero no limitándose a pérdida de beneficios, pérdida de ingresos, pérdida de datos, pérdida de uso, interrupción del negocio, o cualquier otro daño comercial o económico.
-
-**Daños punitivos o ejemplares**, independientemente de que hayamos sido advertidos sobre la posibilidad de tales daños.
-
-**Reclamaciones de terceros** derivadas de tu uso del servicio o del contenido de los recordatorios enviados.
+- Daños indirectos, especiales, incidentales o consecuenciales, incluyendo pero no limitándose a pérdida de beneficios, pérdida de ingresos, pérdida de datos, pérdida de uso, interrupción del negocio, o cualquier otro daño comercial o económico.
+- Daños punitivos o ejemplares, independientemente de que hayamos sido advertidos sobre la posibilidad de tales daños.
+- Reclamaciones de terceros derivadas de tu uso del servicio o del contenido de los recordatorios enviados.
 
 ---
 
@@ -377,15 +359,12 @@ En cualquier caso, y en la máxima medida permitida por la ley aplicable, **NUES
 
 ### Descargo de garantías
 
-EL SERVICIO SE PROPORCIONA "TAL COMO ESTÁ" Y "SEGÚN DISPONIBILIDAD". EN LA MÁXIMA MEDIDA PERMITIDA POR LA LEY APLICABLE, **RECHAZAMOS EXPRESAMENTE TODAS LAS GARANTÍAS**, YA SEAN EXPRESAS, IMPLÍCITAS O ESTATUTARIAS, INCLUYENDO PERO NO LIMITÁNDOSE A:
+EL SERVICIO SE PROPORCIONA "TAL COMO ESTÁ" Y "SEGÚN DISPONIBILIDAD". En la máxima medida permitida por la ley aplicable, rechazamos expresamente todas las garantías, ya sean expresas, implícitas o estatutarias, incluyendo pero no limitándose a:
 
-**Garantías de comerciabilidad**: No garantizamos que el servicio sea apropiado para tus necesidades comerciales específicas o que genere los resultados esperados.
-
-**Garantías de adecuación para un propósito particular**: No garantizamos que el servicio satisfaga tus requisitos específicos o expectativas particulares.
-
-**Garantías de no infracción**: Aunque respetamos los derechos de propiedad intelectual, no garantizamos que el uso del servicio no infrinja derechos de terceros.
-
-**Garantías de precisión o completitud**: No garantizamos que la información procesada sea siempre exacta, completa o esté libre de errores.
+- Garantías de comerciabilidad: No garantizamos que el servicio sea apropiado para tus necesidades comerciales específicas o que genere los resultados esperados.
+- Garantías de adecuación para un propósito particular: No garantizamos que el servicio satisfaga tus requisitos específicos o expectativas particulares.
+- Garantías de no infracción: Aunque respetamos los derechos de propiedad intelectual, no garantizamos que el uso del servicio no infrinja derechos de terceros.
+- Garantías de precisión o completitud: No garantizamos que la información procesada sea siempre exacta, completa o esté libre de errores.
 
 ### Limitaciones de funcionamiento
 
@@ -561,7 +540,7 @@ Los precios de nuestros servicios se publican en nuestra página web y pueden in
 
 **Suscripciones periódicas**: Cuotas mensuales o anuales que proporcionan acceso a determinadas funcionalidades y límites de uso.
 
-**Consumo variable**: Cargos basados en el número de recordatorios enviados, con diferentes tarifas según el volumen.
+**Sistema de créditos**: Otorgamos créditos equivalentes al importe pagado, que se consumen al enviar recordatorios. El coste por recordatorio varía según el destino y las tarifas de nuestros proveedores de telecomunicaciones, y puede cambiar en cualquier momento.
 
 **Servicios adicionales**: Funcionalidades premium o personalizaciones que pueden tener costes adicionales.
 
@@ -569,11 +548,13 @@ Nos reservamos el derecho de modificar nuestros precios con un preaviso mínimo 
 
 ### Métodos de pago
 
-Los pagos se procesan exclusivamente a través de nuestro proveedor de servicios de pago certificado. Aceptamos:
+Los pagos se procesan exclusivamente a través de nuestro proveedor de servicios de pago certificado con autenticación 3D Secure (3DS) obligatoria. Aceptamos únicamente:
 
-Tarjetas de crédito y débito de las principales entidades emisoras. Transferencias bancarias para determinados planes empresariales. Otros métodos que nuestro proveedor de pagos pueda habilitar en el futuro.
+Tarjetas de crédito y débito de las principales entidades emisoras que soporten 3DS.
 
 **No almacenamos información financiera**: Toda la información de pago se gestiona directamente por nuestro proveedor certificado bajo estándares de seguridad PCI-DSS.
+
+**Facturas**: Se envían automáticamente al email proporcionado. Si no las recibes, puedes descargarlas desde tu panel de control o solicitarlas contactando con nuestro soporte.
 
 ### Facturación automática
 
@@ -592,6 +573,16 @@ Es tu responsabilidad mantener actualizada la información de pago y asegurar fo
 **Cargos no reconocidos**: Si detectas cargos no autorizados, contacta inmediatamente con nuestro servicio de atención para investigar la incidencia.
 
 **Disputas de pago**: Las disputas sobre facturación deben presentarse en un plazo máximo de 30 días desde la fecha de cargo.
+
+### Cambios de plan y upgrades
+
+Los cambios de plan (upgrades) pueden realizarse en cualquier momento del ciclo de facturación y se aplican inmediatamente:
+
+- Se cobra la parte proporcional del tiempo restante del mes en la tarifa nueva
+- Se descuenta la parte ya disfrutada del mes en la tarifa anterior
+- Se añaden créditos correspondientes al importe total pagado en el ciclo actual, descontando los créditos ya utilizados.
+
+Este sistema garantiza un tratamiento justo y proporcional en todos los cambios de plan que no penaliza a los clientes que deciden confiar aun mas en nosotros.
 
 ---
 
@@ -693,13 +684,7 @@ El procedimiento de notificación depende de la naturaleza de los cambios:
 
 **Cambios sustanciales** (nuevas obligaciones, modificaciones en limitaciones de responsabilidad, cambios en procedimientos): Notificación por email a todos los usuarios registrados con mínimo 30 días de antelación.
 
-**Cambios críticos** (modificaciones fundamentales en el servicio, nuevas restricciones importantes): Notificación por email con mínimo 60 días de antelación y solicitud de aceptación expresa.
-
 ### Aceptación de nuevos términos
-
-Para cambios sustanciales y críticos:
-
-**Aceptación expresa**: Puede requerirse tu confirmación activa para continuar utilizando el servicio bajo los nuevos términos.
 
 **Aceptación tácita**: Si continúas utilizando el servicio tras la entrada en vigor de los nuevos términos, se considera que los aceptas.
 
@@ -821,7 +806,7 @@ Para cualquier cuestión relacionada con estos Términos y Condiciones, puedes c
 
 **Español**: Idioma oficial para todas las comunicaciones contractuales y legales.
 
-**Inglés**: Soporte disponible para consultas técnicas básicas, aunque las respuestas oficiales se proporcionarán en español.
+**Inglés**: Soporte disponible para consultas técnicas y comerciales, aunque las respuestas oficiales se podrán proporcionarse en español.
 
 **Otros idiomas**: Haremos el mejor esfuerzo para entender consultas en otros idiomas, pero no garantizamos respuestas en idiomas distintos al español e inglés.
 
