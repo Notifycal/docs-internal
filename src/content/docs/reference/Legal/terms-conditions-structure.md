@@ -23,12 +23,11 @@
 - Términos de Acceso Básico (post-login OAuth)
 - Términos de Servicio Completo (post-onboarding + Stripe)
 - Vinculación jurídica
-- Modificaciones de términos
 
 ### 3. DESCRIPCIÓN DEL SERVICIO
 - Funcionalidades principales
-- Fases del servicio (Navegación/Demo/Live)
-- Limitaciones técnicas
+- Fases del servicio
+- Características del sistema
 - Disponibilidad del servicio
 
 ### 4. REGISTRO Y ACCESO
@@ -87,8 +86,12 @@
 
 ### 13. FACTURACIÓN Y PAGOS
 - Precios y tarifas
-- Métodos de pago
+- Sistema de créditos
+- Tipos de créditos y caducidad
+- Gestión de balances separados (limitaciones técnicas)
+- Métodos de pago (solo tarjetas + 3DS)
 - Facturación automática
+- Cambios de plan (mejora de plan y reduccion de plan)
 - Devoluciones y cancelaciones
 
 ### 14. PROTECCIÓN DE DATOS PERSONALES

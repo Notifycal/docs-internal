@@ -556,6 +556,8 @@ Los precios de nuestros servicios se publican en nuestra página web y pueden in
 - La caducidad se aplica automáticamente sin notificación individual
 - Es responsabilidad del usuario gestionar el consumo de créditos antes de su caducidad
 
+**Gestión de balances separados**: Los créditos de suscripción y los créditos de recarga se gestionan en balances independientes debido a sus diferentes ciclos de vida. Por limitaciones técnicas y para garantizar el correcto funcionamiento del servicio para todos los usuarios, nos reservamos el derecho de impedir el envío del último recordatorio que agotaría los balances, incluso cuando la suma total de ambos balances podría ser suficiente para cubrir el coste de dicho recordatorio. Esta política está contemplada en nuestro modelo de precios y garantiza la equidad y estabilidad del servicio.
+
 **Servicios adicionales**: Funcionalidades premium o personalizaciones que pueden tener costes adicionales.
 
 Nos reservamos el derecho de modificar nuestros precios con un preaviso mínimo de 30 días para usuarios existentes. Los nuevos precios se aplicarán al siguiente período de facturación tras la notificación.
