@@ -103,9 +103,6 @@ Al utilizar nuestros servicios, confirmas que:
 - La información proporcionada es veraz y exacta
 - Cumplirás con todas las obligaciones establecidas en estos términos
 
-### Modificaciones de términos
-
-Nos reservamos el derecho de modificar estos términos en cualquier momento. Las modificaciones sustanciales se notificarán con al menos 30 días de antelación. El uso continuado del servicio tras la entrada en vigor de los nuevos términos constituye aceptación de los mismos. Si no estás conforme con los cambios, puedes cancelar tu cuenta antes de que entren en vigor.
 
 ---
 
@@ -125,16 +122,15 @@ Notifycal ofrece un servicio integral de automatización de recordatorios que in
 
 ### Características del sistema
 
-Nuestro servicio presenta las siguientes características operativas:
+Nuestro servicio opera con las siguientes características:
 
-**Integración con Google**: El servicio depende del correcto funcionamiento de la API de Google Calendar y de la continuidad de los permisos OAuth otorgados por el Usuario. Cualquier interrupción, modificación o revocación de estos permisos afectará a la capacidad de prestar el servicio.
+**Dependencia de servicios de terceros**: El funcionamiento depende de integraciones externas, especialmente con Google Calendar, cuya disponibilidad y funcionamiento están fuera de nuestro control directo.
 
-**Cobertura geográfica**: En esta versión, el servicio está optimizado para números de teléfono españoles (prefijo +34). No procesamos ni enviamos mensajes a números internacionales, aunque esto podrá cambiar en futuras actualizaciones.
+**Cobertura geográfica**: En esta versión, el servicio está optimizado para el mercado español, aunque esto podrá expandirse en futuras actualizaciones.
 
-**Recordatorio de demostración**: Está limitado a una longitud máxima de 480 caracteres. Los mensajes que excedan esta longitud se truncarán automáticamente.
+**Sistema de notificaciones**: La plataforma incluye alertas automáticas sobre el estado de créditos disponibles, incluyendo avisos de créditos bajos o insuficientes para garantizar la continuidad del servicio.
 
-**Recordatorios del servicio completo**: No tienen limitación de longitud, pero el coste varía según la longitud y codificación del mensaje conforme al protocolo GSM y las tarifas de nuestros proveedores de telecomunicaciones.
-
+**Recordatorios**: El servicio permite diferentes tipos de recordatorios con características específicas.
 ### Disponibilidad del servicio
 
 Operamos bajo una arquitectura de servicios en la nube que nos permite ofrecer alta disponibilidad, pero no garantizamos un servicio ininterrumpido al 100%. Realizamos mantenimientos programados que podrán afectar temporalmente al servicio, y que se notificarán con antelación cuando sea posible.
@@ -540,7 +536,25 @@ Los precios de nuestros servicios se publican en nuestra página web y pueden in
 
 **Suscripciones periódicas**: Cuotas mensuales o anuales que proporcionan acceso a determinadas funcionalidades y límites de uso.
 
-**Sistema de créditos**: Otorgamos créditos equivalentes al importe pagado, que se consumen al enviar recordatorios. El coste por recordatorio varía según el destino y las tarifas de nuestros proveedores de telecomunicaciones, y puede cambiar en cualquier momento.
+**Sistema de créditos**: Operamos mediante un sistema de créditos donde cada plan de suscripción otorga una cantidad específica de créditos según una ratio variable (planes de mayor valor proporcionan mejor ratio euro-crédito). Estos créditos se consumen al enviar recordatorios. El coste en créditos por recordatorio varía según el destino, el canal de comunicacion y sus particularidades y las tarifas de nuestros proveedores de telecomunicaciones. Dado que los costes de telecomunicaciones representan un componente significativo de nuestras tarifas y pueden fluctuar sin previo aviso por parte de los proveedores, nos reservamos el derecho de ajustar el coste en créditos por recordatorio en cualquier momento para mantener la viabilidad económica del servicio.
+
+### Tipos de créditos y caducidad
+
+**Créditos de suscripción mensual**: Los créditos incluidos en tu plan mensual tienen las siguientes características:
+- Caducan al final del período de facturación mensual si no se utilizan
+- Se sobrescriben (no se acumulan) con cada renovación de suscripción
+- Se pierden definitivamente si no se renueva la suscripción
+
+**Créditos de recarga**: Las recargas adicionales de créditos operan de forma independiente:
+- Son recargas puntuales que complementan tu suscripción mensual
+- Nos reservamos el derecho de establecer una caducidad máxima de 2 meses desde su compra
+- No se renuevan automáticamente
+
+**Política general de créditos**:
+- Los créditos no son reembolsables bajo ninguna circunstancia
+- No pueden transferirse entre cuentas de usuario
+- La caducidad se aplica automáticamente sin notificación individual
+- Es responsabilidad del usuario gestionar el consumo de créditos antes de su caducidad
 
 **Servicios adicionales**: Funcionalidades premium o personalizaciones que pueden tener costes adicionales.
 
@@ -574,15 +588,15 @@ Es tu responsabilidad mantener actualizada la información de pago y asegurar fo
 
 **Disputas de pago**: Las disputas sobre facturación deben presentarse en un plazo máximo de 30 días desde la fecha de cargo.
 
-### Cambios de plan y upgrades
+### Cambios de plan
 
-Los cambios de plan (upgrades) pueden realizarse en cualquier momento del ciclo de facturación y se aplican inmediatamente:
+**Mejoras de plan**: Pueden realizarse en cualquier momento del ciclo de facturación y se aplican inmediatamente:
 
 - Se cobra la parte proporcional del tiempo restante del mes en la tarifa nueva
 - Se descuenta la parte ya disfrutada del mes en la tarifa anterior
-- Se añaden créditos correspondientes al importe total pagado en el ciclo actual, descontando los créditos ya utilizados.
+- Se añaden créditos correspondientes al importe total pagado en el ciclo actual, descontando los créditos ya utilizados
 
-Este sistema garantiza un tratamiento justo y proporcional en todos los cambios de plan que no penaliza a los clientes que deciden confiar aun mas en nosotros.
+**Downgrades (reducciones de plan)**: Se aplican únicamente al finalizar el período de facturación actual. No se realizan devoluciones por la diferencia de precio, y los créditos no utilizados se mantienen disponibles hasta el final del periodo de facturación.
 
 ---
 
