@@ -54,7 +54,7 @@ Para una comprensión clara de estos términos, definimos los siguientes concept
 
 ### Objeto del contrato
 
-Notifycal proporciona una plataforma de software como servicio (SaaS) que permite a profesionales y empresas automatizar el envío de recordatorios por SMS a sus clientes, mediante la integración con sus calendarios digitales.
+Notifycal proporciona una plataforma de software como servicio (SaaS) que permite a profesionales y empresas automatizar el envío de recordatorios a sus clientes, mediante la integración con sus calendarios digitales.
 
 Nuestro servicio actúa como intermediario tecnológico, facilitando la comunicación entre nuestros Usuarios y sus clientes finales, pero sin establecer relación contractual directa con estos últimos.
 
@@ -116,9 +116,9 @@ Notifycal ofrece un servicio integral de automatización de recordatorios que in
 
 **Procesamiento inteligente de eventos**: Análisis automatizado de la información de eventos para extraer datos de contacto de destinatarios, fechas y horarios de citas, y detalles relevantes para la composición de recordatorios.
 
-**Envío automatizado de recordatorios**: Sistema de programación que envía mensajes SMS en los momentos configurados por el Usuario, con plantillas personalizables según el tipo de negocio y servicio.
+**Envío automatizado de recordatorios**: Sistema de programación que envía mensajes en los momentos configurados por el Usuario, con plantillas personalizables según el tipo de negocio y servicio.
 
-**Panel de control**: Herramientas de gestión que permiten configurar preferencias, gestionar tu subscripcion y saldo de creditos, y gestionar la configuración de recordatorios.
+**Panel de control**: Herramientas de gestión que permiten configurar preferencias, gestionar tu suscripción y saldo de créditos, y gestionar la configuración de recordatorios.
 
 ### Características del sistema
 
@@ -131,6 +131,7 @@ Nuestro servicio opera con las siguientes características:
 **Sistema de notificaciones**: La plataforma incluye alertas automáticas sobre el estado de créditos disponibles, incluyendo avisos de créditos bajos o insuficientes para garantizar la continuidad del servicio.
 
 **Recordatorios**: El servicio permite diferentes tipos de recordatorios con características específicas.
+
 ### Disponibilidad del servicio
 
 Operamos bajo una arquitectura de servicios en la nube que nos permite ofrecer alta disponibilidad, pero no garantizamos un servicio ininterrumpido al 100%. Realizamos mantenimientos programados que podrán afectar temporalmente al servicio, y que se notificarán con antelación cuando sea posible.
@@ -214,7 +215,13 @@ El recordatorio de demostración está sujeto a las siguientes condiciones:
 
 Al suscribirte a uno de nuestros planes de pago, accedes a la Fase Live con funcionalidades completas:
 
-Procesamiento ilimitado de calendarios según tu plan contratado. Envío automatizado de recordatorios sin restricciones de cantidad. Acceso completo a estadísticas y herramientas de gestión. Soporte técnico prioritario según tu nivel de suscripción.
+**Procesamiento ilimitado**: Calendarios procesados según tu plan contratado.
+
+**Envío automatizado**: Recordatorios sin restricciones de cantidad dentro de tu plan.
+
+**Acceso completo**: Estadísticas y herramientas de gestión avanzadas.
+
+**Soporte prioritario**: Atención técnica según tu nivel de suscripción.
 
 ### Transiciones entre fases
 
@@ -233,11 +240,11 @@ No es posible retroceder a fases anteriores una vez completada la transición, s
 
 Te comprometes a utilizar Notifycal exclusivamente para fines legítimos y legales, específicamente:
 
-Enviar únicamente recordatorios relacionados con citas, reservas o servicios realmente programados con destinatarios que mantienen una relación comercial contigo.
+**Uso legítimo**: Enviar únicamente recordatorios relacionados con citas, reservas o servicios realmente programados con destinatarios que mantienen una relación comercial contigo.
 
-Comprender que los recordatorios se envían automáticamente según la programación establecida en el calendario, lo que puede incluir envíos en días festivos o en diferentes horarios según la naturaleza de cada cita. Los horarios de envío dependen de la configuración temporal de cada evento programado.
+**Automatización temporal**: Comprender que los recordatorios se envían automáticamente según la programación establecida en el calendario, lo que puede incluir envíos en días festivos o en diferentes horarios según la naturaleza de cada cita. Los horarios de envío dependen de la configuración temporal de cada evento programado.
 
-Mantener la veracidad y exactitud de la información incluida en los recordatorios, incluyendo fechas, horarios, ubicaciones y detalles del servicio.
+**Veracidad**: Mantener la veracidad y exactitud de la información incluida en los recordatorios, incluyendo fechas, horarios, ubicaciones y detalles del servicio.
 
 ### Responsabilidad sobre datos de terceros
 
@@ -247,21 +254,39 @@ Como Usuario de Notifycal, tienes responsabilidades específicas respecto a los 
 
 Debes asegurarte de que los Destinatarios de los recordatorios:
 
-Conocen que utilizas un servicio automatizado de recordatorios. Han sido informados sobre el tratamiento de sus datos personales conforme al RGPD. Tienen conocimiento de sus derechos y cómo ejercerlos.
+**Información sobre automatización**: Conocen que utilizas un servicio automatizado de recordatorios.
+
+**Cumplimiento RGPD**: Han sido informados sobre el tratamiento de sus datos personales conforme al RGPD.
+
+**Derechos**: Tienen conocimiento de sus derechos y cómo ejercerlos.
 
 En caso de reclamaciones o ejercicio de derechos por parte de los Destinatarios, serás el primer responsable de atenderlas, aunque nosotros colaboraremos en la medida de lo posible.
 
 ### Cumplimiento normativo
 
-Te comprometes a cumplir con toda la normativa aplicable, incluyendo pero no limitándose a:
+Te comprometes expresamente a cumplir con toda la normativa aplicable, incluyendo pero no limitándose a:
 
-**Ley de Servicios de la Sociedad de la Información (LSSI)**: Especialmente las disposiciones sobre comunicaciones comerciales electrónicas y obtención de consentimiento previo cuando sea requerido.
+**Ley de Servicios de la Sociedad de la Información (LSSI)**: Especialmente las disposiciones sobre comunicaciones comerciales electrónicas por SMS y cualquier otro canal de comunicación que se utilice, y obtención de consentimiento previo cuando sea requerido.
 
 **Reglamento General de Protección de Datos (RGPD)**: En tu rol como responsable del tratamiento de datos de tus clientes.
 
+**Normativas de telecomunicaciones**: Cumplimiento de regulaciones específicas sobre envío de SMS comerciales o cualquier otro tipo de comunicación electrónica, incluyendo el respeto a la Lista Robinson y normativas de la Comisión Nacional de los Mercados y la Competencia (CNMC).
+
 **Normativas sectoriales**: Cualquier regulación específica que aplique a tu sector de actividad (sanidad, educación, etc.).
 
-**Horarios de comunicación**: Respeto a las limitaciones legales sobre horarios para comunicaciones comerciales telefónicas y por SMS.
+**Responsabilidad por incumplimiento**: Reconoces que cualquier incumplimiento de estas normativas es de tu exclusiva responsabilidad y te comprometes a indemnizar a Notifycal por cualquier consecuencia derivada de dicho incumplimiento.
+
+### Indemnización
+
+Te comprometes a indemnizar, defender y eximir de responsabilidad a Notifycal, sus directivos, empleados y afiliados de y contra todas las reclamaciones, responsabilidades, daños, pérdidas, costes, gastos y honorarios (incluyendo honorarios razonables de abogados) que surjan de o estén relacionados con:
+
+- Tu uso del servicio o incumplimiento de estos términos
+- El contenido de los recordatorios que envíes a través de nuestra plataforma
+- Tu violación de cualquier ley, regulación o derechos de terceros
+- Cualquier disputa entre tú y los destinatarios de los recordatorios
+- Reclamaciones de que tu uso del servicio infringe derechos de terceros
+
+Esta obligación de indemnización sobrevivirá a la terminación de estos términos.
 
 ---
 
@@ -269,25 +294,57 @@ Te comprometes a cumplir con toda la normativa aplicable, incluyendo pero no lim
 
 ### Conductas prohibidas
 
-Está estrictamente prohibido utilizar Notifycal para:
+Está estrictamente prohibido utilizar Notifycal para cualquiera de las siguientes actividades:
 
-**Spam o comunicaciones no solicitadas**: Enviar recordatorios a personas que no tienen una relación comercial previa contigo o que no han consentido recibir comunicaciones.
+**Actividades ilegales o fraudulentas**:
+- Promover, facilitar o participar en cualquier actividad ilegal
+- Lavado de dinero, evasión fiscal o fraude financiero
+- Venta o promoción de sustancias ilegales o controladas
+- Actividades de juego o apuestas ilegales
+- Esquemas piramidales o estafas tipo Ponzi
 
-**Contenido ilegal o inapropiado**: Incluir en los recordatorios lenguaje ofensivo, amenazante, discriminatorio, o cualquier contenido que pueda considerarse acoso o intimidación.
+**Comunicaciones no autorizadas**:
+- Spam o comunicaciones no solicitadas (sin consentimiento previo)
+- Envío masivo de comunicaciones comerciales sin base legal
+- Violación de listas de exclusión como Lista Robinson
+- Envío de comunicaciones a menores sin autorización parental
 
-**Suplantación**: Enviar recordatorios haciéndote pasar por otra persona o entidad, o utilizando información de remitente falsa o engañosa.
+**Contenido dañino o inapropiado**:
+- Contenido sexual explícito, violento o que promueva autolesiones
+- Lenguaje ofensivo, amenazante, discriminatorio o de odio
+- Acoso, intimidación o hostigamiento hacia terceros
+- Contenido difamatorio o que viole derechos de terceros
+- Información falsa, engañosa o fraudulenta
 
-**Actividades ilegales**: Utilizar el servicio para promover, facilitar o participar en cualquier actividad ilegal o contraria a la moral y buenas costumbres.
+**Actividades competitivas desleales**:
+- Ingeniería inversa de nuestra plataforma o tecnología
+- Desarrollo de servicios competidores basados en nuestro servicio
+- Análisis sistemático de nuestras funcionalidades para replicación
+- Uso del servicio para estudiar nuestro modelo de negocio
 
-**Interferencia técnica**: Intentar acceder, modificar o interferir con nuestros sistemas, bases de datos, o infraestructura técnica.
+**Interferencia técnica**:
+- Intentos de acceso no autorizado a sistemas o bases de datos
+- Ataques de denegación de servicio o sobrecarga intencional
+- Introducción de virus, malware o código malicioso
+- Eludir medidas de seguridad o limitaciones técnicas
+
+**Suplantación y fraude de identidad**:
+- Hacerse pasar por otra persona, empresa o entidad
+- Utilizar información de remitente falsa o engañosa
+- Crear cuentas falsas o con información fraudulenta
+
+**Uso abusivo de recursos**:
+- Uso simultáneo desde múltiples ubicaciones que sugiera compartición no autorizada de cuenta
+- Automatización excesiva que pueda afectar el rendimiento del servicio
+- Cualquier uso que consideremos abusivo según nuestro criterio exclusivo
 
 ### Uso del recordatorio de prueba
 
 El recordatorio de demostración está específicamente diseñado para verificar el funcionamiento del servicio con tu configuración. Su uso apropiado implica:
 
-Enviar el mensaje únicamente a tu propio número de teléfono o al de un colaborador que haya consentido específicamente recibir esta prueba.
+**Destinatario apropiado**: Enviar el mensaje únicamente a tu propio número de teléfono o al de un colaborador que haya consentido específicamente recibir esta prueba.
 
-Utilizar contenido apropiado y profesional que refleje el tipo de recordatorios que planeas enviar en tu actividad comercial real.
+**Contenido profesional**: Utilizar contenido apropiado y profesional que refleje el tipo de recordatorios que planeas enviar en tu actividad comercial real.
 
 **Mal uso del recordatorio demo**: Queda expresamente prohibido utilizar esta funcionalidad para molestar, acosar o enviar contenido inapropiado a terceros. Cualquier uso de esta naturaleza resultará en la cancelación inmediata y permanente de tu cuenta.
 
@@ -295,7 +352,13 @@ Utilizar contenido apropiado y profesional que refleje el tipo de recordatorios 
 
 Los recordatorios no pueden contener:
 
-Contenido sexually explícito, violento o que promueva actividades ilegales. Información falsa o engañosa sobre servicios, precios o condiciones. Enlaces a sitios web maliciosos o contenido fraudulento. Datos personales sensibles de terceros (información médica, financiera, etc.) más allá de lo estrictamente necesario para el recordatorio de la cita.
+**Contenido inapropiado**: Contenido sexualmente explícito, violento o que promueva actividades ilegales.
+
+**Información engañosa**: Información falsa o engañosa sobre servicios, precios o condiciones.
+
+**Enlaces maliciosos**: Enlaces a sitios web maliciosos o contenido fraudulento.
+
+**Datos sensibles**: Datos personales sensibles de terceros (información médica, financiera, etc.) más allá de lo estrictamente necesario para el recordatorio de la cita.
 
 ### Consecuencias del incumplimiento
 
@@ -321,13 +384,25 @@ Estas medidas se aplicarán según nuestro criterio exclusivo, sin necesidad de 
 
 Nos esforzamos por mantener el servicio operativo, pero **NO NOS HACEMOS RESPONSABLES** de:
 
-Pérdidas económicas derivadas de la no disponibilidad del servicio. Recordatorios no enviados por fallos técnicos, mantenimientos o interrupciones. Daños a tu reputación comercial por fallos en el envío de comunicaciones. Pérdida de clientes o citas no atendidas por problemas del servicio.
+**Pérdidas económicas**: Derivadas de la no disponibilidad del servicio.
+
+**Recordatorios no enviados**: Por fallos técnicos, mantenimientos o interrupciones.
+
+**Daños reputacionales**: A tu reputación comercial por fallos en el envío de comunicaciones.
+
+**Pérdida de clientes**: O citas no atendidas por problemas del servicio.
 
 ### Funcionalidades de terceros
 
 Nuestro servicio depende integralmente de Google OAuth y Google Calendar API. **NO TENEMOS CONTROL** sobre estos servicios de terceros y **NO NOS RESPONSABILIZAMOS** de:
 
-Cambios en las políticas, términos o funcionalidades de Google que afecten a nuestro servicio. Interrupciones o fallos en los servicios de Google que impidan el acceso a calendarios. Modificaciones o revocaciones de permisos OAuth realizadas por Google o por el Usuario. Pérdidas de datos o funcionalidades derivadas de cambios en APIs de terceros.
+**Cambios de Google**: En políticas, términos o funcionalidades que afecten a nuestro servicio.
+
+**Interrupciones de Google**: O fallos en los servicios de Google que impidan el acceso a calendarios.
+
+**Permisos OAuth**: Modificaciones o revocaciones de permisos OAuth realizadas por Google o por el Usuario.
+
+**Cambios en APIs**: Pérdidas de datos o funcionalidades derivadas de cambios en APIs de terceros.
 
 Si Google modifica sus servicios de tal manera que afecte al funcionamiento de Notifycal, realizaremos los mejores esfuerzos para adaptar nuestro servicio, pero **NO GARANTIZAMOS** que sea técnica o económicamente viable mantener la funcionalidad completa.
 
@@ -335,7 +410,11 @@ Si Google modifica sus servicios de tal manera que afecte al funcionamiento de N
 
 Nos reservamos el derecho de:
 
-Realizar mantenimientos programados que requieran la suspensión temporal del servicio. Aplicar actualizaciones de seguridad o funcionalidad que puedan afectar temporalmente al rendimiento. Suspender el servicio sin previo aviso en caso de detectar amenazas de seguridad o uso malintencionado.
+**Mantenimientos programados**: Que requieran la suspensión temporal del servicio.
+
+**Actualizaciones**: De seguridad o funcionalidad que puedan afectar temporalmente al rendimiento.
+
+**Suspensiones de emergencia**: Sin previo aviso en caso de detectar amenazas de seguridad o uso malintencionado.
 
 Estas actividades se realizarán procurando minimizar el impacto, pero **NO NOS HACEMOS RESPONSABLES** de cualquier inconveniente, pérdida o daño que puedan ocasionar.
 
@@ -388,7 +467,15 @@ No somos responsables de las acciones, errores, omisiones, representaciones, gar
 
 No seremos responsables de cualquier fallo o retraso en el cumplimiento de nuestras obligaciones cuando dicho fallo o retraso resulte de circunstancias fuera de nuestro control razonable, incluyendo pero no limitándose a:
 
-Actos de autoridades gubernamentales, guerra, terrorismo, epidemias, o desastres naturales. Fallos de internet, telecomunicaciones, o infraestructura de terceros. Ciberataques, virus informáticos, o cualquier otra forma de interferencia maliciosa. Huelgas, conflictos laborales, o escasez de suministros o materiales.
+**Eventos generales de fuerza mayor**: Actos de autoridades gubernamentales, guerra, terrorismo, epidemias, desastres naturales, huelgas, conflictos laborales, o escasez de suministros.
+
+**Fallos de infraestructura digital**: Interrupciones de internet, fallos en infraestructura de terceros, ciberataques, virus informáticos, o cualquier forma de interferencia maliciosa.
+
+**Eventos específicos de telecomunicaciones**: Fallos en redes de operadores móviles, interrupciones en sistemas de SMS a nivel nacional o regional, saturación de redes de telecomunicaciones, cambios regulatorios que afecten el envío de comunicaciones electrónicas, o mantenimientos no programados de infraestructura de telecomunicaciones.
+
+**Fallos de servicios integrados**: Interrupciones o cambios en servicios de Google (Calendar, OAuth), modificaciones unilaterales en APIs de terceros, o descontinuación de servicios de los que dependemos.
+
+Estos eventos de fuerza mayor nos eximen de responsabilidad durante su duración y por un período razonable posterior necesario para restaurar el servicio normal.
 
 ---
 
@@ -454,13 +541,25 @@ Nos reservamos el derecho de modificar, actualizar, mejorar o cambiar cualquier 
 
 Como servicio basado en tecnología cloud, realizamos actualizaciones continuas que pueden incluir:
 
-Actualizaciones de seguridad aplicadas automáticamente sin previo aviso. Mejoras en algoritmos de procesamiento de calendarios o envío de mensajes. Adaptaciones a cambios en APIs de terceros o nuevas versiones de servicios integrados. Actualizaciones de infraestructura para mantener el rendimiento y fiabilidad.
+**Actualizaciones de seguridad**: Aplicadas automáticamente sin previo aviso.
+
+**Mejoras algorítmicas**: En procesamiento de calendarios o envío de mensajes.
+
+**Adaptaciones técnicas**: A cambios en APIs de terceros o nuevas versiones de servicios integrados.
+
+**Infraestructura**: Actualizaciones para mantener el rendimiento y fiabilidad.
 
 ### Descontinuación de características
 
 En algunos casos, podemos descontinuar funcionalidades específicas cuando:
 
-Los proveedores de terceros descontinúen servicios de los que dependemos. Los costes de mantenimiento superen significativamente el valor proporcionado. Consideremos que una funcionalidad crea riesgos de seguridad o legales. Sea necesario para cumplir con nuevas regulaciones o requisitos legales.
+**Descontinuación de terceros**: Los proveedores de terceros descontinúen servicios de los que dependemos.
+
+**Viabilidad económica**: Los costes de mantenimiento superen significativamente el valor proporcionado.
+
+**Riesgos**: Consideremos que una funcionalidad crea riesgos de seguridad o legales.
+
+**Cumplimiento normativo**: Sea necesario para cumplir con nuevas regulaciones o requisitos legales.
 
 En estos casos, proporcionaremos aviso con la mayor antelación posible y ofreceremos alternativas cuando estén disponibles.
 
@@ -512,11 +611,25 @@ Nos reservamos el derecho de terminar tu acceso al servicio, con o sin previo av
 
 **Causas de fuerza mayor**: Cuando circunstancias externas hagan imposible o no viable comercialmente la prestación del servicio.
 
+### Suspensión temporal del servicio
+
+A nuestro exclusivo criterio, podremos optar por suspender temporalmente tu acceso al servicio en lugar de proceder a la cancelación definitiva, especialmente en los siguientes casos:
+
+**Incumplimientos menores**: Violaciones que consideremos subsanables sin requerir cancelación definitiva.
+
+**Investigaciones en curso**: Mientras se investigan posibles violaciones de estos términos o actividades sospechosas.
+
+**Problemas de pago temporales**: Cuando existan problemas de facturación que puedan resolverse sin cancelación.
+
+**Medidas preventivas**: Para proteger la integridad del servicio o prevenir daños a otros usuarios.
+
+La duración de la suspensión será determinada exclusivamente por Notifycal según las circunstancias de cada caso. Durante la suspensión, no se enviarán recordatorios, pero se mantendrán los datos según nuestra política de conservación. Nos reservamos el derecho de convertir cualquier suspensión temporal en cancelación definitiva según nuestro criterio.
+
 ### Efectos de la terminación
 
 Independientemente de la causa de terminación:
 
-**Acceso inmediato**: Tu acceso a la plataforma cessará inmediatamente.
+**Acceso inmediato**: Tu acceso a la plataforma cesará inmediatamente.
 
 **Datos de usuario**: Conservaremos tus datos según los plazos establecidos en nuestra Política de Privacidad, pero dejarán de procesarse para el envío de recordatorios.
 
@@ -524,7 +637,19 @@ Independientemente de la causa de terminación:
 
 **Reembolsos**: No se realizan reembolsos proporcionales por servicios no utilizados, salvo casos excepcionales bajo nuestro criterio exclusivo o cuando sea legalmente obligatorio.
 
-**Supervivencia de cláusulas**: Las disposiciones sobre limitación de responsabilidad, propiedad intelectual, y resolución de disputas permanecen vigentes tras la terminación.
+### Supervivencia de cláusulas
+
+Las siguientes disposiciones permanecerán vigentes indefinidamente tras la terminación de estos términos:
+
+- Limitaciones de responsabilidad y descargos de garantías
+- Obligaciones de indemnización
+- Derechos de propiedad intelectual
+- Confidencialidad y no competencia
+- Ley aplicable y jurisdicción
+- Cualquier obligación de pago pendiente
+- Definiciones y interpretación de términos
+
+Esta supervivencia es esencial para proteger los derechos legítimos de ambas partes tras la finalización de la relación contractual.
 
 ---
 
@@ -536,7 +661,7 @@ Los precios de nuestros servicios se publican en nuestra página web y pueden in
 
 **Suscripciones periódicas**: Cuotas mensuales o anuales que proporcionan acceso a determinadas funcionalidades y límites de uso.
 
-**Sistema de créditos**: Operamos mediante un sistema de créditos donde cada plan de suscripción otorga una cantidad específica de créditos según una ratio variable (planes de mayor valor proporcionan mejor ratio euro-crédito). Estos créditos se consumen al enviar recordatorios. El coste en créditos por recordatorio varía según el destino, el canal de comunicacion y sus particularidades y las tarifas de nuestros proveedores de telecomunicaciones. Dado que los costes de telecomunicaciones representan un componente significativo de nuestras tarifas y pueden fluctuar sin previo aviso por parte de los proveedores, nos reservamos el derecho de ajustar el coste en créditos por recordatorio en cualquier momento para mantener la viabilidad económica del servicio.
+**Sistema de créditos**: Operamos mediante un sistema de créditos donde cada plan de suscripción otorga una cantidad específica de créditos según una ratio variable (planes de mayor valor proporcionan mejor ratio euro-crédito). Estos créditos se consumen al enviar recordatorios. El coste en créditos por recordatorio varía según el destino, el canal de comunicación y sus particularidades, y las tarifas de nuestros proveedores de telecomunicaciones. Dado que los costes de telecomunicaciones representan un componente significativo de nuestras tarifas y pueden fluctuar sin previo aviso por parte de los proveedores, nos reservamos el derecho de ajustar el coste en créditos por recordatorio en cualquier momento para mantener la viabilidad económica del servicio.
 
 ### Tipos de créditos y caducidad
 
@@ -576,7 +701,11 @@ Tarjetas de crédito y débito de las principales entidades emisoras que soporte
 
 Al suscribirte a un plan de pago:
 
-Autorizas la facturación automática en los períodos correspondientes (mensual, anual, etc.). Los cargos se realizan por adelantado al inicio de cada período de facturación. Recibirás una factura electrónica tras cada cargo realizado.
+**Autorización**: Autorizas la facturación automática en los períodos correspondientes (mensual, anual, etc.).
+
+**Anticipación**: Los cargos se realizan por adelantado al inicio de cada período de facturación.
+
+**Facturación**: Recibirás una factura electrónica tras cada cargo realizado.
 
 Es tu responsabilidad mantener actualizada la información de pago y asegurar fondos suficientes para los cargos programados.
 
@@ -690,7 +819,13 @@ Nuestro soporte técnico **NO incluye**:
 
 Nos reservamos el derecho de modificar estos Términos y Condiciones en cualquier momento para reflejar:
 
-Cambios en nuestros servicios o funcionalidades. Nuevos requisitos legales o regulatorios. Mejoras en las protecciones de seguridad o privacidad. Adaptaciones a cambios en servicios de terceros de los que dependemos.
+**Cambios de servicio**: En nuestros servicios o funcionalidades.
+
+**Requisitos legales**: Nuevos requisitos legales o regulatorios.
+
+**Seguridad y privacidad**: Mejoras en las protecciones.
+
+**Adaptaciones técnicas**: A cambios en servicios de terceros de los que dependemos.
 
 ### Notificación de cambios
 
@@ -835,6 +970,24 @@ Para comunicaciones oficiales que requieran constancia:
 **Plazos de respuesta**: Las consultas se responderán en los plazos establecidos en la sección de soporte técnico de estos términos.
 
 **Escalado de incidencias**: Si no recibes respuesta en los plazos establecidos, puedes escalar la consulta contactando directamente con la dirección de términos y condiciones.
+
+### Notificaciones legales formales
+
+Para comunicaciones de naturaleza legal (demandas, requerimientos oficiales, notificaciones contractuales importantes):
+
+**Dirección para notificaciones a Notifycal**:
+- Email certificado: **EMAIL TÉRMINOS** (ver datos de contacto al inicio)
+- Dirección postal: [Dirección indicada en datos de contacto al inicio del documento]
+- Se considerarán válidamente entregadas tras confirmación de recepción
+
+**Notificaciones del Usuario a Notifycal**:
+- Deben incluir nombre completo, dirección de cuenta, naturaleza de la comunicación
+- Para efectos legales, se requiere confirmación de entrega (email certificado o correo postal con acuse de recibo)
+
+**Notificaciones de Notifycal al Usuario**:
+- Se realizarán a la dirección de email registrada en la cuenta
+- Para comunicaciones legales importantes, podremos utilizar métodos que garanticen constancia de entrega
+- Se considerarán válidamente entregadas 24 horas después del envío al email registrado
 
 ---
 
