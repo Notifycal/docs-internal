@@ -16,12 +16,13 @@ CONTACTO:
 - Web: www.notifycal.com
 
 ACTUALIZACIÓN:
-- Fecha última actualización: 11 de agosto de 2025
+- Fecha última actualización: 12 de agosto de 2025
 - Versión: 1.0
 ```
 
 ## 1. INFORMACIÓN GENERAL
-- Ámbito de aplicación
+- Ámbito de aplicación (dominios y subdominios)
+- Finalidad de la política (RGPD y LOPD-GDD)
 - Definiciones (Usuario, Destinatario, Servicio)
 - Roles en tratamiento (Responsable vs Encargado)
 
@@ -95,7 +96,8 @@ ACTUALIZACIÓN:
 - Notificación según impacto
 
 ## 12. INFORMACIÓN ADICIONAL
-- Enlaces terceros
+- Enlaces terceros (disclaimer responsabilidad)
+- Información en redes sociales (contenido público)
 - Do Not Track
 - Privacidad por diseño
 

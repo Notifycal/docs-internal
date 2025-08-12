@@ -19,18 +19,30 @@ EMAIL BAJA: baja@notifycal.com
 SITIO WEB: www.notifycal.com
 ```
 
-**Fecha de última actualización**: 11 de agosto de 2025  
+**Fecha de última actualización**: 12 de agosto de 2025  
 **Versión**: 1.0
 
 ---
 
 ## 1. INFORMACIÓN GENERAL
 
-### Introducción
+### Ámbito de aplicación
 
-En **Notifycal** nos tomamos muy en serio la privacidad y la protección de los datos personales. Esta Política de Privacidad describe de manera detallada cómo recopilamos, utilizamos, almacenamos y protegemos la información personal en el contexto de nuestro servicio.
+Esta Política de Privacidad se aplica a cualquier persona que utilice nuestros servicios a través de:
+
+- **Nuestros sitios web principales**: www.notifycal.com y www.notifycal.es
+- **Nuestras áreas privadas**: private.notifycal.com y private.notifycal.es  
+- **Todos los subdominios** asociados a estos dominios principales
+
+Cualquier interacción con estas plataformas digitales estará sujeta a los términos establecidos en esta política.
+
+### Finalidad y compromiso de privacidad
+
+En **Notifycal** nos tomamos muy en serio la privacidad y la protección de los datos personales. Nos comprometemos a proteger la privacidad de nuestros clientes y asociados comerciales, por lo que hemos redactado esta Política de Privacidad para asegurarnos de que cuentes con toda la información que necesitas sobre cómo recopilamos, utilizamos, almacenamos y protegemos la información personal en el contexto de nuestro servicio.
 
 Nuestro servicio se basa en la confianza que depositan en nosotros tanto los profesionales y empresas que utilizan nuestra plataforma como sus clientes que reciben los recordatorios. Por ello, hemos diseñado nuestros procesos siguiendo los principios de privacidad desde el diseño y por defecto, minimizando la recopilación de datos a lo estrictamente necesario para prestar el servicio.
+
+Cuando recogemos y tratamos tus datos personales, estamos sujetos al **Reglamento General de Protección de Datos (RGPD)** (UE) 2016/679 que se aplica en todo el EEE y la **Ley Orgánica de Protección de Datos Personales y garantía de los derechos digitales (LOPD-GDD)** española.
 
 ### Definiciones importantes
 
@@ -99,7 +111,10 @@ El Reglamento General de Protección de Datos (RGPD) exige que todo tratamiento 
 | Soporte técnico y atención al cliente | Art. 6.1.f - Interés legítimo | Tenemos un interés legítimo en ayudar a nuestros usuarios y resolver sus incidencias |
 | Seguridad y prevención del fraude | Art. 6.1.f - Interés legítimo | Proteger nuestra plataforma y a nuestros usuarios de usos fraudulentos o maliciosos |
 | Análisis y mejora del servicio | Art. 6.1.a - Consentimiento | Solo con el consentimiento expreso del Usuario mediante el banner de cookies |
-| Comunicaciones comerciales | Art. 6.1.a - Consentimiento | Envío de novedades, ofertas y newsletter solo si el Usuario lo ha autorizado expresamente |
+| Avisos operativos sobre la cuenta | Art. 6.1.b - Ejecución de contrato | Notificaciones sobre el estado de créditos, límites de servicio y avisos técnicos necesarios para el funcionamiento |
+| Comunicaciones sobre actualizaciones | Art. 6.1.f - Interés legítimo | Informar sobre cambios en términos, condiciones, políticas o funcionalidades que afecten al servicio contratado |
+| Comunicaciones comerciales y marketing | Art. 6.1.a - Consentimiento | Envío de novedades, ofertas, newsletters, encuestas y material promocional solo si el Usuario lo ha autorizado expresamente |
+| Recopilación de comentarios y feedback | Art. 6.1.b - Ejecución de contrato | Recoger opiniones y sugerencias para mejorar el servicio contratado mediante formularios que almacenan respuestas |
 
 ### 3.2. Tratamiento de datos de los Destinatarios
 
@@ -151,11 +166,11 @@ Para poder ofrecer un servicio robusto y de calidad, trabajamos con proveedores 
 
 | **Tipo de proveedor** | **Servicio que presta** | **Datos compartidos** | **Ubicación de procesamiento** |
 |------------------------|-------------------------|----------------------|--------------------------------|
-| Proveedor de infraestructura y hosting | Alojamiento y procesamiento de datos | Todos los datos de la plataforma | Unión Europea |
+| Proveedor de infraestructura y hosting | Alojamiento y procesamiento de datos | Todos los datos de la plataforma | EU |
 | Proveedor de autenticación | Integración con servicios de calendario | Tokens OAuth, datos de calendario | UE/EE.UU. (con SCC) |
 | Proveedor de procesamiento de pagos | Gestión de pagos y facturación | Información de facturación y pagos | UE/EE.UU. (con SCC) |
-| Proveedor de comunicaciones | Envío de recordatorios | Información de contacto y contenido de mensajes | UE (verificación en curso) |
-| Proveedor de correos transaccionales | Envío de correos del sistema | Direcciones email y contenido de correos | UE/EE.UU. (verificar DPA) |
+| Proveedor de comunicaciones | Envío de recordatorios | Información de contacto y contenido de mensajes | UE |
+| Proveedor de correos transaccionales | Envío de correos del sistema | Direcciones email y contenido de correos | UE |
 | Herramientas de análisis de experiencia | Análisis de usabilidad | Datos de navegación anonimizados | EE.UU. (con SCC) |
 | Herramientas de métricas web | Estadísticas de uso | Datos agregados de uso | EE.UU. (con SCC) |
 
@@ -193,7 +208,9 @@ Todas las comunicaciones entre tu navegador y nuestros servidores están cifrada
 
 La autenticación en nuestra plataforma se realiza exclusivamente a través de sistemas OAuth seguros, lo que significa que no almacenamos contraseñas en nuestros sistemas. Esto elimina el riesgo de que las contraseñas puedan ser comprometidas en caso de un incidente de seguridad.
 
-Nuestra infraestructura está alojada en proveedores de servicios en la nube de primer nivel en la Unión Europea, utilizando arquitecturas modernas que proporcionan seguridad y escalabilidad inherentes. Realizamos copias de seguridad automáticas y periódicas de todos los datos. Las credenciales y secretos se almacenan de forma segura con cifrado. Además, implementamos monitorización continua de nuestros sistemas para detectar actividades anómalas o intentos de acceso no autorizado, con alertas automáticas que nos permiten responder rápidamente a cualquier incidente potencial.
+Nuestra infraestructura está alojada en proveedores de servicios en la nube de primer nivel en la Unión Europea, utilizando arquitecturas modernas que proporcionan seguridad y escalabilidad inherentes. 
+
+Implementamos múltiples medidas de protección de datos: realizamos copias de seguridad automáticas y periódicas de todos los datos, las credenciales y secretos se almacenan de forma segura con cifrado, y mantenemos monitorización continua de nuestros sistemas para detectar actividades anómalas o intentos de acceso no autorizado, con alertas automáticas que nos permiten responder rápidamente a cualquier incidente potencial.
 
 Respecto al procesamiento de pagos, reiteramos que no almacenamos ningún dato financiero sensible como números de tarjeta, códigos de seguridad o información bancaria. Toda esta información es procesada directamente por nuestro proveedor de pagos certificado.
 
@@ -235,6 +252,7 @@ Aplicamos el principio de limitación del plazo de conservación, manteniendo lo
 | Logs técnicos del sistema | 1 año | Debugging y análisis de seguridad |
 | Grabaciones de herramientas de experiencia | 30 días | Análisis de experiencia de usuario |
 | Datos de navegación (métricas web) | 26 meses | Estándar de herramientas de analítica |
+| Datos de feedback y comentarios | 1 año desde el envío | Mejora continua del servicio contratado |
 
 ### Proceso de eliminación
 
@@ -246,7 +264,7 @@ Las copias de seguridad que contengan datos personales también se eliminan sigu
 
 ### Portabilidad de datos
 
-Reconocemos tu derecho a la portabilidad de los datos. Si eres Usuario de Notifycal, puedes solicitar en cualquier momento una copia de todos tus datos personales en un formato estructurado, de uso común y lectura mecánica (típicamente JSON o CSV). Esto te permite llevarte tus datos a otro servicio si así lo deseas, o simplemente mantener una copia para tus propios registros.
+Reconocemos tu derecho a la portabilidad de los datos. Si eres Usuario de Notifycal, puedes solicitar en cualquier momento una copia de todos tus datos personales en un formato estructurado, de uso común y lectura mecánica. Esto te permite llevarte tus datos a otro servicio si así lo deseas, o simplemente mantener una copia para tus propios registros.
 
 ---
 
@@ -266,7 +284,7 @@ El Reglamento General de Protección de Datos reconoce una serie de derechos que
 
 **Derecho de oposición**: Puedes oponerte al tratamiento de tus datos cuando este se base en nuestro interés legítimo. Evaluaremos tu solicitud y cesaremos el tratamiento salvo que demostremos motivos legítimos imperiosos que prevalezcan sobre tus intereses, derechos y libertades.
 
-**Derecho a la portabilidad**: Como mencionamos anteriormente, puedes recibir tus datos en un formato estructurado y de uso común, y tienes derecho a transmitirlos directamente a otro responsable cuando sea técnicamente posible.
+**Derecho a la portabilidad**: Puedes recibir tus datos en un formato estructurado y de uso común, y tienes derecho a transmitirlos directamente a otro responsable cuando sea técnicamente posible.
 
 **Derecho a retirar el consentimiento**: Cuando el tratamiento se base en tu consentimiento, puedes retirarlo en cualquier momento. La retirada del consentimiento no afectará a la licitud del tratamiento basado en el consentimiento previo a su retirada.
 
@@ -284,7 +302,9 @@ Cuando recibamos una solicitud de ejercicio de derechos, seguiremos este procedi
 
 Primero, verificaremos tu identidad para asegurarnos de que los datos solo se entregan a la persona correcta. Podemos solicitar información adicional si es necesario para confirmar tu identidad.
 
-Una vez verificada tu identidad, procesaremos tu solicitud y te responderemos en un plazo máximo de un mes desde la recepción. En casos particularmente complejos o cuando recibamos múltiples solicitudes, este plazo puede ampliarse a dos meses adicionales, pero siempre te informaremos de esta ampliación y sus motivos dentro del primer mes.
+Una vez verificada tu identidad, procesaremos tu solicitud y te responderemos en un plazo máximo de un mes desde la recepción. 
+
+En casos particularmente complejos o cuando recibamos múltiples solicitudes, este plazo puede ampliarse a dos meses adicionales, pero siempre te informaremos de esta ampliación y sus motivos dentro del primer mes.
 
 El ejercicio de estos derechos es gratuito. Solo en caso de solicitudes manifiestamente infundadas o excesivas, especialmente por su carácter repetitivo, podríamos cobrar un canon razonable basado en los costes administrativos o negarnos a actuar.
 
@@ -367,9 +387,13 @@ Realizamos revisiones regulares de esta política, como mínimo una vez al año,
 
 La forma en que te notificamos los cambios depende de su importancia:
 
-Para cambios menores que no afectan sustancialmente a tus derechos o a la forma en que tratamos tus datos (como aclaraciones de redacción o actualizaciones de información de contacto), simplemente publicaremos la nueva versión en nuestra web. Te recomendamos que revises periódicamente esta política para estar al tanto de cualquier actualización.
+Para cambios menores que no afectan sustancialmente a tus derechos o a la forma en que tratamos tus datos (como aclaraciones de redacción o actualizaciones de información de contacto), simplemente publicaremos la nueva versión en nuestra web. 
 
-Para cambios sustanciales que sí afectan de manera significativa al tratamiento de tus datos o a tus derechos (como nuevas finalidades de tratamiento, nuevas categorías de datos recopilados, o cambios en los plazos de conservación), te notificaremos directamente por correo electrónico con al menos 30 días de antelación antes de que los cambios entren en vigor. Si los cambios requieren tu consentimiento, te lo solicitaremos expresamente y no aplicaremos los cambios a tus datos hasta que no hayas dado tu aprobación.
+Te recomendamos que revises periódicamente esta política para estar al tanto de cualquier actualización.
+
+Para cambios sustanciales que sí afectan de manera significativa al tratamiento de tus datos o a tus derechos (como nuevas finalidades de tratamiento, nuevas categorías de datos recopilados, o cambios en los plazos de conservación), te notificaremos directamente por correo electrónico con al menos 30 días de antelación antes de que los cambios entren en vigor. 
+
+Si los cambios requieren tu consentimiento, te lo solicitaremos expresamente y no aplicaremos los cambios a tus datos hasta que no hayas dado tu aprobación.
 
 ### Archivo de versiones
 
@@ -381,9 +405,24 @@ Mantenemos un archivo de las versiones anteriores de esta Política de Privacida
 
 ### Enlaces a sitios de terceros
 
-Nuestra plataforma puede contener enlaces a sitios web de terceros, como documentación de servicios integrados, paneles de control de proveedores, o recursos de ayuda externos. Es importante que sepas que no somos responsables de las prácticas de privacidad de estos sitios web.
+Nuestra plataforma puede contener enlaces a sitios web de terceros, tales como:
 
-Te recomendamos que leas las políticas de privacidad de cualquier sitio de terceros que visites a través de enlaces desde nuestra plataforma, especialmente si vas a proporcionarles información personal. El hecho de que incluyamos un enlace no implica que respaldemos las prácticas de privacidad de ese sitio.
+- **Redes sociales** (Instagram, Facebook, LinkedIn) donde compartimos contenido corporativo
+- **Sitios web de nuestros clientes** que pueden aparecer como referencias o casos de éxito en nuestra página principal
+- **Documentación técnica** de servicios integrados, paneles de control de proveedores, o recursos de ayuda externos
+- **Plataformas de soporte** o recursos educativos relacionados con nuestro sector
+
+Al hacer clic en estos enlaces, es posible que permitas a terceros recopilar o compartir datos sobre ti. **No controlamos estos sitios web de terceros y no somos responsables de sus estándares de privacidad.** Cuando salgas de nuestra plataforma, recuerda que esta política ya no se aplica.
+
+Te recomendamos encarecidamente que leas la política de privacidad de cualquier sitio web que visites desde nuestra plataforma, especialmente antes de proporcionar información personal. El hecho de que incluyamos un enlace no implica que respaldemos las prácticas de privacidad o el contenido de ese sitio.
+
+### Información que proporcionas a través de redes sociales
+
+Algunas partes de nuestra plataforma pueden permitirte compartir contenido en redes sociales o interactuar con nuestros perfiles corporativos. Es importante recordar que cualquier información que publiques en plataformas de redes sociales puede ser vista por el público.
+
+**No somos responsables de las acciones tomadas por otras personas si publicas datos personales en plataformas de redes sociales,** ya sean nuestros perfiles oficiales o tus propias cuentas al mencionar o compartir contenido relacionado con Notifycal.
+
+Te recomendamos que seas cauteloso al proporcionar información personal (como datos de contacto, ubicación o detalles de tu negocio) en cualquier plataforma pública. Antes de interactuar, revisa las políticas de privacidad y configuraciones de privacidad de las plataformas de redes sociales que utilizas.
 
 ### Señales "Do Not Track"
 
