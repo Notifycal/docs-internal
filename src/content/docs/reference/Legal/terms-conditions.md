@@ -669,55 +669,115 @@ c) Se añaden créditos correspondientes al importe total pagado en el ciclo act
 
 ---
 
-## 13. PROTECCIÓN DE DATOS PERSONALES
+## 13. DERECHO DE DESISTIMIENTO
 
-### 13.1 REFERENCIA A POLÍTICA DE PRIVACIDAD
+### 13.1 DERECHO GENERAL DE DESISTIMIENTO
 
-13.1.1 El tratamiento de datos personales en el marco de nuestros servicios se rige íntegramente por nuestra **Política de Privacidad**, que constituye un documento independiente pero complementario a estos términos.
+13.1.1 En cumplimiento de la legislación española sobre protección de consumidores y usuarios, los consumidores que contraten nuestros servicios tienen derecho a desistir del contrato durante un plazo de **14 días naturales** sin necesidad de justificar su decisión y sin penalización alguna.
 
-13.1.2 Recomendamos encarecidamente la lectura completa de dicho documento, disponible en nuestro sitio web, donde se detallan aspectos como tipos de datos recopilados, finalidades del tratamiento, bases legales, plazos de conservación, y derechos de los interesados.
+13.1.2 El plazo de desistimiento comenzará a computarse:
 
-### 13.2 ROLES EN TRATAMIENTO DE DATOS
+a) Para **Términos de Servicio Completo**: Desde la fecha de aceptación expresa de estos términos tras completar el proceso de onboarding
 
-13.2.1 Como se establece en nuestra Política de Privacidad, es fundamental comprender los diferentes roles que asumimos:
+b) Para **suscripciones de pago**: Desde la fecha de contratación del plan de suscripción correspondiente
+
+### 13.2 EXCEPCIÓN POR EJECUCIÓN COMPLETA DEL SERVICIO
+
+13.2.1 **Pérdida del derecho de desistimiento**: El derecho de desistimiento se extingue cuando el servicio ha sido completamente ejecutado con el previo consentimiento expreso del consumidor y con el reconocimiento por su parte de que pierde su derecho de desistimiento una vez que el contrato haya sido completamente ejecutado.
+
+13.2.2 **Consentimiento informado**: Al contratar una suscripción de pago de Notifycal, el consumidor otorga expresamente su consentimiento para:
+
+a) El inicio inmediato de la prestación del servicio de recordatorios automáticos
+
+b) El procesamiento inmediato de sus datos de calendario
+
+c) La configuración automática del sistema según sus preferencias
+
+d) El reconocimiento expreso de que, debido a la naturaleza digital e inmediata del servicio, pierde su derecho de desistimiento
+
+### 13.3 SERVICIOS CON MANTENIMIENTO DEL DERECHO
+
+13.3.1 **Recordatorio de demostración**: Los usuarios con Términos de Servicio Completo mantienen su derecho de desistimiento respecto al recordatorio de demostración, ya que este no constituye ejecución completa del servicio.
+
+13.3.2 **Periodo de prueba**: Durante los primeros 14 días tras la aceptación de los Términos de Servicio Completo (sin suscripción de pago), el usuario mantiene pleno derecho de desistimiento.
+
+### 13.4 PROCEDIMIENTO DE DESISTIMIENTO
+
+13.4.1 Para ejercer el derecho de desistimiento, el consumidor deberá:
+
+a) **Comunicar la decisión**: Notificar de manera inequívoca su decisión de desistir del contrato mediante correo electrónico a la dirección **EMAIL CANCELACIÓN** indicada al inicio del documento
+
+b) **Plazo de comunicación**: La comunicación debe realizarse dentro del plazo de 14 días naturales establecido en la normativa
+
+c) **Identificación**: Incluir información suficiente para identificar el contrato (email de cuenta, fecha de contratación, tipo de servicio)
+
+13.4.2 **Confirmación**: Confirmaremos la recepción de la solicitud de desistimiento sin demora indebida y, en cualquier caso, antes de que transcurran 14 días desde la fecha en que recibamos la comunicación.
+
+### 13.5 EFECTOS DEL DESISTIMIENTO
+
+13.5.1 **Reembolsos**: En caso de desistimiento válido de una suscripción de pago:
+
+a) Reembolsaremos todas las cantidades percibidas del consumidor correspondientes al periodo no consumido de la suscripción
+
+b) Los créditos ya consumidos en el envío de recordatorios no serán objeto de reembolso
+
+c) El reembolso se realizará en un plazo máximo de 14 días desde que tengamos conocimiento de la decisión de desistir
+
+13.5.2 **Método de reembolso**: Se utilizará el mismo método de pago empleado por el consumidor para la transacción inicial, salvo que el consumidor haya dispuesto expresamente lo contrario y sin que esto suponga coste adicional alguno para él.
+
+13.5.3 **Cancelación inmediata**: El ejercicio válido del derecho de desistimiento conlleva la cancelación inmediata de la cuenta y el cese de la prestación del servicio.
+
+---
+
+## 14. PROTECCIÓN DE DATOS PERSONALES
+
+### 14.1 REFERENCIA A POLÍTICA DE PRIVACIDAD
+
+14.1.1 El tratamiento de datos personales en el marco de nuestros servicios se rige íntegramente por nuestra **Política de Privacidad**, que constituye un documento independiente pero complementario a estos términos.
+
+14.1.2 Recomendamos encarecidamente la lectura completa de dicho documento, disponible en nuestro sitio web, donde se detallan aspectos como tipos de datos recopilados, finalidades del tratamiento, bases legales, plazos de conservación, y derechos de los interesados.
+
+### 14.2 ROLES EN TRATAMIENTO DE DATOS
+
+14.2.1 Como se establece en nuestra Política de Privacidad, es fundamental comprender los diferentes roles que asumimos:
 
 a) **Responsables del tratamiento** de datos de nuestros Usuarios: Determinamos las finalidades y medios del tratamiento de la información que nos proporcionas directamente como cliente de Notifycal.
 
 b) **Encargados del tratamiento** de datos de Destinatarios: Procesamos los datos de las personas que reciben recordatorios únicamente siguiendo tus instrucciones como Usuario, sin tomar decisiones propias sobre dichos datos.
 
-13.2.2 Esta distinción tiene importantes implicaciones legales que afectan a las responsabilidades de cada parte.
+14.2.2 Esta distinción tiene importantes implicaciones legales que afectan a las responsabilidades de cada parte.
 
-### 13.3 DERECHOS DE LOS INTERESADOS
+### 14.3 DERECHOS DE LOS INTERESADOS
 
-13.3.1 Tanto Usuarios como Destinatarios tienen derechos específicos bajo el Reglamento General de Protección de Datos (RGPD):
+14.3.1 Tanto Usuarios como Destinatarios tienen derechos específicos bajo el Reglamento General de Protección de Datos (RGPD):
 
 a) **Para Usuarios**: Puedes ejercer directamente todos tus derechos (acceso, rectificación, supresión, limitación, oposición, portabilidad) contactándonos en el email de privacidad indicado al inicio de este documento.
 
 b) **Para Destinatarios**: Deben dirigirse prioritariamente al Usuario responsable de sus datos (el profesional o empresa que gestiona su cita). No obstante, pueden contactar directamente con nosotros si no obtienen respuesta satisfactoria.
 
-### 13.4 TRANSFERENCIAS INTERNACIONALES
+### 14.4 TRANSFERENCIAS INTERNACIONALES
 
-13.4.1 Algunos de nuestros proveedores de servicios pueden procesar datos fuera del Espacio Económico Europeo.
+14.4.1 Algunos de nuestros proveedores de servicios pueden procesar datos fuera del Espacio Económico Europeo.
 
-13.4.2 En todos estos casos, aplicamos las garantías adecuadas según la normativa europea, incluyendo Cláusulas Contractuales Tipo aprobadas por la Comisión Europea.
+14.4.2 En todos estos casos, aplicamos las garantías adecuadas según la normativa europea, incluyendo Cláusulas Contractuales Tipo aprobadas por la Comisión Europea.
 
-13.4.3 El detalle completo de estas transferencias y garantías se encuentra especificado en nuestra Política de Privacidad.
+14.4.3 El detalle completo de estas transferencias y garantías se encuentra especificado en nuestra Política de Privacidad.
 
 ---
 
-## 14. SOPORTE TÉCNICO
+## 15. SOPORTE TÉCNICO
 
-### 14.1 NIVELES DE SOPORTE
+### 15.1 NIVELES DE SOPORTE
 
-14.1.1 Ofrecemos diferentes niveles de soporte técnico según tu relación con Notifycal:
+15.1.1 Ofrecemos diferentes niveles de soporte técnico según tu relación con Notifycal:
 
 a) **Usuarios con Términos de Acceso Básico**: Acceso a documentación pública, tutoriales, y preguntas frecuentes. Soporte limitado por email para cuestiones básicas de configuración.
 
 b) **Usuarios con Términos de Servicio Completo**: Además de lo anterior, soporte por email para completar la configuración y resolver problemas con el recordatorio de prueba. Notifycal se reserva el derecho de priorizar y atender primero las consultas y problemas técnicos de usuarios con suscripciones de tiers más altas, proporcionando tiempos de respuesta reducidos y asistencia más personalizada según el nivel de suscripción contratado.
 
-### 14.2 CANALES DE CONTACTO
+### 15.2 CANALES DE CONTACTO
 
-14.2.1 El soporte técnico está disponible a través de:
+15.2.1 El soporte técnico está disponible a través de:
 
 a) **Email de soporte**: Dirección específica indicada al inicio de este documento (**EMAIL SOPORTE**) para todas las consultas técnicas y de funcionamiento.
 
@@ -725,9 +785,9 @@ b) **Documentación online**: Tutoriales, guías de configuración, y resolució
 
 c) **Panel de usuario**: Herramientas de autoservicio integradas en la plataforma para gestión básica de cuenta y configuración.
 
-### 14.3 TIEMPOS DE RESPUESTA
+### 15.3 TIEMPOS DE RESPUESTA
 
-14.3.1 Nos comprometemos a los siguientes tiempos de respuesta (días hábiles):
+15.3.1 Nos comprometemos a los siguientes tiempos de respuesta (días hábiles):
 
 a) **Usuarios de pago**: Respuesta inicial en máximo 24 horas para incidencias críticas, 48 horas para consultas generales.
 
@@ -735,9 +795,9 @@ b) **Usuarios sin suscripción**: Respuesta en máximo 72 horas, priorizando con
 
 c) **Consultas de privacidad**: Máximo 30 días según establece el RGPD, aunque normalmente respondemos en menos tiempo.
 
-### 14.4 LIMITACIONES DEL SOPORTE
+### 15.4 LIMITACIONES DEL SOPORTE
 
-14.4.1 Nuestro soporte técnico **NO incluye**:
+15.4.1 Nuestro soporte técnico **NO incluye**:
 
 a) **Servicios de terceros**: Aunque nuestro servicio depende de ciertas integraciones con productos y servicios de terceros, no proporcionamos configuración directa ni resolución de incidencias de estos sistemas externos. Proporcionamos guías y documentación para facilitar su uso, pero no resolvemos problemas específicos de estas plataformas.
 
@@ -751,11 +811,11 @@ e) **Recuperación de datos**: No garantizamos la recuperación de información 
 
 ---
 
-## 15. MODIFICACIONES DE TÉRMINOS
+## 16. MODIFICACIONES DE TÉRMINOS
 
-### 15.1 PROCEDIMIENTO DE MODIFICACIÓN
+### 16.1 PROCEDIMIENTO DE MODIFICACIÓN
 
-15.1.1 Nos reservamos el derecho de modificar estos Términos y Condiciones en cualquier momento para reflejar:
+16.1.1 Nos reservamos el derecho de modificar estos Términos y Condiciones en cualquier momento para reflejar:
 
 a) **Cambios de servicio**: En nuestros servicios o funcionalidades.
 
@@ -765,25 +825,25 @@ c) **Seguridad y privacidad**: Mejoras en las protecciones.
 
 d) **Adaptaciones técnicas**: A cambios en servicios de terceros de los que dependemos.
 
-### 15.2 NOTIFICACIÓN DE CAMBIOS
+### 16.2 NOTIFICACIÓN DE CAMBIOS
 
-15.2.1 El procedimiento de notificación depende de la naturaleza de los cambios:
+16.2.1 El procedimiento de notificación depende de la naturaleza de los cambios:
 
 a) **Cambios menores** (correcciones tipográficas, aclaraciones sin impacto sustancial): Publicación directa de la nueva versión en nuestro sitio web con actualización de la fecha de modificación.
 
 b) **Cambios sustanciales** (nuevas obligaciones, modificaciones en limitaciones de responsabilidad, cambios en procedimientos): Notificación por email a todos los usuarios registrados con mínimo 30 días de antelación.
 
-### 15.3 ACEPTACIÓN DE NUEVOS TÉRMINOS
+### 16.3 ACEPTACIÓN DE NUEVOS TÉRMINOS
 
-15.3.1 La aceptación de las modificaciones se rige por los siguientes principios:
+16.3.1 La aceptación de las modificaciones se rige por los siguientes principios:
 
 a) **Aceptación tácita**: Si continúas utilizando el servicio tras la entrada en vigor de los nuevos términos, se considera que los aceptas.
 
 b) **Derecho de terminación**: Si no estás conforme con los cambios, puedes terminar tu relación con Notifycal antes de que entren en vigor sin penalización.
 
-### 15.4 EFECTOS DE LAS MODIFICACIONES
+### 16.4 EFECTOS DE LAS MODIFICACIONES
 
-15.4.1 Los nuevos términos se aplicarán:
+16.4.1 Los nuevos términos se aplicarán:
 
 a) **Prospectivamente**: A partir de la fecha de entrada en vigor especificada en la notificación.
 
@@ -791,74 +851,74 @@ b) **A toda la relación**: Los nuevos términos sustituyen completamente a los 
 
 c) **Sin afectación retroactiva**: Los cambios no afectan a acciones ya realizadas bajo los términos anteriores, salvo que sea necesario por cambios legales.
 
-15.4.2 Mantenemos un archivo de versiones anteriores de estos términos. Si deseas consultar una versión anterior, puedes solicitárnosla en la dirección de contacto indicada al inicio de este documento.
+16.4.2 Mantenemos un archivo de versiones anteriores de estos términos. Si deseas consultar una versión anterior, puedes solicitárnosla en la dirección de contacto indicada al inicio de este documento.
 
 ---
 
-## 16. LEY APLICABLE Y JURISDICCIÓN
+## 17. LEY APLICABLE Y JURISDICCIÓN
 
-### 16.1 LEGISLACIÓN APLICABLE
+### 17.1 LEGISLACIÓN APLICABLE
 
-16.1.1 Estos Términos y Condiciones se rigen íntegramente por la **legislación española**, específicamente:
+17.1.1 Estos Términos y Condiciones se rigen íntegramente por la **legislación española**, específicamente:
 
 a) **Código Civil español** para aspectos contractuales generales
 b) **Ley de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSI-CE)** para aspectos específicos de servicios digitales
 c) **Reglamento General de Protección de Datos (RGPD)** y **Ley Orgánica de Protección de Datos y garantía de los derechos digitales (LOPD-GDD)** para aspectos de privacidad y protección de datos
 d) **Código de Consumo** español cuando sea aplicable a relaciones de consumo
 
-### 16.2 TRIBUNALES COMPETENTES
+### 17.2 TRIBUNALES COMPETENTES
 
-16.2.1 Para la resolución de cualquier conflicto, controversia o reclamación derivada de estos términos o relacionada con ellos:
+17.2.1 Para la resolución de cualquier conflicto, controversia o reclamación derivada de estos términos o relacionada con ellos:
 
 a) **Usuarios empresarios o profesionales**: Será competente la jurisdicción española, específicamente los Juzgados y Tribunales de la ciudad donde Notifycal tenga su domicilio social
 b) **Usuarios consumidores**: Conforme a la legislación de protección de consumidores, serán competentes los tribunales correspondientes al domicilio del consumidor o, a elección de este, los del domicilio de Notifycal
 c) **Competencia internacional**: Los tribunales españoles tendrán competencia exclusiva para cualquier disputa, renunciando expresamente a cualquier otro fuero que pudiera corresponder
 
-### 16.3 RESOLUCIÓN DE CONFLICTOS
+### 17.3 RESOLUCIÓN DE CONFLICTOS
 
-16.3.1 Antes de acudir a la vía judicial, recomendamos:
+17.3.1 Antes de acudir a la vía judicial, recomendamos:
 
 a) **Comunicación directa**: Contactar con nuestro servicio de atención para intentar resolver amistosamente cualquier disputa
 b) **Mediación**: Utilizar servicios de mediación de consumo cuando estén disponibles y sean aplicables
 c) **Arbitraje**: Para disputas entre empresarios, posibilidad de someter la controversia a arbitraje institucional bajo el Reglamento de la Corte de Arbitraje de Madrid
 
-### 16.4 MEDIACIÓN Y ARBITRAJE
+### 17.4 MEDIACIÓN Y ARBITRAJE
 
-16.4.1 **Para consumidores**: Derecho a acudir a las Juntas Arbitrales de Consumo cuando la disputa esté relacionada con aspectos de consumo.
+17.4.1 **Para consumidores**: Derecho a acudir a las Juntas Arbitrales de Consumo cuando la disputa esté relacionada con aspectos de consumo.
 
-16.4.2 **Para empresarios**: Posibilidad de pactar arbitraje específico para disputas comerciales, siempre que ambas partes estén de acuerdo.
+17.4.2 **Para empresarios**: Posibilidad de pactar arbitraje específico para disputas comerciales, siempre que ambas partes estén de acuerdo.
 
-16.4.3 **Procedimientos online**: Utilización de plataformas de resolución de disputas online cuando estén disponibles y sean aplicables.
+17.4.3 **Procedimientos online**: Utilización de plataformas de resolución de disputas online cuando estén disponibles y sean aplicables.
 
-16.4.4 En cualquier caso, estas vías alternativas no limitan el derecho fundamental de acceso a la justicia ordinaria.
+17.4.4 En cualquier caso, estas vías alternativas no limitan el derecho fundamental de acceso a la justicia ordinaria.
 
 ---
 
-## 17. DISPOSICIONES GENERALES
+## 18. DISPOSICIONES GENERALES
 
-### 17.1 DIVISIBILIDAD
+### 18.1 DIVISIBILIDAD
 
-17.1.1 Si cualquier disposición de estos Términos y Condiciones es declarada inválida, ilegal o inexigible por un tribunal competente, dicha disposición se considerará separable y no afectará a la validez y exigibilidad de las disposiciones restantes.
+18.1.1 Si cualquier disposición de estos Términos y Condiciones es declarada inválida, ilegal o inexigible por un tribunal competente, dicha disposición se considerará separable y no afectará a la validez y exigibilidad de las disposiciones restantes.
 
-17.1.2 En tal caso, las partes se comprometen a negociar de buena fe una disposición sustitutiva que refleje lo más fielmente posible la intención original de la cláusula invalidada, siempre que ello sea posible y no altere sustancialmente el equilibrio del contrato.
+18.1.2 En tal caso, las partes se comprometen a negociar de buena fe una disposición sustitutiva que refleje lo más fielmente posible la intención original de la cláusula invalidada, siempre que ello sea posible y no altere sustancialmente el equilibrio del contrato.
 
-### 17.2 RENUNCIA
+### 18.2 RENUNCIA
 
-17.2.1 La falta de ejercicio por parte de Notifycal de cualquier derecho o facultad conferida por estos términos, o la falta de exigencia del cumplimiento estricto de cualquier obligación por tu parte, no constituirá renuncia a tales derechos, facultades o al derecho de exigir el cumplimiento exacto en el futuro.
+18.2.1 La falta de ejercicio por parte de Notifycal de cualquier derecho o facultad conferida por estos términos, o la falta de exigencia del cumplimiento estricto de cualquier obligación por tu parte, no constituirá renuncia a tales derechos, facultades o al derecho de exigir el cumplimiento exacto en el futuro.
 
-17.2.2 Cualquier renuncia por nuestra parte debe ser expresa y por escrito para ser válida.
+18.2.2 Cualquier renuncia por nuestra parte debe ser expresa y por escrito para ser válida.
 
-### 17.3 CESIÓN DE DERECHOS
+### 18.3 CESIÓN DE DERECHOS
 
-17.3.1 **Tus derechos**: No puedes ceder, transferir o sublicenciar tus derechos y obligaciones bajo estos términos sin nuestro consentimiento previo por escrito.
+18.3.1 **Tus derechos**: No puedes ceder, transferir o sublicenciar tus derechos y obligaciones bajo estos términos sin nuestro consentimiento previo por escrito.
 
-17.3.2 **Nuestros derechos**: Nos reservamos el derecho de ceder, transferir o sublicenciar nuestros derechos y obligaciones bajo estos términos, especialmente en casos de fusión, adquisición, reorganización empresarial, o venta de activos.
+18.3.2 **Nuestros derechos**: Nos reservamos el derecho de ceder, transferir o sublicenciar nuestros derechos y obligaciones bajo estos términos, especialmente en casos de fusión, adquisición, reorganización empresarial, o venta de activos.
 
-17.3.3 En caso de cesión por nuestra parte, te notificaremos el cambio y te proporcionaremos información sobre la nueva entidad responsable.
+18.3.3 En caso de cesión por nuestra parte, te notificaremos el cambio y te proporcionaremos información sobre la nueva entidad responsable.
 
-### 17.4 COMUNICACIONES
+### 18.4 COMUNICACIONES
 
-17.4.1 Las comunicaciones entre las partes se rigen por las siguientes normas:
+18.4.1 Las comunicaciones entre las partes se rigen por las siguientes normas:
 
 a) **Notificaciones contractuales**: Todas las comunicaciones oficiales relacionadas con estos términos se realizarán mediante email a las direcciones proporcionadas durante el registro.
 
@@ -870,20 +930,20 @@ d) **Cambios de dirección**: Es tu responsabilidad mantener actualizada tu dire
 
 ---
 
-## 18. CONTACTO
+## 19. CONTACTO
 
-### 18.1 INFORMACIÓN DE CONTACTO
+### 19.1 INFORMACIÓN DE CONTACTO
 
-18.1.1 Para cualquier cuestión relacionada con estos Términos y Condiciones, puedes contactar con nosotros a través de:
+19.1.1 Para cualquier cuestión relacionada con estos Términos y Condiciones, puedes contactar con nosotros a través de:
 
 a) **Para consultas generales sobre términos y condiciones**: **EMAIL TÉRMINOS** (ver datos de contacto al inicio)
 b) **Para soporte técnico y funcionamiento del servicio**: **EMAIL SOPORTE** (ver datos de contacto al inicio)
 c) **Para cancelación de cuenta y eliminación de datos**: **EMAIL CANCELACIÓN** (ver datos de contacto al inicio)
 d) **Dirección postal**: Puedes contactarnos también por correo postal en la dirección indicada en los **DATOS DE CONTACTO Y EMPRESA** al inicio de este documento
 
-### 18.2 CANALES DE COMUNICACIÓN
+### 19.2 CANALES DE COMUNICACIÓN
 
-18.2.1 Los canales de comunicación disponibles son:
+19.2.1 Los canales de comunicación disponibles son:
 
 a) **Email**: Canal preferente para todas las comunicaciones oficiales, garantizando respuesta en los plazos establecidos según el tipo de consulta.
 
@@ -891,9 +951,9 @@ b) **Formularios web**: Disponibles en nuestro sitio web para consultas específ
 
 c) **Teléfono**: Cuando esté disponible, se indicará en nuestro sitio web junto con los horarios de atención.
 
-### 18.3 IDIOMAS DISPONIBLES
+### 19.3 IDIOMAS DISPONIBLES
 
-18.3.1 Los idiomas de comunicación soportados son:
+19.3.1 Los idiomas de comunicación soportados son:
 
 a) **Español**: Idioma oficial para todas las comunicaciones contractuales y legales.
 
@@ -901,75 +961,75 @@ b) **Inglés**: Soporte disponible para consultas técnicas y comerciales, aunqu
 
 c) **Otros idiomas**: Haremos el mejor esfuerzo para entender consultas en otros idiomas, pero no garantizamos respuestas en idiomas distintos al español e inglés.
 
-### 18.4 PROCEDIMIENTO DE NOTIFICACIONES
+### 19.4 PROCEDIMIENTO DE NOTIFICACIONES
 
-18.4.1 Para comunicaciones oficiales que requieran constancia:
+19.4.1 Para comunicaciones oficiales que requieran constancia:
 
 a) **Acuse de recibo**: Utilizaremos métodos que proporcionen confirmación de entrega cuando sea necesario para comunicaciones importantes
 b) **Plazos de respuesta**: Las consultas se responderán en los plazos establecidos en la sección de soporte técnico de estos términos
 c) **Escalado de incidencias**: Si no recibes respuesta en los plazos establecidos, puedes escalar la consulta contactando directamente con la dirección de términos y condiciones
 
-### 18.5 NOTIFICACIONES LEGALES FORMALES
+### 19.5 NOTIFICACIONES LEGALES FORMALES
 
-18.5.1 Para comunicaciones de naturaleza legal (demandas, requerimientos oficiales, notificaciones contractuales importantes), se aplicarán los siguientes procedimientos.
+19.5.1 Para comunicaciones de naturaleza legal (demandas, requerimientos oficiales, notificaciones contractuales importantes), se aplicarán los siguientes procedimientos.
 
-18.5.2 **Dirección para notificaciones a Notifycal**:
+19.5.2 **Dirección para notificaciones a Notifycal**:
 a) Email certificado: **EMAIL TÉRMINOS** (ver datos de contacto al inicio)
 b) Dirección postal: [Dirección indicada en datos de contacto al inicio del documento]
 c) Se considerarán válidamente entregadas tras confirmación de recepción
 
-18.5.3 **Notificaciones del Usuario a Notifycal**:
+19.5.3 **Notificaciones del Usuario a Notifycal**:
 a) Deben incluir nombre completo, dirección de cuenta, naturaleza de la comunicación
 b) Para efectos legales, se requiere confirmación de entrega (email certificado o correo postal con acuse de recibo)
 
-18.5.4 **Notificaciones de Notifycal al Usuario**:
+19.5.4 **Notificaciones de Notifycal al Usuario**:
 a) Se realizarán a la dirección de email registrada en la cuenta
 b) Para comunicaciones legales importantes, podremos utilizar métodos que garanticen constancia de entrega
 c) Se considerarán válidamente entregadas 24 horas después del envío al email registrado
 
 ---
 
-## 19. GLOSARIO
+## 20. GLOSARIO
 
-### 19.1 DEFINICIONES TÉCNICAS
+### 20.1 DEFINICIONES TÉCNICAS
 
-19.1.1 **API (Application Programming Interface)**: Conjunto de definiciones y protocolos que permite la comunicación entre diferentes software, especialmente entre Notifycal y servicios de terceros como Google Calendar.
+20.1.1 **API (Application Programming Interface)**: Conjunto de definiciones y protocolos que permite la comunicación entre diferentes software, especialmente entre Notifycal y servicios de terceros como Google Calendar.
 
-19.1.2 **OAuth 2.0**: Protocolo de autorización estándar que permite a los usuarios otorgar acceso limitado a sus recursos sin compartir sus credenciales principales.
+20.1.2 **OAuth 2.0**: Protocolo de autorización estándar que permite a los usuarios otorgar acceso limitado a sus recursos sin compartir sus credenciales principales.
 
-19.1.3 **SMS (Short Message Service)**: Servicio de mensajería de texto que permite el intercambio de mensajes cortos entre dispositivos móviles.
+20.1.3 **SMS (Short Message Service)**: Servicio de mensajería de texto que permite el intercambio de mensajes cortos entre dispositivos móviles.
 
-19.1.4 **SaaS (Software as a Service)**: Modelo de distribución de software donde las aplicaciones se alojan por un proveedor de servicios y se ponen a disposición de los usuarios a través de internet.
+20.1.4 **SaaS (Software as a Service)**: Modelo de distribución de software donde las aplicaciones se alojan por un proveedor de servicios y se ponen a disposición de los usuarios a través de internet.
 
-19.1.5 **Recordatorio**: Mensaje automatizado enviado a través de SMS para informar sobre citas próximas, eventos programados, o servicios contratados.
+20.1.5 **Recordatorio**: Mensaje automatizado enviado a través de SMS para informar sobre citas próximas, eventos programados, o servicios contratados.
 
-### 19.2 TÉRMINOS LEGALES
+### 20.2 TÉRMINOS LEGALES
 
-19.2.1 **RGPD**: Reglamento General de Protección de Datos (UE) 2016/679, la principal normativa europea sobre protección de datos personales.
+20.2.1 **RGPD**: Reglamento General de Protección de Datos (UE) 2016/679, la principal normativa europea sobre protección de datos personales.
 
-19.2.2 **LSSI-CE**: Ley de Servicios de la Sociedad de la Información y de Comercio Electrónico, normativa española que regula los servicios digitales.
+20.2.2 **LSSI-CE**: Ley de Servicios de la Sociedad de la Información y de Comercio Electrónico, normativa española que regula los servicios digitales.
 
-19.2.3 **Responsable del Tratamiento**: Persona física o jurídica que determina los fines y medios del tratamiento de datos personales.
+20.2.3 **Responsable del Tratamiento**: Persona física o jurídica que determina los fines y medios del tratamiento de datos personales.
 
-19.2.4 **Encargado del Tratamiento**: Persona física o jurídica que trata datos personales por cuenta del responsable del tratamiento.
+20.2.4 **Encargado del Tratamiento**: Persona física o jurídica que trata datos personales por cuenta del responsable del tratamiento.
 
-19.2.5 **Fuerza Mayor**: Circunstancias excepcionales e imprevisibles ajenas a la voluntad de las partes que impiden el cumplimiento de las obligaciones contractuales.
+20.2.5 **Fuerza Mayor**: Circunstancias excepcionales e imprevisibles ajenas a la voluntad de las partes que impiden el cumplimiento de las obligaciones contractuales.
 
-### 19.3 ABREVIACIONES
+### 20.3 ABREVIACIONES
 
-19.3.1 **UE**: Unión Europea
-19.3.2 **EEE**: Espacio Económico Europeo
-19.3.3 **PCI-DSS**: Payment Card Industry Data Security Standard
-19.3.4 **TLS**: Transport Layer Security
-19.3.5 **GSM**: Global System for Mobile Communications
+20.3.1 **UE**: Unión Europea
+20.3.2 **EEE**: Espacio Económico Europeo
+20.3.3 **PCI-DSS**: Payment Card Industry Data Security Standard
+20.3.4 **TLS**: Transport Layer Security
+20.3.5 **GSM**: Global System for Mobile Communications
 
-### 19.4 REFERENCIAS NORMATIVAS
+### 20.4 REFERENCIAS NORMATIVAS
 
-19.4.1 **Código Civil español**: Legislación que regula las relaciones contractuales entre particulares.
+20.4.1 **Código Civil español**: Legislación que regula las relaciones contractuales entre particulares.
 
-19.4.2 **Código de Consumo**: Normativa española que protege los derechos de los consumidores en sus relaciones comerciales.
+20.4.2 **Código de Consumo**: Normativa española que protege los derechos de los consumidores en sus relaciones comerciales.
 
-19.4.3 **LOPD-GDD**: Ley Orgánica de Protección de Datos Personales y garantía de los derechos digitales, normativa española complementaria al RGPD.
+20.4.3 **LOPD-GDD**: Ley Orgánica de Protección de Datos Personales y garantía de los derechos digitales, normativa española complementaria al RGPD.
 
 ---
 

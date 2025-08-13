@@ -185,99 +185,117 @@
   - 12.6.1 Mejoras de plan
   - 12.6.2 Reducciones de plan
 
-### 13. PROTECCIÓN DE DATOS PERSONALES
-- 13.1 Referencia a Política de Privacidad
-  - 13.1.1 Marco normativo
-  - 13.1.2 Documentación detallada
-- 13.2 Roles en tratamiento de datos
-  - 13.2.1 Diferentes roles asumidos
-  - 13.2.2 Implicaciones legales
-- 13.3 Derechos de los interesados
-  - 13.3.1 Derechos según RGPD
-- 13.4 Transferencias internacionales
-  - 13.4.1 Proveedores fuera de EEE
-  - 13.4.2 Garantías aplicadas
-  - 13.4.3 Información detallada
+### 13. DERECHO DE DESISTIMIENTO
+- 13.1 Derecho general de desistimiento
+  - 13.1.1 Plazo de 14 días naturales
+  - 13.1.2 Cómputo del plazo
+- 13.2 Excepción por ejecución completa del servicio
+  - 13.2.1 Pérdida del derecho de desistimiento
+  - 13.2.2 Consentimiento informado
+- 13.3 Servicios con mantenimiento del derecho
+  - 13.3.1 Recordatorio de demostración
+  - 13.3.2 Periodo de prueba
+- 13.4 Procedimiento de desistimiento
+  - 13.4.1 Comunicación y requisitos
+  - 13.4.2 Confirmación
+- 13.5 Efectos del desistimiento
+  - 13.5.1 Reembolsos
+  - 13.5.2 Método de reembolso
+  - 13.5.3 Cancelación inmediata
 
-### 14. SOPORTE TÉCNICO
-- 14.1 Niveles de soporte
-  - 14.1.1 Diferentes niveles según usuario
-- 14.2 Canales de contacto
-  - 14.2.1 Canales disponibles
-- 14.3 Tiempos de respuesta
-  - 14.3.1 Compromisos de tiempo
-- 14.4 Limitaciones del soporte
-  - 14.4.1 Servicios no incluidos
+### 14. PROTECCIÓN DE DATOS PERSONALES
+- 14.1 Referencia a Política de Privacidad
+  - 14.1.1 Marco normativo
+  - 14.1.2 Documentación detallada
+- 14.2 Roles en tratamiento de datos
+  - 14.2.1 Diferentes roles asumidos
+  - 14.2.2 Implicaciones legales
+- 14.3 Derechos de los interesados
+  - 14.3.1 Derechos según RGPD
+- 14.4 Transferencias internacionales
+  - 14.4.1 Proveedores fuera de EEE
+  - 14.4.2 Garantías aplicadas
+  - 14.4.3 Información detallada
 
-### 15. MODIFICACIONES DE TÉRMINOS
-- 15.1 Procedimiento de modificación
-  - 15.1.1 Razones para modificaciones
-- 15.2 Notificación de cambios
-  - 15.2.1 Procedimientos según tipo de cambio
-- 15.3 Aceptación de nuevos términos
-  - 15.3.1 Mecanismos de aceptación
-- 15.4 Efectos de las modificaciones
-  - 15.4.1 Aplicación de nuevos términos
-  - 15.4.2 Archivo de versiones anteriores
+### 15. SOPORTE TÉCNICO
+- 15.1 Niveles de soporte
+  - 15.1.1 Diferentes niveles según usuario
+- 15.2 Canales de contacto
+  - 15.2.1 Canales disponibles
+- 15.3 Tiempos de respuesta
+  - 15.3.1 Compromisos de tiempo
+- 15.4 Limitaciones del soporte
+  - 15.4.1 Servicios no incluidos
 
-### 16. LEY APLICABLE Y JURISDICCIÓN
-- 16.1 Legislación aplicable
-  - 16.1.1 Marco legal español
-- 16.2 Tribunales competentes
-  - 16.2.1 Competencia según tipo de usuario
-- 16.3 Resolución de conflictos
-  - 16.3.1 Vías alternativas previas
-- 16.4 Mediación y arbitraje
-  - 16.4.1 Procedimientos para consumidores
-  - 16.4.2 Procedimientos para empresarios
-  - 16.4.3 Plataformas online
-  - 16.4.4 Acceso a justicia ordinaria
+### 16. MODIFICACIONES DE TÉRMINOS
+- 16.1 Procedimiento de modificación
+  - 16.1.1 Razones para modificaciones
+- 16.2 Notificación de cambios
+  - 16.2.1 Procedimientos según tipo de cambio
+- 16.3 Aceptación de nuevos términos
+  - 16.3.1 Mecanismos de aceptación
+- 16.4 Efectos de las modificaciones
+  - 16.4.1 Aplicación de nuevos términos
+  - 16.4.2 Archivo de versiones anteriores
 
-### 17. DISPOSICIONES GENERALES
-- 17.1 Divisibilidad
-  - 17.1.1 Separabilidad de cláusulas
-  - 17.1.2 Negociación de sustitución
-- 17.2 Renuncia
-  - 17.2.1 Ejercicio de derechos
-  - 17.2.2 Renuncia expresa
-- 17.3 Cesión de derechos
-  - 17.3.1 Derechos del usuario
-  - 17.3.2 Derechos de Notifycal
-  - 17.3.3 Notificación de cesión
-- 17.4 Comunicaciones
-  - 17.4.1 Notificaciones contractuales
-  - 17.4.2 Idioma de comunicaciones
-  - 17.4.3 Confirmación de recepción
-  - 17.4.4 Actualización de direcciones
+### 17. LEY APLICABLE Y JURISDICCIÓN
+- 17.1 Legislación aplicable
+  - 17.1.1 Marco legal español
+- 17.2 Tribunales competentes
+  - 17.2.1 Competencia según tipo de usuario
+- 17.3 Resolución de conflictos
+  - 17.3.1 Vías alternativas previas
+- 17.4 Mediación y arbitraje
+  - 17.4.1 Procedimientos para consumidores
+  - 17.4.2 Procedimientos para empresarios
+  - 17.4.3 Plataformas online
+  - 17.4.4 Acceso a justicia ordinaria
 
-### 18. CONTACTO
-- 18.1 Información de contacto
-  - 18.1.1 Direcciones específicas por tipo de consulta
-- 18.2 Canales de comunicación
-  - 18.2.1 Email como canal preferente
-  - 18.2.2 Formularios web
-  - 18.2.3 Teléfono cuando disponible
-- 18.3 Idiomas disponibles
-  - 18.3.1 Español como idioma oficial
-  - 18.3.2 Inglés para soporte
-  - 18.3.3 Otros idiomas
-- 18.4 Procedimiento de notificaciones
-  - 18.4.1 Comunicaciones con constancia
-- 18.5 Notificaciones legales formales
-  - 18.5.1 Comunicaciones de naturaleza legal
-  - 18.5.2 Dirección para notificaciones a Notifycal
-  - 18.5.3 Notificaciones del Usuario a Notifycal
-  - 18.5.4 Notificaciones de Notifycal al Usuario
+### 18. DISPOSICIONES GENERALES
+- 18.1 Divisibilidad
+  - 18.1.1 Separabilidad de cláusulas
+  - 18.1.2 Negociación de sustitución
+- 18.2 Renuncia
+  - 18.2.1 Ejercicio de derechos
+  - 18.2.2 Renuncia expresa
+- 18.3 Cesión de derechos
+  - 18.3.1 Derechos del usuario
+  - 18.3.2 Derechos de Notifycal
+  - 18.3.3 Notificación de cesión
+- 18.4 Comunicaciones
+  - 18.4.1 Notificaciones contractuales
+  - 18.4.2 Idioma de comunicaciones
+  - 18.4.3 Confirmación de recepción
+  - 18.4.4 Actualización de direcciones
 
-### 19. GLOSARIO
-- 19.1 Definiciones técnicas
-  - 19.1.1-19.1.5 API, OAuth, SMS, SaaS, Recordatorio
-- 19.2 Términos legales
-  - 19.2.1-19.2.5 RGPD, LSSI-CE, Responsable, Encargado, Fuerza Mayor
-- 19.3 Abreviaciones
-  - 19.3.1-19.3.5 UE, EEE, PCI-DSS, TLS, GSM
-- 19.4 Referencias normativas
-  - 19.4.1-19.4.3 Código Civil, Código de Consumo, LOPD-GDD
+### 19. CONTACTO
+- 19.1 Información de contacto
+  - 19.1.1 Direcciones específicas por tipo de consulta
+- 19.2 Canales de comunicación
+  - 19.2.1 Email como canal preferente
+  - 19.2.2 Formularios web
+  - 19.2.3 Teléfono cuando disponible
+- 19.3 Idiomas disponibles
+  - 19.3.1 Español como idioma oficial
+  - 19.3.2 Inglés para soporte
+  - 19.3.3 Otros idiomas
+- 19.4 Procedimiento de notificaciones
+  - 19.4.1 Comunicaciones con constancia
+- 19.5 Notificaciones legales formales
+  - 19.5.1 Comunicaciones de naturaleza legal
+  - 19.5.2 Dirección para notificaciones a Notifycal
+  - 19.5.3 Notificaciones del Usuario a Notifycal
+  - 19.5.4 Notificaciones de Notifycal al Usuario
+
+### 20. GLOSARIO
+- 20.1 Definiciones técnicas
+  - 20.1.1-20.1.5 API, OAuth, SMS, SaaS, Recordatorio
+- 20.2 Términos legales
+  - 20.2.1-20.2.5 RGPD, LSSI-CE, Responsable, Encargado, Fuerza Mayor
+- 20.3 Abreviaciones
+  - 20.3.1-20.3.5 UE, EEE, PCI-DSS, TLS, GSM
+- 20.4 Referencias normativas
+  - 20.4.1-20.4.3 Código Civil, Código de Consumo, LOPD-GDD
 
 ---
 
@@ -288,13 +306,15 @@
 - Eliminación de Sección 5 (Proceso de Onboarding y Fases)
 - Simplificación a modelo Acceso Básico vs Servicio Completo
 - Nueva Sección 3: DESCRIPCIÓN DEL SERVICIO (consolidación de información dispersa)
-- Renumeración de secciones (ahora 19 secciones)
+- **NUEVA SECCIÓN 13: DERECHO DE DESISTIMIENTO** (cumplimiento normativa española de protección al consumidor)
+- Renumeración de secciones posteriores (ahora 20 secciones totales)
 - Mejoras en cobertura geográfica y servicios adicionales
 - Simplificación de niveles de soporte (2 niveles con priorización por tier)
 - **FORMATO LEGAL JERÁRQUICO**: Documento con numeración decimal UNE 50-132-94
 - Implementación de numeración jerárquica: X.Y para subsecciones, X.Y.Z para párrafos, a) b) c) para elementos
 - Conversión de elementos en negrita a listas alfabéticas estructuradas
 - Mejora en estructura profesional y navegabilidad del documento legal
+- Inclusión obligatoria de derecho de desistimiento con excepción por ejecución completa del servicio
 
 ---
 
