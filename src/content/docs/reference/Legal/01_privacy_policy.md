@@ -72,7 +72,9 @@ Cuando un profesional o empresa decide utilizar Notifycal, necesitamos recopilar
 
 Durante el proceso de registro y creación de cuenta, solicitamos datos básicos de identificación como el nombre comercial del negocio, la dirección física del negocio necesaria para los recordatorios, el sector y tamaño de la empresa para personalizar mejor el servicio, y el idioma preferido que permite adaptar las comunicaciones. También recopilamos información de contacto esencial como el identificador para el envío de recordatorios y el tipo de canal de comunicación preferido.
 
-La integración con Google constituye una parte esencial de nuestro servicio. Cuando el Usuario autoriza la conexión, recibimos y almacenamos de forma segura el token de acceso proporcionado por Google OAuth, que nos permite acceder a los calendarios en nombre del Usuario. También guardamos el identificador único de la cuenta de Google y los permisos específicos otorgados, que incluyen acceso a Google Calendar y, opcionalmente, a Google Contacts. Es importante señalar que estos permisos pueden ser revocados en cualquier momento desde la configuración de Google del Usuario.
+La integración con Google constituye una parte esencial de nuestro servicio. Cuando el Usuario autoriza la conexión, recibimos y almacenamos de forma segura el token de acceso proporcionado por Google OAuth, que nos permite acceder a los calendarios en nombre del Usuario. También guardamos el identificador único de la cuenta de Google y los permisos específicos otorgados, que incluyen acceso a Google Calendar API y, opcionalmente, a Google People API. Es importante señalar que estos permisos pueden ser revocados en cualquier momento desde la configuración de Google del Usuario. Para revocar el acceso, puedes dirigirte a tu [cuenta de Google](https://myaccount.google.com/permissions), donde encontrarás la lista de aplicaciones autorizadas y podrás eliminar los permisos concedidos a Notifycal. Al revocar estos permisos, el servicio dejará de funcionar hasta que vuelvas a autorizar la conexión.
+
+El uso de información obtenida a través de las Google APIs cumple con la Google API Services User Data Policy, incluyendo los requisitos de Limited Use, limitando el uso de datos de Google exclusivamente para proporcionar o mejorar funciones orientadas al usuario según se describe en esta política.
 
 Durante el uso continuado del servicio, recopilamos información sobre cómo se configura y utiliza la plataforma. Esto incluye la configuración de los calendarios conectados y las plantillas de mensajes seleccionadas, el historial completo de mensajes enviados para poder ofrecer estadísticas y resolver posibles incidencias, los logs de actividad que nos permiten detectar y prevenir usos inadecuados del servicio, y las fechas de aceptación de términos y condiciones y política de privacidad.
 
@@ -86,7 +88,7 @@ La información que procesamos incluye los datos de contacto del destinatario cu
 
 También procesamos cualquier información adicional que el Usuario haya incluido en el evento y considere relevante para el recordatorio.
 
-Cuando la información de contacto no está explícitamente disponible, nuestro sistema identifica la información de contacto necesaria del evento cuando está disponible. Esta funcionalidad **opcional** puede utilizar Google Contacts del Usuario para enriquecer la información cuando sea necesario, accediendo únicamente al número de teléfono y dirección de email del contacto.
+Cuando la información de contacto no está explícitamente disponible, nuestro sistema identifica la información de contacto necesaria del evento cuando está disponible. Esta funcionalidad **opcional** puede utilizar Google People API del Usuario para enriquecer la información cuando sea necesario, accediendo únicamente al número de teléfono y dirección de email del contacto.
 
 ### 2.3. Información técnica y de navegación
 
@@ -167,7 +169,7 @@ Para poder ofrecer un servicio robusto y de calidad, trabajamos con proveedores 
 | **Tipo de proveedor** | **Servicio que presta** | **Datos compartidos** | **Ubicación de procesamiento** |
 |------------------------|-------------------------|----------------------|--------------------------------|
 | Proveedor de infraestructura y hosting | Alojamiento y procesamiento de datos | Todos los datos de la plataforma | EU |
-| Proveedor de autenticación | Integración con servicios de calendario | Tokens OAuth, datos de calendario | UE/EE.UU. (con SCC) |
+| Proveedor de autenticación, calendario y contactos | Integración con Calendar & People APIs | Tokens OAuth, datos de calendario y contactos | UE/EE.UU. (con SCC) |
 | Proveedor de procesamiento de pagos | Gestión de pagos y facturación | Información de facturación y pagos | UE/EE.UU. (con SCC) |
 | Proveedor de comunicaciones | Envío de recordatorios | Información de contacto y contenido de mensajes | UE |
 | Proveedor de correos transaccionales | Envío de correos del sistema | Direcciones email y contenido de correos | UE |
