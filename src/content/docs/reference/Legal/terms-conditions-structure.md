@@ -299,22 +299,32 @@
 
 ---
 
-## REGISTRO DE CAMBIOS
+## ESTÁNDARES Y METODOLOGÍA APLICADA
 
-### Versión 1.0 - 12 de agosto de 2025
-- Creación inicial del documento de estructura
-- Eliminación de Sección 5 (Proceso de Onboarding y Fases)
-- Simplificación a modelo Acceso Básico vs Servicio Completo
-- Nueva Sección 3: DESCRIPCIÓN DEL SERVICIO (consolidación de información dispersa)
-- **NUEVA SECCIÓN 13: DERECHO DE DESISTIMIENTO** (cumplimiento normativa española de protección al consumidor)
-- Renumeración de secciones posteriores (ahora 20 secciones totales)
-- Mejoras en cobertura geográfica y servicios adicionales
-- Simplificación de niveles de soporte (2 niveles con priorización por tier)
-- **FORMATO LEGAL JERÁRQUICO**: Documento con numeración decimal UNE 50-132-94
-- Implementación de numeración jerárquica: X.Y para subsecciones, X.Y.Z para párrafos, a) b) c) para elementos
-- Conversión de elementos en negrita a listas alfabéticas estructuradas
-- Mejora en estructura profesional y navegabilidad del documento legal
-- Inclusión obligatoria de derecho de desistimiento con excepción por ejecución completa del servicio
+### FORMATO LEGAL JERÁRQUICO
+El documento principal sigue el **estándar UNE 50-132-94** para numeración jerárquica:
+- **X.** para secciones principales
+- **X.Y** para subsecciones  
+- **X.Y.Z** para párrafos específicos
+- **a) b) c)** para elementos dentro de párrafos
+
+### CRITERIOS ESTRUCTURALES
+- **Progresión lógica**: De general (información y aceptación) a específico (facturación y contacto)
+- **Agrupación temática**: Secciones relacionadas consecutivas (ej: limitaciones + garantías)
+- **Separación clara**: Derechos vs obligaciones, aspectos técnicos vs legales
+- **Accesibilidad**: Lenguaje profesional pero comprensible, evitando jerga innecesaria
+
+### METODOLOGÍA DE DESARROLLO
+- **Consolidación de información**: Eliminación de duplicidades entre secciones
+- **Modelo simplificado**: Acceso Básico vs Servicio Completo
+- **Cumplimiento normativo**: Inclusión obligatoria de derecho de desistimiento (normativa española)
+- **Profesionalización**: Conversión de elementos en negrita a listas estructuradas
+
+### REFERENCIAS NORMATIVAS
+- **RGPD**: Reglamento General de Protección de Datos
+- **LSSI-CE**: Ley de Servicios de la Sociedad de la Información  
+- **RDL 1/2007**: Texto refundido de la Ley General para la Defensa de los Consumidores y Usuarios
+- **UNE 50-132-94**: Estándar de numeración y estructura documental
 
 ---
 
