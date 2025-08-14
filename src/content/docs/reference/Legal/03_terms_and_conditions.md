@@ -20,7 +20,7 @@ SITIO WEB: www.notifycal.com
 ÁREA PRIVADA: private.notifycal.com
 ```
 
-**Fecha de última actualización**: 12 de agosto de 2025  
+**Fecha de última actualización**: 12 de agosto de 2025
 **Versión**: 1.0
 
 ---
@@ -32,8 +32,11 @@ SITIO WEB: www.notifycal.com
 1.1.1 Estos Términos y Condiciones de Servicio regulan el acceso y uso de la plataforma **Notifycal**, que incluye:
 
 a) **Sitios web principales**: notifycal.com y notifycal.es
+
 b) **Áreas privadas de usuario**: private.notifycal.com y private.notifycal.es
+
 c) **Todos los subdominios** y servicios asociados a estos dominios principales
+
 d) **Aplicaciones móviles** y cualquier otro canal de acceso que podamos desarrollar en el futuro
 
 1.1.2 Al acceder, navegar o utilizar cualquiera de nuestros servicios, aceptas cumplir con estos términos en su totalidad.
@@ -75,13 +78,17 @@ e) **"Contenido"** incluye toda la información, datos, texto, mensajes, configu
 2.1.2 Los Términos de Acceso Básico te otorgan derecho a:
 
 a) Navegar por las áreas privadas de la plataforma
+
 b) Acceder al proceso de configuración de recordatorios inicial e información básica
+
 c) Revisar las funcionalidades disponibles
 
 2.1.3 Con los Términos de Acceso Básico, **NO tienes derecho a**:
 
 a) Enviar recordatorios reales a través de nuestros sistemas
+
 b) Acceder a funcionalidades de procesamiento de calendarios en vivo
+
 c) Utilizar las herramientas de comunicación masiva
 
 2.1.4 Nos reservamos el derecho de mantener cuentas con Términos de Acceso Básico de forma indefinida o cancelarlas según nuestro criterio empresarial, especialmente si detectamos inactividad prolongada o falta de intención de completar el onboarding.
@@ -93,8 +100,11 @@ c) Utilizar las herramientas de comunicación masiva
 2.2.2 Esta aceptación te otorga derechos adicionales:
 
 a) Acceso completo a la configuración de la plataforma
+
 b) Envío de un recordatorio de demostración
+
 c) Procesamiento de tus datos de calendario
+
 d) Posibilidad de crear una suscripción de pago para el servicio completo
 
 2.2.3 Estos mismos Términos de Servicio Completo son los que se aplican cuando procedes a la suscripción de pago a través de nuestro proveedor de pagos, y constituyen el contrato definitivo entre las partes.
@@ -108,8 +118,11 @@ d) Posibilidad de crear una suscripción de pago para el servicio completo
 2.3.3 Al utilizar nuestros servicios, confirmas que:
 
 a) Eres mayor de 18 años
+
 b) Tienes capacidad legal para contratar
+
 c) La información proporcionada es veraz y exacta
+
 d) Cumplirás con todas las obligaciones establecidas en estos términos
 
 ---
@@ -205,7 +218,9 @@ c) El funcionamiento óptimo del servicio puede requerir la autorización de acc
 4.2.3 Responsabilidades de seguridad del usuario:
 
 a) Mantener la seguridad de tu cuenta con el proveedor de autenticación
+
 b) Utilizar autenticación de doble factor cuando esté disponible
+
 c) Proteger tus dispositivos de acceso
 
 4.2.4 En caso de compromiso de seguridad:
@@ -243,7 +258,9 @@ c) Notificar inmediatamente cualquier uso no autorizado de tu cuenta o cualquier
 5.1.1 Te comprometes a utilizar Notifycal exclusivamente para fines legítimos y legales, específicamente:
 
 a) **Uso legítimo**: Enviar únicamente recordatorios relacionados con citas, reservas o servicios realmente programados con destinatarios que mantienen una relación comercial contigo
+
 b) **Automatización temporal**: Comprender que los recordatorios se envían automáticamente según la programación establecida en el calendario, lo que puede incluir envíos en días festivos o en diferentes horarios según la naturaleza de cada cita
+
 c) **Veracidad**: Mantener la veracidad y exactitud de la información incluida en los recordatorios, incluyendo fechas, horarios, ubicaciones y detalles del servicio
 
 ### 5.2 RESPONSABILIDAD SOBRE DATOS DE TERCEROS
@@ -255,7 +272,9 @@ c) **Veracidad**: Mantener la veracidad y exactitud de la información incluida 
 5.3.1 Debes asegurarte de que los Destinatarios de los recordatorios:
 
 a) **Información sobre automatización**: Conocen que utilizas un servicio automatizado de recordatorios
+
 b) **Cumplimiento RGPD**: Han sido informados sobre el tratamiento de sus datos personales conforme al RGPD
+
 c) **Derechos**: Tienen conocimiento de sus derechos y cómo ejercerlos
 
 5.3.2 En caso de reclamaciones o ejercicio de derechos por parte de los Destinatarios, serás el primer responsable de atenderlas, aunque nosotros colaboraremos en la medida de lo posible.
@@ -265,9 +284,13 @@ c) **Derechos**: Tienen conocimiento de sus derechos y cómo ejercerlos
 5.4.1 Te comprometes expresamente a cumplir con toda la normativa aplicable, incluyendo pero no limitándose a:
 
 a) **Ley de Servicios de la Sociedad de la Información (LSSI)**: Especialmente las disposiciones sobre comunicaciones comerciales electrónicas por SMS y cualquier otro canal de comunicación que se utilice, y obtención de consentimiento previo cuando sea requerido
+
 b) **Reglamento General de Protección de Datos (RGPD)**: En tu rol como responsable del tratamiento de datos de tus clientes
+
 c) **Normativas de telecomunicaciones**: Cumplimiento de regulaciones específicas sobre envío de SMS comerciales o cualquier otro tipo de comunicación electrónica, incluyendo el respeto a la Lista Robinson y normativas de la Comisión Nacional de los Mercados y la Competencia (CNMC)
+
 d) **Normativas sectoriales**: Cualquier regulación específica que aplique a tu sector de actividad (sanidad, educación, etc.)
+
 e) **Responsabilidad por incumplimiento**: Reconoces que cualquier incumplimiento de estas normativas es de tu exclusiva responsabilidad y te comprometes a indemnizar a Notifycal por cualquier consecuencia derivada de dicho incumplimiento
 
 ### 5.5 INDEMNIZACIÓN
@@ -275,9 +298,13 @@ e) **Responsabilidad por incumplimiento**: Reconoces que cualquier incumplimient
 5.5.1 Te comprometes a indemnizar, defender y eximir de responsabilidad a Notifycal, sus directivos, empleados y afiliados de y contra todas las reclamaciones, responsabilidades, daños, pérdidas, costes, gastos y honorarios (incluyendo honorarios razonables de abogados) que surjan de o estén relacionados con:
 
 a) Tu uso del servicio o incumplimiento de estos términos
-b) El contenido de los recordatorios que envíes a través de nuestra plataforma
+
+b) El contenido de los recordatorios que envíe a través de nuestra plataforma
+
 c) Tu violación de cualquier ley, regulación o derechos de terceros
+
 d) Cualquier disputa entre tú y los destinatarios de los recordatorios
+
 e) Reclamaciones de que tu uso del servicio infringe derechos de terceros
 
 5.5.2 Esta obligación de indemnización sobrevivirá a la terminación de estos términos.
@@ -344,8 +371,11 @@ g) **Uso abusivo de recursos**:
 6.2.1 Los recordatorios no pueden contener:
 
 a) **Contenido inapropiado**: Contenido sexualmente explícito, violento o que promueva actividades ilegales
+
 b) **Información engañosa**: Información falsa o engañosa sobre servicios, precios o condiciones
+
 c) **Enlaces maliciosos**: Enlaces a sitios web maliciosos o contenido fraudulento
+
 d) **Datos sensibles**: Datos personales sensibles de terceros (información médica, financiera, etc.) más allá de lo estrictamente necesario para el recordatorio de la cita
 
 ### 6.3 CONSECUENCIAS DEL INCUMPLIMIENTO
@@ -353,8 +383,11 @@ d) **Datos sensibles**: Datos personales sensibles de terceros (información mé
 6.3.1 El incumplimiento de estas prohibiciones puede resultar en:
 
 a) **Advertencia**: Para infracciones menores o primeras ofensas no graves
+
 b) **Suspensión temporal**: Limitación del acceso al servicio por períodos determinados
+
 c) **Cancelación permanente**: Terminación definitiva de la cuenta sin posibilidad de recuperación, aplicable a infracciones graves o reincidencia
+
 d) **Prohibición de acceso futuro**: En casos de mal uso grave, nos reservamos el derecho de impedir permanentemente el acceso de la persona física o jurídica a nuestros servicios, manteniendo registros para prevenir nuevos registros
 
 6.3.2 Estas medidas se aplicarán según nuestro criterio exclusivo, sin necesidad de aviso previo, y sin derecho a compensación o devolución de cantidades pagadas.
@@ -370,8 +403,11 @@ d) **Prohibición de acceso futuro**: En casos de mal uso grave, nos reservamos 
 7.1.2 Nos esforzamos por mantener el servicio operativo, pero **no nos hacemos responsables** de:
 
 a) **Pérdidas económicas**: Derivadas de la no disponibilidad del servicio
+
 b) **Recordatorios no enviados**: Por fallos técnicos, mantenimientos o interrupciones
+
 c) **Daños reputacionales**: A tu reputación comercial por fallos en el envío de comunicaciones
+
 d) **Pérdida de clientes**: O citas no atendidas por problemas del servicio
 
 ### 7.2 FUNCIONALIDADES DE TERCEROS
@@ -379,8 +415,11 @@ d) **Pérdida de clientes**: O citas no atendidas por problemas del servicio
 7.2.1 Nuestro servicio depende en gran medida de integraciones con plataformas de terceros para el acceso a calendarios y autenticación. **No tenemos control** sobre estos servicios de terceros y **no nos responsabilizamos** de:
 
 a) **Cambios de proveedores**: En políticas, términos o funcionalidades de los servicios integrados que afecten a nuestro servicio
+
 b) **Interrupciones externas**: Fallos en los servicios de terceros que impidan el acceso a calendarios o funcionalidades de autenticación
+
 c) **Permisos de acceso**: Modificaciones o revocaciones de permisos de acceso realizadas por los proveedores de servicios o por el Usuario
+
 d) **Cambios en APIs**: Pérdidas de datos o funcionalidades derivadas de cambios en interfaces de programación de terceros
 
 7.2.2 Si los proveedores de servicios integrados modifican sus servicios de tal manera que afecte al funcionamiento de Notifycal, realizaremos los mejores esfuerzos para adaptar nuestro servicio, pero **no garantizamos** que sea técnica o económicamente viable mantener la funcionalidad completa.
@@ -390,7 +429,9 @@ d) **Cambios en APIs**: Pérdidas de datos o funcionalidades derivadas de cambio
 7.3.1 Nos reservamos el derecho de:
 
 a) **Mantenimientos programados**: Que requieran la suspensión temporal del servicio
+
 b) **Actualizaciones**: De seguridad o funcionalidad que puedan afectar temporalmente al rendimiento
+
 c) **Suspensiones de emergencia**: Sin previo aviso en caso de detectar amenazas de seguridad o uso malintencionado
 
 7.3.2 Estas actividades se realizarán procurando minimizar el impacto, pero **no nos hacemos responsables** de cualquier inconveniente, pérdida o daño que puedan ocasionar.
@@ -402,7 +443,9 @@ c) **Suspensiones de emergencia**: Sin previo aviso en caso de detectar amenazas
 7.4.2 En ningún caso seremos responsables de:
 
 a) Daños indirectos, especiales, incidentales o consecuenciales, incluyendo pero no limitándose a pérdida de beneficios, pérdida de ingresos, pérdida de datos, pérdida de uso, interrupción del negocio, o cualquier otro daño comercial o económico
+
 b) Daños punitivos o ejemplares, independientemente de que hayamos sido advertidos sobre la posibilidad de tales daños
+
 c) Reclamaciones de terceros derivadas de tu uso del servicio o del contenido de los recordatorios enviados
 
 ---
@@ -414,8 +457,11 @@ c) Reclamaciones de terceros derivadas de tu uso del servicio o del contenido de
 8.1.1 El servicio se proporciona "TAL COMO ESTÁ" y "SEGÚN DISPONIBILIDAD". En la máxima medida permitida por la ley aplicable, rechazamos expresamente todas las garantías, ya sean expresas, implícitas o estatutarias, incluyendo pero no limitándose a:
 
 a) **Garantías de comerciabilidad**: No garantizamos que el servicio sea apropiado para tus necesidades comerciales específicas o que genere los resultados esperados
+
 b) **Garantías de adecuación para un propósito particular**: No garantizamos que el servicio satisfaga tus requisitos específicos o expectativas particulares
+
 c) **Garantías de no infracción**: Aunque respetamos los derechos de propiedad intelectual, no garantizamos que el uso del servicio no infrinja derechos de terceros
+
 d) **Garantías de precisión o completitud**: No garantizamos que la información procesada sea siempre exacta, completa o esté libre de errores
 
 ### 8.2 LIMITACIONES DE FUNCIONAMIENTO
@@ -423,8 +469,11 @@ d) **Garantías de precisión o completitud**: No garantizamos que la informaci�
 8.2.1 Reconoces y aceptas expresamente que:
 
 a) El procesamiento automatizado de calendarios puede contener errores o imprecisiones que afecten al contenido o momento de envío de los recordatorios
+
 b) La integración con servicios de terceros (Google, proveedores de SMS) puede verse afectada por cambios, interrupciones o fallos ajenos a nuestro control
+
 c) La entrega de mensajes SMS depende de operadores de telecomunicaciones y puede verse afectada por factores como cobertura, congestión de red, o políticas de filtrado
+
 d) Los tiempos de entrega no están garantizados y pueden variar según factores técnicos y operativos externos
 
 ### 8.3 RESPONSABILIDAD DE TERCEROS
@@ -432,7 +481,9 @@ d) Los tiempos de entrega no están garantizados y pueden variar según factores
 8.3.1 No somos responsables de las acciones, errores, omisiones, representaciones, garantías, incumplimientos o negligencias de:
 
 a) **Proveedores de servicios**: Google, proveedores de SMS, operadores de telecomunicaciones, o cualquier otro tercero involucrado en la prestación del servicio
+
 b) **Destinatarios**: Las acciones o reacciones de las personas que reciben los recordatorios, incluyendo reclamaciones, quejas o cualquier tipo de respuesta
+
 c) **Otros usuarios**: El comportamiento de otros usuarios de la plataforma no afecta a tu contrato con nosotros, pero no nos responsabilizamos de interferencias o problemas causados por terceros
 
 ### 8.4 FUERZA MAYOR
@@ -440,8 +491,11 @@ c) **Otros usuarios**: El comportamiento de otros usuarios de la plataforma no a
 8.4.1 No seremos responsables de cualquier fallo o retraso en el cumplimiento de nuestras obligaciones cuando dicho fallo o retraso resulte de circunstancias fuera de nuestro control razonable, incluyendo pero no limitándose a:
 
 a) **Eventos generales de fuerza mayor**: Actos de autoridades gubernamentales, guerra, terrorismo, epidemias, desastres naturales, huelgas, conflictos laborales, o escasez de suministros
+
 b) **Fallos de infraestructura digital**: Interrupciones de internet, fallos en infraestructura de terceros, ciberataques, virus informáticos, o cualquier forma de interferencia maliciosa
+
 c) **Eventos específicos de telecomunicaciones**: Fallos en redes de operadores móviles, interrupciones en sistemas de SMS a nivel nacional o regional, saturación de redes de telecomunicaciones, cambios regulatorios que afecten el envío de comunicaciones electrónicas, o mantenimientos no programados de infraestructura de telecomunicaciones
+
 d) **Fallos de servicios integrados**: Interrupciones o cambios en servicios de proveedores de calendarios y autenticación, modificaciones unilaterales en APIs de terceros, o descontinuación de servicios de los que dependemos
 
 8.4.2 Estos eventos de fuerza mayor nos eximen de responsabilidad durante su duración y por un período razonable posterior necesario para restaurar el servicio normal.
@@ -455,8 +509,11 @@ d) **Fallos de servicios integrados**: Interrupciones o cambios en servicios de 
 9.1.1 Todos los derechos de propiedad intelectual relacionados con la plataforma Notifycal son de nuestra propiedad exclusiva o nos han sido licenciados legítimamente. Esto incluye:
 
 a) **Software y código fuente**: Toda la tecnología, algoritmos, interfaces de usuario, y código de programación que constituye nuestra plataforma
+
 b) **Marca y diseño**: El nombre "Notifycal", logotipos, diseños, esquemas de color, y elementos visuales distintivos
+
 c) **Contenido propietario**: Documentación, tutoriales, plantillas predefinidas, y cualquier otro material desarrollado por nosotros
+
 d) **Datos agregados**: Métricas, estadísticas y análisis derivados del uso de la plataforma (siempre anonimizados y sin referencia a datos personales)
 
 ### 9.2 LICENCIA DE USO
@@ -464,8 +521,11 @@ d) **Datos agregados**: Métricas, estadísticas y análisis derivados del uso d
 9.2.1 Te otorgamos una licencia limitada, no exclusiva, no transferible y revocable para utilizar nuestra plataforma durante la vigencia de tu suscripción, sujeta a las siguientes condiciones:
 
 a) **Uso personal o empresarial**: La licencia está limitada al uso por parte de tu organización para los fines descritos en estos términos
+
 b) **Prohibición de ingeniería inversa**: No puedes descompilar, desensamblar, realizar ingeniería inversa, o intentar derivar el código fuente de nuestro software
+
 c) **No redistribución**: No puedes revender, sublicenciar, alquilar o distribuir el acceso a nuestra plataforma a terceros
+
 d) **Respeto a limitaciones técnicas**: No puedes intentar eludir o desactivar características de seguridad o limitaciones técnicas del servicio
 
 ### 9.3 MARCAS Y CONTENIDO
@@ -481,7 +541,9 @@ d) **Respeto a limitaciones técnicas**: No puedes intentar eludir o desactivar 
 9.4.1 Te comprometes a:
 
 a) No utilizar la plataforma de manera que infrinja derechos de propiedad intelectual de terceros
+
 b) Asegurarte de que tienes todos los derechos necesarios sobre el contenido que introduces en el sistema
+
 c) Notificar inmediatamente cualquier posible infracción de derechos de terceros de la que tengas conocimiento
 
 9.4.2 Si recibimos una notificación válida de infracción de propiedad intelectual relacionada con tu uso del servicio, nos reservamos el derecho de suspender o cancelar tu cuenta hasta que se resuelva la disputa.
@@ -495,8 +557,11 @@ c) Notificar inmediatamente cualquier posible infracción de derechos de tercero
 10.1.1 Nos reservamos el derecho de modificar, actualizar, mejorar o cambiar cualquier aspecto de nuestro servicio en cualquier momento, incluyendo:
 
 a) **Nuevas características**: Introducción de funcionalidades adicionales que pueden estar sujetas a condiciones específicas o costes adicionales
+
 b) **Modificaciones de interfaz**: Cambios en el diseño, navegación o experiencia de usuario para mejorar la usabilidad o adaptarnos a nuevas tecnologías
+
 c) **Cambios en integraciones**: Modificaciones en las integraciones con Google o implementación de integraciones con nuevos proveedores de servicios
+
 d) **Optimizaciones técnicas**: Mejoras en rendimiento, seguridad o escalabilidad que pueden afectar al funcionamiento percibido del servicio
 
 ### 10.2 ACTUALIZACIONES TÉCNICAS
@@ -504,8 +569,11 @@ d) **Optimizaciones técnicas**: Mejoras en rendimiento, seguridad o escalabilid
 10.2.1 Como servicio basado en tecnología cloud, realizamos actualizaciones continuas que pueden incluir:
 
 a) **Actualizaciones de seguridad**: Aplicadas automáticamente sin previo aviso
+
 b) **Mejoras algorítmicas**: En procesamiento de calendarios o envío de mensajes
+
 c) **Adaptaciones técnicas**: A cambios en APIs de terceros o nuevas versiones de servicios integrados
+
 d) **Infraestructura**: Actualizaciones para mantener el rendimiento y fiabilidad
 
 ### 10.3 DESCONTINUACIÓN DE CARACTERÍSTICAS
@@ -513,9 +581,13 @@ d) **Infraestructura**: Actualizaciones para mantener el rendimiento y fiabilida
 10.3.1 En algunos casos, podemos descontinuar funcionalidades específicas cuando:
 
 a) **Descontinuación de terceros**: Los proveedores de terceros descontinúen servicios de los que dependemos
+
 b) **Viabilidad económica**: Los costes de mantenimiento superen significativamente el valor proporcionado, o cuando una funcionalidad afecte negativamente a la continuidad y sostenibilidad económica del negocio
+
 c) **Riesgos**: Consideremos que una funcionalidad crea riesgos de seguridad o legales
+
 d) **Cumplimiento normativo**: Sea necesario para cumplir con nuevas regulaciones o requisitos legales
+
 e) **Continuidad del negocio**: Cuando sea necesario garantizar la estabilidad operativa y financiera del servicio para el conjunto de usuarios
 
 10.3.2 En estos casos, proporcionaremos aviso con la mayor antelación posible y ofreceremos alternativas cuando estén disponibles.
@@ -525,7 +597,9 @@ e) **Continuidad del negocio**: Cuando sea necesario garantizar la estabilidad o
 10.4.1 Para cambios significativos que afecten sustancialmente al funcionamiento del servicio:
 
 a) **Cambios menores** (mejoras de interfaz, optimizaciones): Sin notificación previa necesaria
+
 b) **Cambios sustanciales** (nuevas funcionalidades importantes, modificaciones en integraciones): Notificación por email con al menos 15 días de antelación
+
 c) **Cambios críticos** (descontinuación de funcionalidades, cambios en precios): Notificación por email con al menos 30 días de antelación
 
 10.4.2 Los cambios entran en vigor en la fecha especificada en la notificación, y el uso continuado del servicio constituye aceptación de los mismos.
@@ -547,6 +621,7 @@ c) **Cambios críticos** (descontinuación de funcionalidades, cambios en precio
 11.2.1 Puedes terminar tu relación con Notifycal en cualquier momento mediante:
 
 a) **Revocación de permisos**: Eliminando el acceso de Notifycal desde el panel de control del proveedor de autenticación
+
 b) **Cancelación de suscripción**: Utilizando las herramientas de cancelación disponibles en tu panel de control. O contactando con nuestro servicio de atención por email a (**EMAIL CANCELACIÓN**) en caso de experimentar problemas con las herramientas disponibles en el panel de control
 
 ### 11.3 TERMINACIÓN POR NOTIFYCAL
@@ -554,9 +629,13 @@ b) **Cancelación de suscripción**: Utilizando las herramientas de cancelación
 11.3.1 Nos reservamos el derecho de terminar tu acceso al servicio, con o sin previo aviso, en los siguientes casos:
 
 a) **Incumplimiento de términos**: Violación de cualquiera de las obligaciones o prohibiciones establecidas en estos términos
+
 b) **Uso fraudulento o malintencionado**: Cualquier intento de utilizar el servicio de manera que cause daño a Notifycal, otros usuarios, o terceros
+
 c) **Inactividad prolongada**: En cuentas que permanezcan con Términos de Acceso Básico sin progresión hacia el servicio completo durante períodos que consideremos excesivos
+
 d) **Falta de pago**: Impago de facturas o problemas recurrentes con métodos de pago en cuentas de suscripción
+
 e) **Causas de fuerza mayor**: Cuando circunstancias externas hagan imposible o no viable comercialmente la prestación del servicio
 
 ### 11.4 SUSPENSIÓN TEMPORAL DEL SERVICIO
@@ -564,8 +643,11 @@ e) **Causas de fuerza mayor**: Cuando circunstancias externas hagan imposible o 
 11.4.1 A nuestro exclusivo criterio, podremos optar por suspender temporalmente tu acceso al servicio en lugar de proceder a la cancelación definitiva, especialmente en los siguientes casos:
 
 a) **Incumplimientos menores**: Violaciones que consideremos subsanables sin requerir cancelación definitiva
+
 b) **Investigaciones en curso**: Mientras se investigan posibles violaciones de estos términos o actividades sospechosas
+
 c) **Problemas de pago temporales**: Cuando existan problemas de facturación que puedan resolverse sin cancelación
+
 d) **Medidas preventivas**: Para proteger la integridad del servicio o prevenir daños a otros usuarios
 
 11.4.2 La duración de la suspensión será determinada exclusivamente por Notifycal según las circunstancias de cada caso. Durante la suspensión, no se enviarán recordatorios, pero se mantendrán los datos según nuestra política de conservación. Nos reservamos el derecho de convertir cualquier suspensión temporal en cancelación definitiva según nuestro criterio.
@@ -575,8 +657,11 @@ d) **Medidas preventivas**: Para proteger la integridad del servicio o prevenir 
 11.5.1 Independientemente de la causa de terminación:
 
 a) **Acceso inmediato**: Tu acceso a la plataforma cesará inmediatamente
+
 b) **Datos de usuario**: Conservaremos tus datos según los plazos establecidos en nuestra Política de Privacidad, pero dejarán de procesarse para el envío de recordatorios
+
 c) **Datos de destinatarios**: Se eliminarán según el calendario de conservación establecido, salvo obligaciones legales específicas
+
 d) **Reembolsos**: No se realizan reembolsos proporcionales por servicios no utilizados, salvo casos excepcionales bajo nuestro criterio exclusivo o cuando sea legalmente obligatorio
 
 ### 11.6 SUPERVIVENCIA DE CLÁUSULAS
@@ -584,11 +669,17 @@ d) **Reembolsos**: No se realizan reembolsos proporcionales por servicios no uti
 11.6.1 Las siguientes disposiciones permanecerán vigentes indefinidamente tras la terminación de estos términos:
 
 a) Limitaciones de responsabilidad y descargos de garantías
+
 b) Obligaciones de indemnización
+
 c) Derechos de propiedad intelectual
+
 d) Confidencialidad y no competencia
+
 e) Ley aplicable y jurisdicción
+
 f) Cualquier obligación de pago pendiente
+
 g) Definiciones e interpretación de términos
 
 11.6.2 Esta supervivencia es esencial para proteger los derechos legítimos de ambas partes tras la finalización de la relación contractual.
@@ -612,20 +703,27 @@ b) **Sistema de créditos**: Los recordatorios se tarifican mediante un sistema 
 12.2.1 **Créditos de suscripción mensual**: Los créditos incluidos en tu plan mensual tienen las siguientes características:
 
 a) Caducan al final del período de facturación mensual si no se utilizan
+
 b) Se sobrescriben (no se acumulan) con cada renovación de suscripción
+
 c) Se pierden definitivamente si no se renueva la suscripción
 
 12.2.2 **Créditos de recarga**: Las recargas adicionales de créditos operan de forma independiente:
 
 a) Son recargas puntuales que complementan tu suscripción mensual
+
 b) Nos reservamos el derecho de establecer una caducidad máxima de 2 meses desde su compra
+
 c) No se renuevan automáticamente
 
 12.2.3 **Política general de créditos**:
 
 a) Los créditos no son reembolsables bajo ninguna circunstancia
+
 b) No pueden transferirse entre cuentas de usuario
+
 c) La caducidad se aplica automáticamente sin notificación individual
+
 d) Es responsabilidad del usuario gestionar el consumo de créditos antes de su caducidad
 
 12.2.4 **Gestión de balances separados**: Como se detalla en la Sección 3, los créditos se gestionan en balances independientes con limitaciones técnicas específicas para garantizar la estabilidad del servicio.
@@ -667,7 +765,9 @@ c) **Facturación**: Recibirás una factura electrónica tras cada cargo realiza
 12.6.1 **Mejoras de plan**: Pueden realizarse en cualquier momento del ciclo de facturación y se aplican inmediatamente:
 
 a) Se cobra la parte proporcional del tiempo restante del mes en la tarifa nueva
+
 b) Se descuenta la parte ya disfrutada del mes en la tarifa anterior
+
 c) Se añaden créditos correspondientes al importe total pagado en el ciclo actual, descontando los créditos ya utilizados
 
 12.6.2 **Reducciones de plan**: Se aplican únicamente al finalizar el período de facturación actual. No se realizan devoluciones por la diferencia de precio, y los créditos no utilizados se mantienen disponibles hasta el final del periodo de facturación.
@@ -867,8 +967,11 @@ c) **Sin afectación retroactiva**: Los cambios no afectan a acciones ya realiza
 17.1.1 Estos Términos y Condiciones se rigen íntegramente por la **legislación española**, específicamente:
 
 a) **Código Civil español** para aspectos contractuales generales
+
 b) **Ley de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSI-CE)** para aspectos específicos de servicios digitales
+
 c) **Reglamento General de Protección de Datos (RGPD)** y **Ley Orgánica de Protección de Datos y garantía de los derechos digitales (LOPD-GDD)** para aspectos de privacidad y protección de datos
+
 d) **Código de Consumo** español cuando sea aplicable a relaciones de consumo
 
 ### 17.2 TRIBUNALES COMPETENTES
@@ -876,7 +979,9 @@ d) **Código de Consumo** español cuando sea aplicable a relaciones de consumo
 17.2.1 Para la resolución de cualquier conflicto, controversia o reclamación derivada de estos términos o relacionada con ellos:
 
 a) **Usuarios empresarios o profesionales**: Será competente la jurisdicción española, específicamente los Juzgados y Tribunales de la ciudad donde Notifycal tenga su domicilio social
+
 b) **Usuarios consumidores**: Conforme a la legislación de protección de consumidores, serán competentes los tribunales correspondientes al domicilio del consumidor o, a elección de este, los del domicilio de Notifycal
+
 c) **Competencia internacional**: Los tribunales españoles tendrán competencia exclusiva para cualquier disputa, renunciando expresamente a cualquier otro fuero que pudiera corresponder
 
 ### 17.3 RESOLUCIÓN DE CONFLICTOS
@@ -884,7 +989,9 @@ c) **Competencia internacional**: Los tribunales españoles tendrán competencia
 17.3.1 Antes de acudir a la vía judicial, recomendamos:
 
 a) **Comunicación directa**: Contactar con nuestro servicio de atención para intentar resolver amistosamente cualquier disputa
+
 b) **Mediación**: Utilizar servicios de mediación de consumo cuando estén disponibles y sean aplicables
+
 c) **Arbitraje**: Para disputas entre empresarios, posibilidad de someter la controversia a arbitraje institucional bajo el Reglamento de la Corte de Arbitraje de Madrid
 
 ### 17.4 MEDIACIÓN Y ARBITRAJE
@@ -942,8 +1049,11 @@ d) **Cambios de dirección**: Es tu responsabilidad mantener actualizada tu dire
 19.1.1 Para cualquier cuestión relacionada con estos Términos y Condiciones, puedes contactar con nosotros a través de:
 
 a) **Para consultas generales sobre términos y condiciones**: **EMAIL TÉRMINOS** (ver datos de contacto al inicio)
+
 b) **Para soporte técnico y funcionamiento del servicio**: **EMAIL SOPORTE** (ver datos de contacto al inicio)
+
 c) **Para cancelación de cuenta y eliminación de datos**: **EMAIL CANCELACIÓN** (ver datos de contacto al inicio)
+
 d) **Dirección postal**: Puedes contactarnos también por correo postal en la dirección indicada en los **DATOS DE CONTACTO Y EMPRESA** al inicio de este documento
 
 ### 19.2 CANALES DE COMUNICACIÓN
@@ -971,7 +1081,9 @@ c) **Otros idiomas**: Haremos el mejor esfuerzo para entender consultas en otros
 19.4.1 Para comunicaciones oficiales que requieran constancia:
 
 a) **Acuse de recibo**: Utilizaremos métodos que proporcionen confirmación de entrega cuando sea necesario para comunicaciones importantes
+
 b) **Plazos de respuesta**: Las consultas se responderán en los plazos establecidos en la sección de soporte técnico de estos términos
+
 c) **Escalado de incidencias**: Si no recibes respuesta en los plazos establecidos, puedes escalar la consulta contactando directamente con la dirección de términos y condiciones
 
 ### 19.5 NOTIFICACIONES LEGALES FORMALES
@@ -980,16 +1092,21 @@ c) **Escalado de incidencias**: Si no recibes respuesta en los plazos establecid
 
 19.5.2 **Dirección para notificaciones a Notifycal**:
 a) Email certificado: **EMAIL TÉRMINOS** (ver datos de contacto al inicio)
+
 b) Dirección postal: [Dirección indicada en datos de contacto al inicio del documento]
+
 c) Se considerarán válidamente entregadas tras confirmación de recepción
 
 19.5.3 **Notificaciones del Usuario a Notifycal**:
 a) Deben incluir nombre completo, dirección de cuenta, naturaleza de la comunicación
+
 b) Para efectos legales, se requiere confirmación de entrega (email certificado o correo postal con acuse de recibo)
 
 19.5.4 **Notificaciones de Notifycal al Usuario**:
 a) Se realizarán a la dirección de email registrada en la cuenta
+
 b) Para comunicaciones legales importantes, podremos utilizar métodos que garanticen constancia de entrega
+
 c) Se considerarán válidamente entregadas 24 horas después del envío al email registrado
 
 ---
@@ -1040,6 +1157,6 @@ c) Se considerarán válidamente entregadas 24 horas después del envío al emai
 
 _Estos Términos y Condiciones han sido redactados originalmente en español. En caso de que se realicen traducciones a otros idiomas y existan discrepancias en la interpretación, prevalecerá siempre la versión en español._
 
-**Documento revisado y validado legalmente el**: [Ver fecha al inicio del documento]  
-**Versión del documento**: [Ver versión al inicio del documento]  
+**Documento revisado y validado legalmente el**: [Ver fecha al inicio del documento]
+**Versión del documento**: [Ver versión al inicio del documento]
 **© 2025 Notifycal. Todos los derechos reservados.**
