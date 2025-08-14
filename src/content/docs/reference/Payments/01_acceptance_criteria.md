@@ -1,10 +1,11 @@
 # Functional Acceptance Criteria – Subscription & Top-up System
 
 ## 1. Crear suscripción
+
 - [x] 1.1. Al crearla, la suscripción se activa inmediatamente
 
 - [x] 1.2. Al crearla, se realiza el cobro inmediato del importe mensual del plan
-Comment: the invoice says `paid` but the money apparently doesn't make it into the Stripe balance until 7 days later.
+      Comment: the invoice says `paid` but the money apparently doesn't make it into the Stripe balance until 7 days later.
 
 - [x] 1.3. Si ya existe una suscripción activa, la creación se rechaza con error claro
 
@@ -19,6 +20,7 @@ Comment: the invoice says `paid` but the money apparently doesn't make it into t
 - [x] 1.8. Test payment with card from other country/coin (to check conversion).
 
 ## 2. Cancelar suscripción
+
 - [x] 2.1. Al cancelar una suscripción, no se cancela inmediatamente: sigue activa hasta el final del ciclo actual
 
 - [x] 2.2. La cancelación se programa para que no haya renovación automática en el siguiente ciclo
@@ -38,6 +40,7 @@ Comment: the invoice says `paid` but the money apparently doesn't make it into t
 - [x] 2.9. Si Notifycal Admins cancelan una subscripcion(desde Stripe dashboard), se debe de cancelar la subscripcion del usuario en la app tambien.
 
 ## 3. Reanudar suscripción
+
 - [x] 3.1. Solo puede reanudarse una suscripción que está cancelada pero aún activa (antes de endDate)
 
 - [x] 3.2. Reanudarla revierte la cancelación programada, manteniendo el mismo ciclo actual
@@ -49,6 +52,7 @@ Comment: the invoice says `paid` but the money apparently doesn't make it into t
 - [x] 3.5. Si el usuario intenta reanudar sin tener una suscripción cancelada en curso, se muestra error claro. Stripe no muestra el boton de "reanudar".
 
 ## 4. Cambiar de plan – Upgrade (a un plan superior)
+
 - [x] 4.1. El upgrade se aplica inmediatamente en el momento en que el usuario lo solicita
 
 - [x] 4.2. Se realiza cobro inmediato del prorrateo correspondiente a la diferencia entre el nuevo plan y el actual, en función de los días restantes
@@ -69,9 +73,10 @@ Comment: the invoice says `paid` but the money apparently doesn't make it into t
 
 - [x] 4.10. La actualización de créditos debe tener en cuenta los créditos que el usuario haya gastado ya. Por ejemplo, si el usuario esta en "better" (250 créditos), gasta 50 créditos, y hace un upgrade a "best" (1000 créditos), el resultado deberá ser 750.
 
-- [x] 4.11. Un upgrade es posible incluso si el cliente es capaz de hacerlo en el primer segundo del nuevo ciclo de facturacion. 
+- [x] 4.11. Un upgrade es posible incluso si el cliente es capaz de hacerlo en el primer segundo del nuevo ciclo de facturacion.
 
 ## 5. Cambiar de plan – Downgrade (a un plan inferior)
+
 - [x] 5.1. El downgrade no es inmediato: se programa para el final del ciclo actual
 
 - [x] 5.2. No se cobra ni se devuelve nada en el momento del downgrade
@@ -88,15 +93,13 @@ Comment: the invoice says `paid` but the money apparently doesn't make it into t
 
 - [ ] 5.8. [Stripe bug] Solo puede haber un downgrade programado a la vez; uno nuevo sobreescribe el anterior.
 
-
-- [x] 5.9. Si el usuario hace un upgrade antes de la fecha efectiva del downgrade, el downgrade programado se cancela automáticamente. 
+- [x] 5.9. Si el usuario hace un upgrade antes de la fecha efectiva del downgrade, el downgrade programado se cancela automáticamente.
 
 - [x] 5.10. Al hacer doble downgrade, y cancelarlo, vuelve al plan original, antes de ninguno de los downgrades.
 
 - [x] 5.11. El usuario puede hacer downgrade después de cancelar su subscripción (scheduled) y se anula la cancelación.
 
 - [x] 5.12. El usuario no puede hacer downgrade después de la cancelación efectiva de su subscripción. Stripe no deja hacer esto por diseño, porque la subscripcion ya no esta en estado "activo".
-
 
 ## 6. Hacer top-up
 
@@ -140,11 +143,11 @@ Comment: the invoice says `paid` but the money apparently doesn't make it into t
 
 - [x] 7.12. Para cumplir la ley, aun sin tener una subscripcion activa, se le debe dejar al usuario consultar sus facturas.
 
-- [x] 7.13. La renovacion de una subscripcion se ejecuta inmediatamente cuando empieza el nuevo  ciclo de facturacion. Por defecto, Stripe espera una hora dentro del nuevo ciclo de facturacion.
+- [x] 7.13. La renovacion de una subscripcion se ejecuta inmediatamente cuando empieza el nuevo ciclo de facturacion. Por defecto, Stripe espera una hora dentro del nuevo ciclo de facturacion.
 
 ## 8. Deductions
-- [x] 8.1. Testear escenario out-of-credits. El usuario tiene creditos para mandar 1 solo mensaje (o incluso menos creditos). El user status debe cambiar a out-of-credits la siguiente vez que intente mandar un mensaje. Debido a esto, se puede estar a 0 creditos y no estar en out-of-credits todavia (no se ha intentado mandar otro mensaje).
 
+- [x] 8.1. Testear escenario out-of-credits. El usuario tiene creditos para mandar 1 solo mensaje (o incluso menos creditos). El user status debe cambiar a out-of-credits la siguiente vez que intente mandar un mensaje. Debido a esto, se puede estar a 0 creditos y no estar en out-of-credits todavia (no se ha intentado mandar otro mensaje).
 
 ---
 
@@ -158,7 +161,7 @@ Comment: the invoice says `paid` but the money apparently doesn't make it into t
 
 - [ ] 6.12. Si el usuario solo tiene créditos de top-up, porque no ha renovado la subscripción por problemas de pago puede seguir enviando mensajes hasta agotarlos. [Ticket](https://github.com/Notifycal/frontend/issues/450)
 
-- [ ] 6.13.  Si el usuario solo tiene créditos de top-up, porque ha cancelado la subscripción, puede seguir enviando mensajes hasta agotarlos.  [Ticket](https://github.com/Notifycal/frontend/issues/450)
+- [ ] 6.13. Si el usuario solo tiene créditos de top-up, porque ha cancelado la subscripción, puede seguir enviando mensajes hasta agotarlos. [Ticket](https://github.com/Notifycal/frontend/issues/450)
 
 ### 7. Casos combinados y bordes
 
@@ -196,26 +199,26 @@ The field `Records[*].body.time` is the relevant one here. Esto te evita esperar
 
 ```json
 {
-        "Records": [
-            {
-                "messageId": "5e62dd00-da98-4e91-a72d-70c2925c21d4",
-                "receiptHandle": "AQEBuhRfwz53e1HI6CfBuyS+kI0KKMBdvZty2rmlYTXpq5m8Xt1p6pVo8MgdcCObCtp79OjF+TeNVOrzDOOm8wOuei1bRujNA7KauGbHNy63T5E046HjjXZKrCp5GYln8bx8qYQ4OOiCs5qlP1olXL8SveD3/I81DZkLHCPWFozq0Gihz9UWuf2s99kK2hTYWUqPd4JaAphal1TKJf0/Hfa5vlAFo8DEBV0To7b6UDTzYKY1TSqlvW+Kh1b0in71Q4BLH1G9aw/9W/qAuzLqfoojdUhowTAOgWDd/V6N1q4KtxA=",
-                "body": "{\"version\":\"0\",\"id\":\"2b1b6467-fc0a-2791-2570-fabd802f4b1d\",\"detail-type\":\"Scheduled Event\",\"source\":\"aws.events\",\"account\":\"381492094204\",\"time\":\"2025-07-31T13:30:00Z\",\"region\":\"eu-west-1\",\"resources\":[\"arn:aws:events:eu-west-1:381492094204:rule/fetch-user-calendars-schedule-dev\"],\"detail\":{}}",
-                "attributes": {
-                    "ApproximateReceiveCount": "1",
-                    "SentTimestamp": "1753965043109",
-                    "SequenceNumber": "18895759124745455616",
-                    "MessageGroupId": "event-bridge",
-                    "SenderId": "AIDAJ2E4ZHTZPIG4AM4I6",
-                    "MessageDeduplicationId": "78d7fce142a72a9776f6d6cd9b731299179c6358fe35849184596bce6166da0a",
-                    "ApproximateFirstReceiveTimestamp": "1753965043109"
-                },
-                "messageAttributes": {},
-                "md5OfBody": "16c9e713004bc44d941c61a70fdd325a",
-                "eventSource": "aws:sqs",
-                "eventSourceARN": "arn:aws:sqs:eu-west-1:381492094204:fetch-user-calendars-dev.fifo",
-                "awsRegion": "eu-west-1"
-            }
-        ]
+  "Records": [
+    {
+      "messageId": "5e62dd00-da98-4e91-a72d-70c2925c21d4",
+      "receiptHandle": "AQEBuhRfwz53e1HI6CfBuyS+kI0KKMBdvZty2rmlYTXpq5m8Xt1p6pVo8MgdcCObCtp79OjF+TeNVOrzDOOm8wOuei1bRujNA7KauGbHNy63T5E046HjjXZKrCp5GYln8bx8qYQ4OOiCs5qlP1olXL8SveD3/I81DZkLHCPWFozq0Gihz9UWuf2s99kK2hTYWUqPd4JaAphal1TKJf0/Hfa5vlAFo8DEBV0To7b6UDTzYKY1TSqlvW+Kh1b0in71Q4BLH1G9aw/9W/qAuzLqfoojdUhowTAOgWDd/V6N1q4KtxA=",
+      "body": "{\"version\":\"0\",\"id\":\"2b1b6467-fc0a-2791-2570-fabd802f4b1d\",\"detail-type\":\"Scheduled Event\",\"source\":\"aws.events\",\"account\":\"381492094204\",\"time\":\"2025-07-31T13:30:00Z\",\"region\":\"eu-west-1\",\"resources\":[\"arn:aws:events:eu-west-1:381492094204:rule/fetch-user-calendars-schedule-dev\"],\"detail\":{}}",
+      "attributes": {
+        "ApproximateReceiveCount": "1",
+        "SentTimestamp": "1753965043109",
+        "SequenceNumber": "18895759124745455616",
+        "MessageGroupId": "event-bridge",
+        "SenderId": "AIDAJ2E4ZHTZPIG4AM4I6",
+        "MessageDeduplicationId": "78d7fce142a72a9776f6d6cd9b731299179c6358fe35849184596bce6166da0a",
+        "ApproximateFirstReceiveTimestamp": "1753965043109"
+      },
+      "messageAttributes": {},
+      "md5OfBody": "16c9e713004bc44d941c61a70fdd325a",
+      "eventSource": "aws:sqs",
+      "eventSourceARN": "arn:aws:sqs:eu-west-1:381492094204:fetch-user-calendars-dev.fifo",
+      "awsRegion": "eu-west-1"
     }
+  ]
+}
 ```
