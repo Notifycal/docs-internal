@@ -36,7 +36,7 @@
   - 2.1.3 Derechos NO otorgados
   - 2.1.4 Gestión de cuentas básicas
 - 2.2 Términos de Servicio Completo
-  - 2.2.1 Aceptación expresa post-onboarding
+  - 2.2.1 Aceptación expresa post-proceso de onboarding
   - 2.2.2 Derechos adicionales
   - 2.2.3 Aplicación en suscripción de pago
 - 2.3 Vinculación jurídica

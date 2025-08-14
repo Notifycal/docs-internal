@@ -55,6 +55,8 @@ d) **"Destinatario"** son las personas que reciben los recordatorios enviados a 
 
 e) **"Contenido"** incluye toda la información, datos, texto, mensajes, configuraciones y cualquier otro material introducido o generado a través de nuestros servicios.
 
+f) **"Proceso de onboarding"** o **"configuración inicial"** se refiere al conjunto de pasos que debe completar el Usuario tras la primera autenticación para configurar completamente su cuenta, incluyendo la aceptación de los Términos de Servicio Completo, configuración de datos de negocio, y habilitación de funcionalidades del servicio.
+
 ### 1.3 OBJETO DEL CONTRATO
 
 1.3.1 Notifycal proporciona una plataforma de software como servicio (SaaS) que permite a profesionales y empresas automatizar el envío de recordatorios a sus clientes, mediante la integración con sus calendarios digitales.
@@ -91,7 +93,7 @@ b) Acceder a funcionalidades de procesamiento de calendarios en vivo
 
 c) Utilizar las herramientas de comunicación masiva
 
-2.1.4 Nos reservamos el derecho de mantener cuentas con Términos de Acceso Básico de forma indefinida o cancelarlas según nuestro criterio empresarial, especialmente si detectamos inactividad prolongada o falta de intención de completar el onboarding.
+2.1.4 Nos reservamos el derecho de mantener cuentas con Términos de Acceso Básico de forma indefinida o cancelarlas según nuestro criterio empresarial, especialmente si detectamos inactividad prolongada o falta de intención de completar el proceso de onboarding.
 
 ### 2.2 TÉRMINOS DE SERVICIO COMPLETO
 
@@ -614,7 +616,7 @@ c) **Cambios críticos** (descontinuación de funcionalidades, cambios en precio
 
 11.1.1 **Términos de Acceso Básico**: Vigentes desde el momento de la autenticación OAuth hasta la cancelación de la cuenta o la transición a Términos de Servicio Completo.
 
-11.1.2 **Términos de Servicio Completo**: Vigentes desde la finalización del onboarding y mantenidos durante toda la duración de la relación comercial.
+11.1.2 **Términos de Servicio Completo**: Vigentes desde la finalización del proceso de onboarding y mantenidos durante toda la duración de la relación comercial.
 
 11.1.3 La duración específica de tu suscripción de pago se establece en el momento de la contratación (mensual, anual, etc.) y se renueva automáticamente salvo cancelación expresa.
 
