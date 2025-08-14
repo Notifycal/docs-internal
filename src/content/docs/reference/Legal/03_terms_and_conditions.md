@@ -112,7 +112,6 @@ b) Tienes capacidad legal para contratar
 c) La información proporcionada es veraz y exacta
 d) Cumplirás con todas las obligaciones establecidas en estos términos
 
-
 ---
 
 ## 3. DESCRIPCIÓN DEL SERVICIO
@@ -180,7 +179,6 @@ a) **Balances separados**: Los créditos de suscripción y los créditos de reca
 b) **Limitaciones técnicas**: Por limitaciones técnicas y para garantizar el correcto funcionamiento del servicio para todos los usuarios, nos reservamos el derecho de impedir el envío del último recordatorio que agotaría los balances, incluso cuando la suma total de ambos balances podría ser suficiente para cubrir el coste de dicho recordatorio. Esta política está contemplada en nuestro modelo de precios y garantiza la equidad y estabilidad del servicio.
 
 ---
-
 
 ## 4. REGISTRO Y ACCESO
 
@@ -293,46 +291,53 @@ e) Reclamaciones de que tu uso del servicio infringe derechos de terceros
 6.1.1 Está estrictamente prohibido utilizar Notifycal para cualquiera de las siguientes actividades:
 
 a) **Actividades ilegales o fraudulentas**:
-   - Promover, facilitar o participar en cualquier actividad ilegal
-   - Lavado de dinero, evasión fiscal o fraude financiero
-   - Venta o promoción de sustancias ilegales o controladas
-   - Actividades de juego o apuestas ilegales
-   - Esquemas piramidales o estafas tipo Ponzi
+
+- Promover, facilitar o participar en cualquier actividad ilegal
+- Lavado de dinero, evasión fiscal o fraude financiero
+- Venta o promoción de sustancias ilegales o controladas
+- Actividades de juego o apuestas ilegales
+- Esquemas piramidales o estafas tipo Ponzi
 
 b) **Comunicaciones no autorizadas**:
-   - Spam o comunicaciones no solicitadas (sin consentimiento previo)
-   - Envío masivo de comunicaciones comerciales sin base legal
-   - Violación de listas de exclusión como Lista Robinson
-   - Envío de comunicaciones a menores sin autorización parental
+
+- Spam o comunicaciones no solicitadas (sin consentimiento previo)
+- Envío masivo de comunicaciones comerciales sin base legal
+- Violación de listas de exclusión como Lista Robinson
+- Envío de comunicaciones a menores sin autorización parental
 
 c) **Contenido dañino o inapropiado**:
-   - Contenido sexual explícito, violento o que promueva autolesiones
-   - Lenguaje ofensivo, amenazante, discriminatorio o de odio
-   - Acoso, intimidación o hostigamiento hacia terceros
-   - Contenido difamatorio o que viole derechos de terceros
-   - Información falsa, engañosa o fraudulenta
+
+- Contenido sexual explícito, violento o que promueva autolesiones
+- Lenguaje ofensivo, amenazante, discriminatorio o de odio
+- Acoso, intimidación o hostigamiento hacia terceros
+- Contenido difamatorio o que viole derechos de terceros
+- Información falsa, engañosa o fraudulenta
 
 d) **Actividades competitivas desleales**:
-   - Ingeniería inversa de nuestra plataforma o tecnología
-   - Desarrollo de servicios competidores basados en nuestro servicio
-   - Análisis sistemático de nuestras funcionalidades para replicación
-   - Uso del servicio para estudiar nuestro modelo de negocio
+
+- Ingeniería inversa de nuestra plataforma o tecnología
+- Desarrollo de servicios competidores basados en nuestro servicio
+- Análisis sistemático de nuestras funcionalidades para replicación
+- Uso del servicio para estudiar nuestro modelo de negocio
 
 e) **Interferencia técnica**:
-   - Intentos de acceso no autorizado a sistemas o bases de datos
-   - Ataques de denegación de servicio o sobrecarga intencional
-   - Introducción de virus, malware o código malicioso
-   - Eludir medidas de seguridad o limitaciones técnicas
+
+- Intentos de acceso no autorizado a sistemas o bases de datos
+- Ataques de denegación de servicio o sobrecarga intencional
+- Introducción de virus, malware o código malicioso
+- Eludir medidas de seguridad o limitaciones técnicas
 
 f) **Suplantación y fraude de identidad**:
-   - Hacerse pasar por otra persona, empresa o entidad
-   - Utilizar información de remitente falsa o engañosa
-   - Crear cuentas falsas o con información fraudulenta
+
+- Hacerse pasar por otra persona, empresa o entidad
+- Utilizar información de remitente falsa o engañosa
+- Crear cuentas falsas o con información fraudulenta
 
 g) **Uso abusivo de recursos**:
-   - Uso simultáneo desde múltiples ubicaciones que sugiera compartición no autorizada de cuenta
-   - Automatización excesiva que pueda afectar el rendimiento del servicio
-   - Cualquier uso que consideremos abusivo según nuestro criterio exclusivo
+
+- Uso simultáneo desde múltiples ubicaciones que sugiera compartición no autorizada de cuenta
+- Automatización excesiva que pueda afectar el rendimiento del servicio
+- Cualquier uso que consideremos abusivo según nuestro criterio exclusivo
 
 ### 6.2 CONTENIDO NO PERMITIDO
 
@@ -1033,7 +1038,7 @@ c) Se considerarán válidamente entregadas 24 horas después del envío al emai
 
 ---
 
-*Estos Términos y Condiciones han sido redactados originalmente en español. En caso de que se realicen traducciones a otros idiomas y existan discrepancias en la interpretación, prevalecerá siempre la versión en español.*
+_Estos Términos y Condiciones han sido redactados originalmente en español. En caso de que se realicen traducciones a otros idiomas y existan discrepancias en la interpretación, prevalecerá siempre la versión en español._
 
 **Documento revisado y validado legalmente el**: [Ver fecha al inicio del documento]  
 **Versión del documento**: [Ver versión al inicio del documento]  

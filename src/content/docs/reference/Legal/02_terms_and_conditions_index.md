@@ -8,12 +8,14 @@
 ## ESTRUCTURA DEL DOCUMENTO
 
 ### BLOQUE DE VARIABLES
+
 - Datos de contacto y empresa
 - Emails específicos de servicio
 - Información corporativa
 - Metadatos del documento
 
 ### 1. INFORMACIÓN GENERAL
+
 - 1.1 Ámbito de aplicación
   - 1.1.1 Plataformas y servicios incluidos
   - 1.1.2 Aceptación mediante uso
@@ -27,6 +29,7 @@
   - 1.4.2 Exclusión de Destinatarios
 
 ### 2. ACEPTACIÓN DE TÉRMINOS
+
 - 2.1 Términos de Acceso Básico
   - 2.1.1 Aceptación automática por autenticación OAuth
   - 2.1.2 Derechos otorgados
@@ -42,6 +45,7 @@
   - 2.3.3 Confirmaciones del usuario
 
 ### 3. DESCRIPCIÓN DEL SERVICIO
+
 - 3.1 Funcionalidades principales
 - 3.2 Recordatorios de servicio completo
   - 3.2.1 Condiciones operativas
@@ -54,6 +58,7 @@
   - 3.4.2 Gestión de balances
 
 ### 4. REGISTRO Y ACCESO
+
 - 4.1 Proceso de registro
   - 4.1.1 Métodos de autenticación seguros
   - 4.1.2 Requisitos del proceso
@@ -69,6 +74,7 @@
   - 4.4.1 Responsabilidades al registrarse
 
 ### 5. OBLIGACIONES DEL USUARIO
+
 - 5.1 Uso apropiado del servicio
   - 5.1.1 Fines legítimos y legales
 - 5.2 Responsabilidad sobre datos de terceros
@@ -83,6 +89,7 @@
   - 5.5.2 Supervivencia de la obligación
 
 ### 6. PROHIBICIONES Y USO INAPROPIADO
+
 - 6.1 Conductas prohibidas
   - 6.1.1 Actividades estrictamente prohibidas (7 categorías)
 - 6.2 Contenido no permitido
@@ -92,6 +99,7 @@
   - 6.3.2 Criterio exclusivo sin compensación
 
 ### 7. LIMITACIONES DE RESPONSABILIDAD
+
 - 7.1 Disponibilidad del servicio
   - 7.1.1 No garantía de disponibilidad ininterrumpida
   - 7.1.2 No responsabilidad por pérdidas derivadas
@@ -106,6 +114,7 @@
   - 7.4.2 Exclusión de daños específicos
 
 ### 8. GARANTÍAS Y DESCARGOS
+
 - 8.1 Descargo de garantías
   - 8.1.1 Servicio "tal como está"
 - 8.2 Limitaciones de funcionamiento
@@ -117,6 +126,7 @@
   - 8.4.2 Exención durante eventos de fuerza mayor
 
 ### 9. PROPIEDAD INTELECTUAL
+
 - 9.1 Derechos de Notifycal
   - 9.1.1 Propiedad exclusiva
 - 9.2 Licencia de uso
@@ -130,6 +140,7 @@
   - 9.4.2 Suspensión por infracciones
 
 ### 10. MODIFICACIONES DEL SERVICIO
+
 - 10.1 Cambios en funcionalidades
   - 10.1.1 Derechos de modificación
 - 10.2 Actualizaciones técnicas
@@ -142,6 +153,7 @@
   - 10.4.2 Entrada en vigor
 
 ### 11. DURACIÓN Y TERMINACIÓN
+
 - 11.1 Duración del contrato
   - 11.1.1 Términos de Acceso Básico
   - 11.1.2 Términos de Servicio Completo
@@ -160,6 +172,7 @@
   - 11.6.2 Protección de derechos post-terminación
 
 ### 12. FACTURACIÓN Y PAGOS
+
 - 12.1 Precios y tarifas
   - 12.1.1 Tipos de servicios y precios
   - 12.1.2 Modificaciones de precios
@@ -186,6 +199,7 @@
   - 12.6.2 Reducciones de plan
 
 ### 13. DERECHO DE DESISTIMIENTO
+
 - 13.1 Derecho general de desistimiento
   - 13.1.1 Plazo de 14 días naturales
   - 13.1.2 Cómputo del plazo
@@ -204,6 +218,7 @@
   - 13.5.3 Cancelación inmediata
 
 ### 14. PROTECCIÓN DE DATOS PERSONALES
+
 - 14.1 Referencia a Política de Privacidad
   - 14.1.1 Marco normativo
   - 14.1.2 Documentación detallada
@@ -218,6 +233,7 @@
   - 14.4.3 Información detallada
 
 ### 15. SOPORTE TÉCNICO
+
 - 15.1 Niveles de soporte
   - 15.1.1 Diferentes niveles según usuario
 - 15.2 Canales de contacto
@@ -228,6 +244,7 @@
   - 15.4.1 Servicios no incluidos
 
 ### 16. MODIFICACIONES DE TÉRMINOS
+
 - 16.1 Procedimiento de modificación
   - 16.1.1 Razones para modificaciones
 - 16.2 Notificación de cambios
@@ -239,6 +256,7 @@
   - 16.4.2 Archivo de versiones anteriores
 
 ### 17. LEY APLICABLE Y JURISDICCIÓN
+
 - 17.1 Legislación aplicable
   - 17.1.1 Marco legal español
 - 17.2 Tribunales competentes
@@ -252,6 +270,7 @@
   - 17.4.4 Acceso a justicia ordinaria
 
 ### 18. DISPOSICIONES GENERALES
+
 - 18.1 Divisibilidad
   - 18.1.1 Separabilidad de cláusulas
   - 18.1.2 Negociación de sustitución
@@ -269,6 +288,7 @@
   - 18.4.4 Actualización de direcciones
 
 ### 19. CONTACTO
+
 - 19.1 Información de contacto
   - 19.1.1 Direcciones específicas por tipo de consulta
 - 19.2 Canales de comunicación
@@ -288,6 +308,7 @@
   - 19.5.4 Notificaciones de Notifycal al Usuario
 
 ### 20. GLOSARIO
+
 - 20.1 Definiciones técnicas
   - 20.1.1-20.1.5 API, OAuth, SMS, SaaS, Recordatorio
 - 20.2 Términos legales
@@ -302,30 +323,35 @@
 ## ESTÁNDARES Y METODOLOGÍA APLICADA
 
 ### FORMATO LEGAL JERÁRQUICO
+
 El documento principal sigue el **estándar UNE 50-132-94** para numeración jerárquica:
+
 - **X.** para secciones principales
-- **X.Y** para subsecciones  
+- **X.Y** para subsecciones
 - **X.Y.Z** para párrafos específicos
 - **a) b) c)** para elementos dentro de párrafos
 
 ### CRITERIOS ESTRUCTURALES
+
 - **Progresión lógica**: De general (información y aceptación) a específico (facturación y contacto)
 - **Agrupación temática**: Secciones relacionadas consecutivas (ej: limitaciones + garantías)
 - **Separación clara**: Derechos vs obligaciones, aspectos técnicos vs legales
 - **Accesibilidad**: Lenguaje profesional pero comprensible, evitando jerga innecesaria
 
 ### METODOLOGÍA DE DESARROLLO
+
 - **Consolidación de información**: Eliminación de duplicidades entre secciones
 - **Modelo simplificado**: Acceso Básico vs Servicio Completo
 - **Cumplimiento normativo**: Inclusión obligatoria de derecho de desistimiento (normativa española)
 - **Profesionalización**: Conversión de elementos en negrita a listas estructuradas
 
 ### REFERENCIAS NORMATIVAS
+
 - **RGPD**: Reglamento General de Protección de Datos
-- **LSSI-CE**: Ley de Servicios de la Sociedad de la Información  
+- **LSSI-CE**: Ley de Servicios de la Sociedad de la Información
 - **RDL 1/2007**: Texto refundido de la Ley General para la Defensa de los Consumidores y Usuarios
 - **UNE 50-132-94**: Estándar de numeración y estructura documental
 
 ---
 
-*Documento de estructura para desarrollo de términos y condiciones de Notifycal*
+_Documento de estructura para desarrollo de términos y condiciones de Notifycal_
