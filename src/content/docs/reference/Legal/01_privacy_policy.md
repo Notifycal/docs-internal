@@ -31,7 +31,7 @@ SITIO WEB: www.notifycal.com
 Esta Política de Privacidad se aplica a cualquier persona que utilice nuestros servicios a través de:
 
 - **Nuestros sitios web principales**: www.notifycal.com y www.notifycal.es
-- **Nuestras áreas privadas**: private.notifycal.com y private.notifycal.es  
+- **Nuestras áreas privadas**: private.notifycal.com y private.notifycal.es
 - **Todos los subdominios** asociados a estos dominios principales
 
 Cualquier interacción con estas plataformas digitales estará sujeta a los términos establecidos en esta política.
@@ -104,19 +104,19 @@ Además, utilizamos herramientas especializadas de análisis para entender mejor
 
 El Reglamento General de Protección de Datos (RGPD) exige que todo tratamiento de datos personales tenga una base legal válida. A continuación, detallamos las bases legales que amparan cada una de nuestras actividades de tratamiento:
 
-| **Finalidad del tratamiento** | **Base legal (RGPD)** | **Explicación detallada** |
-|-------------------------------|------------------------|---------------------------|
+| **Finalidad del tratamiento**            | **Base legal (RGPD)**              | **Explicación detallada**                                                                                                                                |
+| ---------------------------------------- | ---------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Prestación del servicio de recordatorios | Art. 6.1.b - Ejecución de contrato | El tratamiento es necesario para proporcionar el servicio que el Usuario ha contratado, incluyendo la lectura de calendarios y el envío de recordatorios |
-| Gestión y administración de la cuenta | Art. 6.1.b - Ejecución de contrato | Necesario para mantener la cuenta activa, gestionar las configuraciones y preferencias del Usuario |
-| Procesamiento de pagos y facturación | Art. 6.1.b - Ejecución de contrato | Imprescindible para cobrar por nuestros servicios y emitir las facturas correspondientes |
-| Cumplimiento de obligaciones legales | Art. 6.1.c - Obligación legal | Conservación de facturas y datos fiscales según la legislación española |
-| Soporte técnico y atención al cliente | Art. 6.1.f - Interés legítimo | Tenemos un interés legítimo en ayudar a nuestros usuarios y resolver sus incidencias |
-| Seguridad y prevención del fraude | Art. 6.1.f - Interés legítimo | Proteger nuestra plataforma y a nuestros usuarios de usos fraudulentos o maliciosos |
-| Análisis y mejora del servicio | Art. 6.1.a - Consentimiento | Solo con el consentimiento expreso del Usuario mediante el banner de cookies |
-| Avisos operativos sobre la cuenta | Art. 6.1.b - Ejecución de contrato | Notificaciones sobre el estado de créditos, límites de servicio y avisos técnicos necesarios para el funcionamiento |
-| Comunicaciones sobre actualizaciones | Art. 6.1.f - Interés legítimo | Informar sobre cambios en términos, condiciones, políticas o funcionalidades que afecten al servicio contratado |
-| Comunicaciones comerciales y marketing | Art. 6.1.a - Consentimiento | Envío de novedades, ofertas, newsletters, encuestas y material promocional solo si el Usuario lo ha autorizado expresamente |
-| Recopilación de comentarios y feedback | Art. 6.1.b - Ejecución de contrato | Recoger opiniones y sugerencias para mejorar el servicio contratado mediante formularios que almacenan respuestas |
+| Gestión y administración de la cuenta    | Art. 6.1.b - Ejecución de contrato | Necesario para mantener la cuenta activa, gestionar las configuraciones y preferencias del Usuario                                                       |
+| Procesamiento de pagos y facturación     | Art. 6.1.b - Ejecución de contrato | Imprescindible para cobrar por nuestros servicios y emitir las facturas correspondientes                                                                 |
+| Cumplimiento de obligaciones legales     | Art. 6.1.c - Obligación legal      | Conservación de facturas y datos fiscales según la legislación española                                                                                  |
+| Soporte técnico y atención al cliente    | Art. 6.1.f - Interés legítimo      | Tenemos un interés legítimo en ayudar a nuestros usuarios y resolver sus incidencias                                                                     |
+| Seguridad y prevención del fraude        | Art. 6.1.f - Interés legítimo      | Proteger nuestra plataforma y a nuestros usuarios de usos fraudulentos o maliciosos                                                                      |
+| Análisis y mejora del servicio           | Art. 6.1.a - Consentimiento        | Solo con el consentimiento expreso del Usuario mediante el banner de cookies                                                                             |
+| Avisos operativos sobre la cuenta        | Art. 6.1.b - Ejecución de contrato | Notificaciones sobre el estado de créditos, límites de servicio y avisos técnicos necesarios para el funcionamiento                                      |
+| Comunicaciones sobre actualizaciones     | Art. 6.1.f - Interés legítimo      | Informar sobre cambios en términos, condiciones, políticas o funcionalidades que afecten al servicio contratado                                          |
+| Comunicaciones comerciales y marketing   | Art. 6.1.a - Consentimiento        | Envío de novedades, ofertas, newsletters, encuestas y material promocional solo si el Usuario lo ha autorizado expresamente                              |
+| Recopilación de comentarios y feedback   | Art. 6.1.b - Ejecución de contrato | Recoger opiniones y sugerencias para mejorar el servicio contratado mediante formularios que almacenan respuestas                                        |
 
 ### 3.2. Tratamiento de datos de los Destinatarios
 
@@ -166,15 +166,15 @@ Si decides rechazar las cookies de análisis, podrás seguir utilizando Notifyca
 
 Para poder ofrecer un servicio robusto y de calidad, trabajamos con proveedores cuidadosamente seleccionados que actúan como encargados del tratamiento bajo estrictos acuerdos de procesamiento de datos (DPA) que garantizan la protección de tu información:
 
-| **Tipo de proveedor** | **Servicio que presta** | **Datos compartidos** | **Ubicación de procesamiento** |
-|------------------------|-------------------------|----------------------|--------------------------------|
-| Proveedor de infraestructura y hosting | Alojamiento y procesamiento de datos | Todos los datos de la plataforma | EU |
-| Proveedor de autenticación, calendario y contactos | Integración con Calendar & People APIs | Tokens OAuth, datos de calendario y contactos | UE/EE.UU. (con SCC) |
-| Proveedor de procesamiento de pagos | Gestión de pagos y facturación | Información de facturación y pagos | UE/EE.UU. (con SCC) |
-| Proveedor de comunicaciones | Envío de recordatorios | Información de contacto y contenido de mensajes | UE |
-| Proveedor de correos transaccionales | Envío de correos del sistema | Direcciones email y contenido de correos | UE |
-| Herramientas de análisis de experiencia | Análisis de usabilidad | Datos de navegación anonimizados | EE.UU. (con SCC) |
-| Herramientas de métricas web | Estadísticas de uso | Datos agregados de uso | EE.UU. (con SCC) |
+| **Tipo de proveedor**                              | **Servicio que presta**                | **Datos compartidos**                           | **Ubicación de procesamiento** |
+| -------------------------------------------------- | -------------------------------------- | ----------------------------------------------- | ------------------------------ |
+| Proveedor de infraestructura y hosting             | Alojamiento y procesamiento de datos   | Todos los datos de la plataforma                | EU                             |
+| Proveedor de autenticación, calendario y contactos | Integración con Calendar & People APIs | Tokens OAuth, datos de calendario y contactos   | UE/EE.UU. (con SCC)            |
+| Proveedor de procesamiento de pagos                | Gestión de pagos y facturación         | Información de facturación y pagos              | UE/EE.UU. (con SCC)            |
+| Proveedor de comunicaciones                        | Envío de recordatorios                 | Información de contacto y contenido de mensajes | UE                             |
+| Proveedor de correos transaccionales               | Envío de correos del sistema           | Direcciones email y contenido de correos        | UE                             |
+| Herramientas de análisis de experiencia            | Análisis de usabilidad                 | Datos de navegación anonimizados                | EE.UU. (con SCC)               |
+| Herramientas de métricas web                       | Estadísticas de uso                    | Datos agregados de uso                          | EE.UU. (con SCC)               |
 
 Todos estos proveedores han sido seleccionados no solo por la calidad de sus servicios, sino también por su compromiso con la protección de datos y su cumplimiento con el RGPD. Mantenemos con cada uno de ellos acuerdos contractuales que les obligan a proteger los datos con el mismo nivel de seguridad que aplicamos nosotros y a no utilizarlos para ningún fin distinto al servicio que nos prestan.
 
@@ -210,7 +210,7 @@ Todas las comunicaciones entre tu navegador y nuestros servidores están cifrada
 
 La autenticación en nuestra plataforma se realiza exclusivamente a través de sistemas OAuth seguros, lo que significa que no almacenamos contraseñas en nuestros sistemas. Esto elimina el riesgo de que las contraseñas puedan ser comprometidas en caso de un incidente de seguridad.
 
-Nuestra infraestructura está alojada en proveedores de servicios en la nube de primer nivel en la Unión Europea, utilizando arquitecturas modernas que proporcionan seguridad y escalabilidad inherentes. 
+Nuestra infraestructura está alojada en proveedores de servicios en la nube de primer nivel en la Unión Europea, utilizando arquitecturas modernas que proporcionan seguridad y escalabilidad inherentes.
 
 Implementamos múltiples medidas de protección de datos: realizamos copias de seguridad automáticas y periódicas de todos los datos, las credenciales y secretos se almacenan de forma segura con cifrado, y mantenemos monitorización continua de nuestros sistemas para detectar actividades anómalas o intentos de acceso no autorizado, con alertas automáticas que nos permiten responder rápidamente a cualquier incidente potencial.
 
@@ -244,17 +244,17 @@ Mantenemos un registro documentado de todos los incidentes de seguridad, incluye
 
 Aplicamos el principio de limitación del plazo de conservación, manteniendo los datos personales solo durante el tiempo necesario para cumplir con las finalidades para las que fueron recogidos y para cumplir con nuestras obligaciones legales:
 
-| **Tipo de datos** | **Plazo de conservación** | **Justificación** |
-|-------------------|---------------------------|-------------------|
-| Datos de cuenta de Usuario | Mientras la cuenta esté activa + 30 días | Permitir reactivación y resolver incidencias pendientes |
-| Información de facturación | 5 años desde la emisión de la factura | Obligación legal según normativa fiscal española |
-| Logs de recordatorios enviados | 6 meses desde el envío | Resolución de incidencias y reclamaciones |
-| Historial de eventos procesados | 6 meses desde el procesamiento | Auditoría del servicio y resolución de problemas |
-| Datos de Destinatarios | 6 meses desde el último envío | Trazabilidad del servicio y gestión de incidencias |
-| Logs técnicos del sistema | 1 año | Debugging y análisis de seguridad |
-| Grabaciones de herramientas de experiencia | 30 días | Análisis de experiencia de usuario |
-| Datos de navegación (métricas web) | 26 meses | Estándar de herramientas de analítica |
-| Datos de feedback y comentarios | 1 año desde el envío | Mejora continua del servicio contratado |
+| **Tipo de datos**                          | **Plazo de conservación**                | **Justificación**                                       |
+| ------------------------------------------ | ---------------------------------------- | ------------------------------------------------------- |
+| Datos de cuenta de Usuario                 | Mientras la cuenta esté activa + 30 días | Permitir reactivación y resolver incidencias pendientes |
+| Información de facturación                 | 5 años desde la emisión de la factura    | Obligación legal según normativa fiscal española        |
+| Logs de recordatorios enviados             | 6 meses desde el envío                   | Resolución de incidencias y reclamaciones               |
+| Historial de eventos procesados            | 6 meses desde el procesamiento           | Auditoría del servicio y resolución de problemas        |
+| Datos de Destinatarios                     | 6 meses desde el último envío            | Trazabilidad del servicio y gestión de incidencias      |
+| Logs técnicos del sistema                  | 1 año                                    | Debugging y análisis de seguridad                       |
+| Grabaciones de herramientas de experiencia | 30 días                                  | Análisis de experiencia de usuario                      |
+| Datos de navegación (métricas web)         | 26 meses                                 | Estándar de herramientas de analítica                   |
+| Datos de feedback y comentarios            | 1 año desde el envío                     | Mejora continua del servicio contratado                 |
 
 ### Proceso de eliminación
 
@@ -304,7 +304,7 @@ Cuando recibamos una solicitud de ejercicio de derechos, seguiremos este procedi
 
 Primero, verificaremos tu identidad para asegurarnos de que los datos solo se entregan a la persona correcta. Podemos solicitar información adicional si es necesario para confirmar tu identidad.
 
-Una vez verificada tu identidad, procesaremos tu solicitud y te responderemos en un plazo máximo de un mes desde la recepción. 
+Una vez verificada tu identidad, procesaremos tu solicitud y te responderemos en un plazo máximo de un mes desde la recepción.
 
 En casos particularmente complejos o cuando recibamos múltiples solicitudes, este plazo puede ampliarse a dos meses adicionales, pero siempre te informaremos de esta ampliación y sus motivos dentro del primer mes.
 
@@ -315,6 +315,7 @@ El ejercicio de estos derechos es gratuito. Solo en caso de solicitudes manifies
 Si no estás satisfecho con nuestra respuesta a tu solicitud de ejercicio de derechos, o si consideras que estamos tratando tus datos de forma incorrecta, tienes derecho a presentar una reclamación ante la autoridad de control competente.
 
 En España, la autoridad de control es la **Agencia Española de Protección de Datos (AEPD)**:
+
 - Sitio web: www.aepd.es
 - Dirección: C/ Jorge Juan, 6. 28001 Madrid
 - Teléfonos: 901 100 099 / 91 266 35 17
@@ -389,11 +390,11 @@ Realizamos revisiones regulares de esta política, como mínimo una vez al año,
 
 La forma en que te notificamos los cambios depende de su importancia:
 
-Para cambios menores que no afectan sustancialmente a tus derechos o a la forma en que tratamos tus datos (como aclaraciones de redacción o actualizaciones de información de contacto), simplemente publicaremos la nueva versión en nuestra web. 
+Para cambios menores que no afectan sustancialmente a tus derechos o a la forma en que tratamos tus datos (como aclaraciones de redacción o actualizaciones de información de contacto), simplemente publicaremos la nueva versión en nuestra web.
 
 Te recomendamos que revises periódicamente esta política para estar al tanto de cualquier actualización.
 
-Para cambios sustanciales que sí afectan de manera significativa al tratamiento de tus datos o a tus derechos (como nuevas finalidades de tratamiento, nuevas categorías de datos recopilados, o cambios en los plazos de conservación), te notificaremos directamente por correo electrónico con al menos 30 días de antelación antes de que los cambios entren en vigor. 
+Para cambios sustanciales que sí afectan de manera significativa al tratamiento de tus datos o a tus derechos (como nuevas finalidades de tratamiento, nuevas categorías de datos recopilados, o cambios en los plazos de conservación), te notificaremos directamente por correo electrónico con al menos 30 días de antelación antes de que los cambios entren en vigor.
 
 Si los cambios requieren tu consentimiento, te lo solicitaremos expresamente y no aplicaremos los cambios a tus datos hasta que no hayas dado tu aprobación.
 
@@ -508,7 +509,7 @@ Para facilitar la comprensión de esta política, incluimos un glosario de los t
 
 ---
 
-*Esta Política de Privacidad ha sido redactada originalmente en español. En caso de que se realicen traducciones a otros idiomas y existan discrepancias en la interpretación, prevalecerá siempre la versión en español.*
+_Esta Política de Privacidad ha sido redactada originalmente en español. En caso de que se realicen traducciones a otros idiomas y existan discrepancias en la interpretación, prevalecerá siempre la versión en español._
 
 **Documento revisado y validado legalmente el**: [Ver fecha al inicio del documento]  
 **Versión del documento**: [Ver versión al inicio del documento]  
