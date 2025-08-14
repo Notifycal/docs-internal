@@ -1,3 +1,8 @@
+---
+title: Privacy Policy
+description: Complete privacy policy for Notifycal
+---
+
 # POLÍTICA DE PRIVACIDAD
 
 ---

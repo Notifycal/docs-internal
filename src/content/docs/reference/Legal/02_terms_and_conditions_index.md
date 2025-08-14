@@ -1,3 +1,8 @@
+---
+title: Terms and Conditions Structure
+description: Structure and schema for Notifycal's terms and conditions
+---
+
 # TÉRMINOS Y CONDICIONES - ESTRUCTURA
 
 **Fecha de última actualización**: 12 de agosto de 2025  

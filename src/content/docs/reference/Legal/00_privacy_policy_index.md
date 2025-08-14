@@ -1,3 +1,8 @@
+---
+title: Privacy Policy Structure
+description: Structure and schema for Notifycal's privacy policy
+---
+
 # ESTRUCTURA - POLÍTICA DE PRIVACIDAD NOTIFYCAL
 
 ## VARIABLES CONFIGURABLES

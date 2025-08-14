@@ -1,3 +1,8 @@
+---
+title: Terms and Conditions
+description: Complete terms and conditions of service for Notifycal
+---
+
 # TÉRMINOS Y CONDICIONES DE SERVICIO
 
 ---
