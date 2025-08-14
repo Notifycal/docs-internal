@@ -422,6 +422,8 @@ c) **Permisos de acceso**: Modificaciones o revocaciones de permisos de acceso r
 
 d) **Cambios en APIs**: Pérdidas de datos o funcionalidades derivadas de cambios en interfaces de programación de terceros
 
+e) **Limitaciones de capacidad**: Rate limiting, throttling, o límites de envío impuestos por proveedores de telecomunicaciones, APIs de Google Calendar, o cualquier otro servicio integrado que puedan afectar la velocidad o capacidad de entrega de recordatorios
+
 7.2.2 Si los proveedores de servicios integrados modifican sus servicios de tal manera que afecte al funcionamiento de Notifycal, realizaremos los mejores esfuerzos para adaptar nuestro servicio, pero **no garantizamos** que sea técnica o económicamente viable mantener la funcionalidad completa.
 
 ### 7.3 INTERRUPCIONES Y MANTENIMIENTO
