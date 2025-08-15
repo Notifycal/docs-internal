@@ -1,9 +1,7 @@
 ---
-title: Acceptance criteria subscription & topups
+title: Payments
 description: Document containing all test cases/spec that defines how the platform handles subscripction and topups
 ---
-
-# Functional Acceptance Criteria – Subscription & Top-up System
 
 ## 1. Crear suscripción
 
