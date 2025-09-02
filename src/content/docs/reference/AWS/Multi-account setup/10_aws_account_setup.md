@@ -1,7 +1,11 @@
 ---
-title: AWS Account setup
+title: AWS Account setup (generic)
 description: Steps taken to setup and secure the AWS account
 ---
+
+:::note
+The following steps must be followed for all AWS accounts, regardless of whether they are for management or for environments.
+:::
 
 ## AWS Account creation
 
@@ -43,11 +47,7 @@ Using the Root Account, you just need to:
 
 ## AWS CLI setup
 
-Check how to [setup the AWS CLI](01_awscli.md) and verify it works correctly before moving into the next step.
-
-## Add personal accounts/IAM Users
-
-Add IAM Users as per your needs and make sure they log in and enable MFA before continuing with this guide. Otherwise they might end up locked out.
+Check how to [setup the AWS CLI](/guides/aws/00_aws_cli) and verify it works correctly before moving into the next step.
 
 ## Enforce MFA everywhere
 
@@ -105,6 +105,10 @@ $ aws iam attach-group-policy \
     --group-name EnforceMFA
 ```
 
-All human users created moving forward should be added to this group, so MFA is enforced for them.
+Finally, add the `iamadmin` User to the Group.
 
-Move onto the next section: [MFA with AWS CLI](./02_mfa_with_awscli.md).
+## Management account extra steps
+
+:::caution
+If the account is a management account, designed to be the entrypoint for access/impersonation, also follow the steps outlined [here](../05_aws_account_setup_mgmt).
+:::
