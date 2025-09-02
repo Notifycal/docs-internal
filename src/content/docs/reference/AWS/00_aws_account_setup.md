@@ -34,7 +34,7 @@ Using the Root Account, you just need to:
 1. Log in with it.
 1. Enable MFA.
 
-### Enable programmatic access for `iamadmin`
+### [Optional] Enable programmatic access for `iamadmin`
 
 1. Go to IAM > My Security credentials
 1. Create Access key. Select CLI and check the box.
@@ -44,6 +44,10 @@ Using the Root Account, you just need to:
 ## AWS CLI setup
 
 Check how to [setup the AWS CLI](01_awscli.md) and verify it works correctly before moving into the next step.
+
+## Add personal accounts/IAM Users
+
+Add IAM Users as per your needs and make sure they log in and enable MFA before continuing with this guide. Otherwise they might end up locked out.
 
 ## Enforce MFA everywhere
 
