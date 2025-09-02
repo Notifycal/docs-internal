@@ -49,6 +49,64 @@ Using the Root Account, you just need to:
 
 Check how to [setup the AWS CLI](/guides/aws/00_aws_cli) and verify it works correctly before moving into the next step.
 
+## Enforce MFA everywhere
+
+Right now MFA is enforced when logging into the AWS Console (UI) through the browser, but we also want to enforce it when using the CLI. In order to do that we need to create an IAM Policy.
+
+### Create IAM Policy
+
+The policy contents are in [aws/utils/enforce-mfa-policy.json](./utils/enforce-mfa-policy.json). Run the following command:
+
+```bash
+$ aws iam create-policy \
+    --policy-name EnforceMFA \
+    --policy-document file://$(pwd)/utils/enforce-mfa-policy.json \
+    --description "This policy enforces MFA"
+
+{
+    "Policy": {
+        "PolicyName": "EnforceMFA",
+        "PolicyId": "ANPAVRUVTMT6C3Q7G5TZD",
+        "Arn": "arn:aws:iam::<redacted>:policy/EnforceMFA",
+        "Path": "/",
+        "DefaultVersionId": "v1",
+        "AttachmentCount": 0,
+        "PermissionsBoundaryUsageCount": 0,
+        "IsAttachable": true,
+        "CreateDate": "2024-03-16T00:23:42Z",
+        "UpdateDate": "2024-03-16T00:23:42Z"
+    }
+}
+```
+
+### Create IAM Group
+
+Now we need to create an IAM Group:
+
+```bash
+$ aws iam create-group \
+    --group-name EnforceMFA
+{
+    "Group": {
+        "Path": "/",
+        "GroupName": "EnforceMFA",
+        "GroupId": "AGPAVRUVTMT6FOETRJYX6",
+        "Arn": "arn:aws:iam::<redacted>:group/EnforceMFA",
+        "CreateDate": "2024-03-16T00:26:59Z"
+    }
+}
+```
+
+After the Group has been created, we can now associate it with the IAM Policy created earlier. For that we need the Policy ARN (AWS returned it when we created the Policy earlier).
+
+```bash
+$ aws iam attach-group-policy \
+    --policy-arn "arn:aws:iam::381492094204:policy/EnforceMFA" \
+    --group-name EnforceMFA
+```
+
+Finally, add the `iamadmin` User to the Group.
+
 ## Management account extra steps
 
 :::caution
