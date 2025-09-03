@@ -37,7 +37,7 @@ jobs:
           filters: |
             tf:
               - 'tf/**'
-              - '.github/workflows/*.yaml'
+              - '.github/workflows/cicd.yaml'
             web:
               - '**'
               - '!tf/**'
@@ -201,7 +201,7 @@ jobs:
           role-to-assume: ${{ secrets.AWS_IAM_ROLE_CI }}
           role-session-name: run-${{ github.run_id }}
           role-chaining: true
-          role-duration-seconds: 3600  # chaining max is 3600s
+          role-duration-seconds: 3600 # chaining max is 3600s
 
       - run: aws sts get-caller-identity
 
