@@ -67,12 +67,25 @@ jobs:
       - name: Hack for github internal repo access :(
         run: git config --global url."https://foo:${{ steps.gh-app-auth.outputs.token }}@github.com".insteadOf ssh://git@github.com
 
-      - name: Configure AWS Credentials
+      - name: Configure AWS Credentials (OIDC Role)
         uses: aws-actions/configure-aws-credentials@v4
         with:
           aws-region: ${{ env.AWS_REGION }}
-          role-to-assume: ${{ secrets.AWS_IAM_ROLE_CI }}
+          role-to-assume: ${{ secrets.AWS_IAM_OIDC_ROLE_CI }}
           role-session-name: run-${{ github.run_id }}
+
+      - run: aws sts get-caller-identity
+
+      - name: Configure AWS Credentials (CI/CD Role)
+        id: config_aws_credentials_ci_role
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-region: ${{ env.AWS_REGION }}
+          role-to-assume: ${{ secrets.AWS_IAM_ROLE_CI_NONPROD }}
+          role-session-name: run-${{ github.run_id }}
+          role-chaining: true
+          role-duration-seconds: 3600 # chaining max is 3600s
+
       - run: aws sts get-caller-identity
       - name: Get tofu version from .opentofu-version
         run: echo "tofu_version=$(cat .opentofu-version)" >> "${GITHUB_OUTPUT}"
@@ -188,7 +201,7 @@ jobs:
         uses: aws-actions/configure-aws-credentials@v4
         with:
           aws-region: ${{ env.AWS_REGION }}
-          role-to-assume: ${{ secrets.AWS_IAM_ROLE_CI }}
+          role-to-assume: ${{ secrets.AWS_IAM_OIDC_ROLE_CI }}
           role-session-name: run-${{ github.run_id }}
 
       - run: aws sts get-caller-identity
@@ -198,7 +211,7 @@ jobs:
         uses: aws-actions/configure-aws-credentials@v4
         with:
           aws-region: ${{ env.AWS_REGION }}
-          role-to-assume: ${{ secrets.AWS_IAM_ROLE_CI }}
+          role-to-assume: ${{ secrets.AWS_IAM_ROLE_CI_NONPROD }}
           role-session-name: run-${{ github.run_id }}
           role-chaining: true
           role-duration-seconds: 3600 # chaining max is 3600s
