@@ -19,57 +19,59 @@ We need to create an IAM Role in the Target account(s) that the Source account w
 1. Log into a Target account (`prod`, `nonprod`).
 2. Go to IAM > Roles. Create a role.
 3. In `Select trusted entity`, pick `Custom trust policy` as the `Trusted entity type`.
-![target_account_role_trusted_entity](./images/multi-account/target_create_role_trusted_entity.png)
+   ![target_account_role_trusted_entity](./images/multi-account/target_create_role_trusted_entity.png)
 4. Ensure the `Trust policy` looks something like this:
-    ```json
-    {
-        "Version": "2012-10-17",
-        "Statement": [
-            {
-                "Effect": "Allow",
-                "Principal": {
-                    "AWS": [
-                        "arn:aws:iam::<AWS_ACCOUNT_ID>:user/<USER_1>",
-                        "arn:aws:iam::<AWS_ACCOUNT_ID>:user/<USER_2>",
-                        ...
-                    ]
-                },
-                "Action": "sts:AssumeRole",
-                "Condition": {
-                    "Bool": {
-                        "aws:MultiFactorAuthPresent": "true"
-                    },
-                    "StringEquals": {
-                        "sts:RoleSessionName": "${aws:username}"
-                    }
-                }
-            },
-            {
-                "Effect": "Allow",
-                "Principal": {
-                    "AWS": [
-                        "arn:aws:iam::<AWS_ACCOUNT_ID>:user/<USER_1>",
-                        "arn:aws:iam::<AWS_ACCOUNT_ID>:user/<USER_2>"
-                        ...
-                    ]
-                },
-                "Action": "sts:AssumeRole",
-                "Condition": {
-                    "Bool": {
-                        "aws:MultiFactorAuthPresent": "true"
-                    },
-                    "StringLike": {
-                        "sts:RoleSessionName": "tofu-layer-0-*"
-                    }
-                }
-            }
-        ]
-    }
-    ```
-    Replace `<AWS_ACCOUNT_ID>` and `<USER_#>` accordingly. The first statement covers the AWS CLI, the second statement covers the `layer-0` repository.
 
-6. In the `Add permissions` page, select the desired policies and click `Next`. Because the scope of these steps is for user authentication, we'll select the `AdministratorAccess` policy.
-7. In the final step, give the role a name, a description, and ensure that both the `Trust policy` and Permissions make sense. For the name, we've settled on `impersonate-from-mgmt`.
+   ```json
+   {
+       "Version": "2012-10-17",
+       "Statement": [
+           {
+               "Effect": "Allow",
+               "Principal": {
+                   "AWS": [
+                       "arn:aws:iam::<AWS_ACCOUNT_ID>:user/<USER_1>",
+                       "arn:aws:iam::<AWS_ACCOUNT_ID>:user/<USER_2>",
+                       ...
+                   ]
+               },
+               "Action": "sts:AssumeRole",
+               "Condition": {
+                   "Bool": {
+                       "aws:MultiFactorAuthPresent": "true"
+                   },
+                   "StringEquals": {
+                       "sts:RoleSessionName": "${aws:username}"
+                   }
+               }
+           },
+           {
+               "Effect": "Allow",
+               "Principal": {
+                   "AWS": [
+                       "arn:aws:iam::<AWS_ACCOUNT_ID>:user/<USER_1>",
+                       "arn:aws:iam::<AWS_ACCOUNT_ID>:user/<USER_2>"
+                       ...
+                   ]
+               },
+               "Action": "sts:AssumeRole",
+               "Condition": {
+                   "Bool": {
+                       "aws:MultiFactorAuthPresent": "true"
+                   },
+                   "StringLike": {
+                       "sts:RoleSessionName": "tofu-layer-0-*"
+                   }
+               }
+           }
+       ]
+   }
+   ```
+
+   Replace `<AWS_ACCOUNT_ID>` and `<USER_#>` accordingly. The first statement covers the AWS CLI, the second statement covers the `layer-0` repository.
+
+5. In the `Add permissions` page, select the desired policies and click `Next`. Because the scope of these steps is for user authentication, we'll select the `AdministratorAccess` policy.
+6. In the final step, give the role a name, a description, and ensure that both the `Trust policy` and Permissions make sense. For the name, we've settled on `impersonate-from-mgmt`.
 
 ![target_account_role_details](./images/multi-account/target_create_role_details.png)
 
