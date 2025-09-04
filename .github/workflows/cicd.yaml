@@ -28,20 +28,17 @@ jobs:
       infra: ${{ steps.filter.outputs.tf }}
       web: ${{ steps.filter.outputs.web }}
     steps:
-      # For pull requests it's not necessary to checkout the code
-      - uses: dorny/paths-filter@v3
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref || github.ref_name }}
+
+      - name: Detect changes
+        uses: dorny/paths-filter@v3
         # Skip the filter if there is no PR to filter
         if: github.event_name == 'pull_request'
         id: filter
         with:
-          filters: |
-            tf:
-              - 'tf/**'
-              - '.github/workflows/cicd.yaml'
-            web:
-              - '**'
-              - '!tf/**'
-              - '!README.md'
+          filters: .github/filters.yaml
 
   plan:
     runs-on: ubuntu-latest
