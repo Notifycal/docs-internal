@@ -26,6 +26,30 @@ We need to create an IAM Role in the Target account(s) that the Source account w
 
 6. In the `Add permissions` page, select the desired policies and click `Next`. Because the scope of these steps is for user authentication, we'll select the `AdministratorAccess` policy.
 7. In the final step, give the role a name, a description, and ensure that both the `Trust policy` and Permissions make sense. For the name, we've settled on `impersonate-from-mgmt`.
+8. Ensure the Trust policy looks like this. Special highlight to the `sts:RoleSessionName` condition to help with traceability:
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": "arn:aws:iam::<AWS_ACCOUNT_ID>:root"
+      },
+      "Action": "sts:AssumeRole",
+      "Condition": {
+        "Bool": {
+          "aws:MultiFactorAuthPresent": "true"
+        },
+        "StringEquals": {
+          "sts:RoleSessionName": "${aws:username}"
+        }
+      }
+    }
+  ]
+}
+```
 
 ![target_account_role_details](./images/multi-account/target_create_role_details.png)
 
