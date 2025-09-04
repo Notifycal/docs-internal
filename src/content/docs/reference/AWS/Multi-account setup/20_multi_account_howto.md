@@ -18,16 +18,8 @@ We need to create an IAM Role in the Target account(s) that the Source account w
 
 1. Log into a Target account (`prod`, `nonprod`).
 2. Go to IAM > Roles. Create a role.
-3. In `Select trusted entity`, pick `AWS Account` as the `Trusted entity type`.
-4. Select `Another AWS account` and type the AWS Account ID of the Source account (`mgmt`).
-5. Finally, before clicking `Next`, tick the `Require MFA` checkbox.
-
-![target_account_role_trusted_entity](./images/multi-account/target_create_role_trusted_entity.png)
-
-6. In the `Add permissions` page, select the desired policies and click `Next`. Because the scope of these steps is for user authentication, we'll select the `AdministratorAccess` policy.
-7. In the final step, give the role a name, a description, and ensure that both the `Trust policy` and Permissions make sense. For the name, we've settled on `impersonate-from-mgmt`.
-8. Ensure the Trust policy looks like this. Special highlight to the `sts:RoleSessionName` condition to help with traceability:
-
+3. In `Select trusted entity`, pick `Custom trust policy` as the `Trusted entity type`.
+4. Ensure the `Trust policy` looks something like this:
 ```json
 {
   "Version": "2012-10-17",
@@ -35,7 +27,11 @@ We need to create an IAM Role in the Target account(s) that the Source account w
     {
       "Effect": "Allow",
       "Principal": {
-        "AWS": "arn:aws:iam::<AWS_ACCOUNT_ID>:root"
+        "AWS": [
+				    "arn:aws:iam::<AWS_ACCOUNT_ID>:user/<user_1>",
+				    "arn:aws:iam::<AWS_ACCOUNT_ID>:user/<user_2>"
+            ...
+        ]
       },
       "Action": "sts:AssumeRole",
       "Condition": {
@@ -50,6 +46,11 @@ We need to create an IAM Role in the Target account(s) that the Source account w
   ]
 }
 ```
+
+![target_account_role_trusted_entity](./images/multi-account/target_create_role_trusted_entity.png)
+
+6. In the `Add permissions` page, select the desired policies and click `Next`. Because the scope of these steps is for user authentication, we'll select the `AdministratorAccess` policy.
+7. In the final step, give the role a name, a description, and ensure that both the `Trust policy` and Permissions make sense. For the name, we've settled on `impersonate-from-mgmt`.
 
 ![target_account_role_details](./images/multi-account/target_create_role_details.png)
 
