@@ -14,9 +14,8 @@ The solution is to create a new IAM role, assign the ‘AmazonAPIGatewayPushToCl
 Once the Role has been created, it’s time to add it to API Gateway so that it can use the role to write logs to CloudWatch.
 
 1. In the AWS console, navigate to API Gateway.
-1. From the list of APIs, select the API for which you want to enable logging.
-1. On the left-hand menu, click on Settings.
-1. In the Settings page, locate the CloudWatch Logs role ARN field. Paste the ARN from the role created earlier.
+1. On the left side menu, click on `Settings`.
+1. In the Settings page, locate `Logging` > `CloudWatch Logs role ARN field`. Paste the ARN from the role created earlier.
 
 Role created:
 
