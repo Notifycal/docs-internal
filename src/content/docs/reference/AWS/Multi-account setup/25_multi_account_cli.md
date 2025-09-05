@@ -20,6 +20,7 @@ aws_secret_access_key = <secret>
 [notifycal-nonprod]   # Target account
 role_arn = arn:aws:iam::<AWS_ACCOUNT_ID>:role/impersonate-from-mgmt
 source_profile = notifycal-mgmt
+role_session_name = <Your AWS Username>
 ```
 
 ### Test it works
