@@ -19,7 +19,7 @@
     "astro": "^5.9.4",
     "globals": "^16.2.0",
     "sharp": "^0.34.2",
-    "typescript": "^5.8.3"
+    "typescript": "^5.9.2"
   },
   "devDependencies": {
     "eslint": "^9.24.0",
