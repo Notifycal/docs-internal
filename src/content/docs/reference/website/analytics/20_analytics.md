@@ -32,6 +32,8 @@ We decided to remove PartyTown and run analytics scripts directly on the main th
 
 ## Google Tag Manager Setup
 
+- [Notifycal GTM "custom" setup](./25_gtm.md).
+
 For comprehensive setup instructions, refer to the official Google Tag Manager documentation:
 
 - [Get started with Google Tag Manager](https://support.google.com/tagmanager/answer/14842164?hl=en)
@@ -50,7 +52,7 @@ For comprehensive setup instructions, refer to the official Google Tag Manager d
 
 ### Environment Separation
 
-We maintain separate GTM containers for different environments. **Dev Container** is used for for local development (`npm run dev`) too.
+We maintain separate GTM containers for different environments. **Dev Container** is used for local development (`npm run dev`) too.
 
 This separation ensures:
 
@@ -63,6 +65,8 @@ This separation ensures:
 Google Analytics follows the same environment separation model as GTM since both are Google products.
 
 ### Setup Steps
+
+- [Notifycal GA4 "custom" setup](./20_analytics.md).
 
 For detailed configuration instructions, refer to the official Google documentation:
 
@@ -90,6 +94,8 @@ Basic setup overview:
 **Stream**: Data collection stream within a property
 
 ## Microsoft Clarity Integration
+
+- [Notifycal MS Clarity "custom" setup](./24_clarity.md).
 
 For detailed integration instructions, refer to the official Microsoft documentation:
 
@@ -124,8 +130,16 @@ For Clarity, you can either:
 - Only one Clarity tag can be linked to a specific Clarity project
 - Project IDs can be found in respective platform URLs
 
+## Platform-specific docs
+
+- [Google Analytics](./20_analytics.md)
+- [Microsoft Clarity](./24_clarity.md)
+- [Google Tag Manager](./25_gtm.md)
+
 ## Resources
 
 - [Google Tag Manager Help](https://support.google.com/tagmanager/)
 - [Google Analytics Setup Guide](https://support.google.com/analytics/)
 - [Microsoft Clarity GTM Integration](https://learn.microsoft.com/en-us/clarity/third-party-integrations/google-tag-manager)
+
+UPDATE!
