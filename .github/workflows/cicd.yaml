@@ -22,26 +22,24 @@ jobs:
   changes:
     runs-on: ubuntu-latest
     permissions:
+      contents: read
       pull-requests: read
     # Set job outputs to values from filter step
     outputs:
       infra: ${{ steps.filter.outputs.tf }}
       web: ${{ steps.filter.outputs.web }}
     steps:
-      # For pull requests it's not necessary to checkout the code
-      - uses: dorny/paths-filter@v3
+      - uses: actions/checkout@v5
+        with:
+          ref: ${{ github.head_ref || github.ref_name }}
+
+      - name: Detect changes
+        uses: dorny/paths-filter@v3
         # Skip the filter if there is no PR to filter
         if: github.event_name == 'pull_request'
         id: filter
         with:
-          filters: |
-            tf:
-              - 'tf/**'
-              - '.github/workflows/*.yaml'
-            web:
-              - '**'
-              - '!tf/**'
-              - '!README.md'
+          filters: .github/filters.yaml
 
   plan:
     runs-on: ubuntu-latest
@@ -67,15 +65,28 @@ jobs:
       - name: Hack for github internal repo access :(
         run: git config --global url."https://foo:${{ steps.gh-app-auth.outputs.token }}@github.com".insteadOf ssh://git@github.com
 
-      - name: Configure AWS Credentials
-        uses: aws-actions/configure-aws-credentials@v4
+      - name: Configure AWS Credentials (OIDC Role)
+        uses: aws-actions/configure-aws-credentials@v5
         with:
           aws-region: ${{ env.AWS_REGION }}
-          role-to-assume: ${{ secrets.AWS_IAM_ROLE_CI }}
+          role-to-assume: ${{ secrets.AWS_IAM_OIDC_ROLE_CI }}
           role-session-name: run-${{ github.run_id }}
+
+      - run: aws sts get-caller-identity
+
+      - name: Configure AWS Credentials (CI/CD Role)
+        id: config_aws_credentials_ci_role
+        uses: aws-actions/configure-aws-credentials@v5
+        with:
+          aws-region: ${{ env.AWS_REGION }}
+          role-to-assume: ${{ secrets.AWS_IAM_ROLE_CI_NONPROD }}
+          role-session-name: run-${{ github.run_id }}
+          role-chaining: true
+          role-duration-seconds: 3600 # chaining max is 3600s
+
       - run: aws sts get-caller-identity
       - name: Get tofu version from .opentofu-version
-        run: echo "tofu_version=$(cat .opentofu-version)" >> $GITHUB_OUTPUT
+        run: echo "tofu_version=$(cat .opentofu-version)" >> "${GITHUB_OUTPUT}"
         id: get_tofu_version
         working-directory: tf
       - name: Cached tofu binary?
@@ -132,7 +143,7 @@ jobs:
       needs.changes.outputs.web == 'true' || github.event_name != 'pull_request'
     steps:
       - uses: actions/checkout@v5
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v5
         with:
           node-version-file: '.nvmrc'
           cache: 'npm'
@@ -184,15 +195,29 @@ jobs:
       - name: Hack for github internal repo access :(
         run: git config --global url."https://foo:${{ steps.gh-app-auth.outputs.token }}@github.com".insteadOf ssh://git@github.com
 
-      - name: Configure AWS Credentials
-        uses: aws-actions/configure-aws-credentials@v4
+      - name: Configure AWS Credentials (OIDC Role)
+        uses: aws-actions/configure-aws-credentials@v5
         with:
           aws-region: ${{ env.AWS_REGION }}
-          role-to-assume: ${{ secrets.AWS_IAM_ROLE_CI }}
+          role-to-assume: ${{ secrets.AWS_IAM_OIDC_ROLE_CI }}
           role-session-name: run-${{ github.run_id }}
+
       - run: aws sts get-caller-identity
+
+      - name: Configure AWS Credentials (CI/CD Role)
+        id: config_aws_credentials_ci_role
+        uses: aws-actions/configure-aws-credentials@v5
+        with:
+          aws-region: ${{ env.AWS_REGION }}
+          role-to-assume: ${{ secrets.AWS_IAM_ROLE_CI_NONPROD }}
+          role-session-name: run-${{ github.run_id }}
+          role-chaining: true
+          role-duration-seconds: 3600 # chaining max is 3600s
+
+      - run: aws sts get-caller-identity
+
       - name: Get tofu version from .opentofu-version
-        run: echo "tofu_version=$(cat .opentofu-version)" >> $GITHUB_OUTPUT
+        run: echo "tofu_version=$(cat .opentofu-version)" >> "${GITHUB_OUTPUT}"
         id: get_tofu_version
         working-directory: tf
       - uses: opentofu/setup-opentofu@v1
@@ -219,7 +244,7 @@ jobs:
           tofu output -raw bucket_name
           s3_bucket="$(tofu output -raw bucket_name)"
           echo "S3 Bucket name: ${s3_bucket}"
-          echo "s3_bucket=${s3_bucket}" >> $GITHUB_OUTPUT
+          echo "s3_bucket=${s3_bucket}" >> "${GITHUB_OUTPUT}"
         working-directory: tf
       - name: Deploy to S3
         run: aws s3 sync --delete ./dist/ s3://${{ env.BUCKET }}
@@ -229,7 +254,7 @@ jobs:
         id: get_site_url
         run: |
           SITE_URL="$(tofu output -raw site_url)"
-          echo "site_url=${SITE_URL}" >> "$GITHUB_OUTPUT"
+          echo "site_url=${SITE_URL}" >> "${GITHUB_OUTPUT}"
         working-directory: tf
   info:
     runs-on: ubuntu-latest
@@ -242,4 +267,4 @@ jobs:
     steps:
       - name: Set Job summary
         run: |
-          echo "Access the documentation on the following URL: ${SITE_URL}" >> $GITHUB_STEP_SUMMARY
+          echo "Access the documentation on the following URL: ${SITE_URL}" >> "${GITHUB_STEP_SUMMARY}"

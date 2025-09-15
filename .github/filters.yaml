@@ -1,0 +1,7 @@
+tf:
+  - 'tf/**'
+  - '.github/workflows/cicd.yaml'
+web:
+  - '**'
+  - '!tf/**'
+  - '!README.md'
