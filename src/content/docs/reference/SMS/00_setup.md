@@ -27,24 +27,28 @@ Our journey to SMS integration began with a different objective. Initially, the 
 We maintain direct relationships with Vonage representatives for both business and technical matters:
 
 ### Account Management
+
 - **Noelia** - Account Manager
 - Handles business relationships, contracts, and commercial inquiries
 
 ### Technical Support
+
 - **Crist�bal** - Technical Contact
 - Primary point of contact for integration questions and technical support
 - Has assisted with implementation doubts and API-related queries
 
-*Note: Contact emails are stored securely in our internal systems*
+_Note: Contact emails are stored securely in our internal systems_
 
 ## Technical Implementation
 
 For detailed technical configuration and setup procedures, refer to:
+
 - [Manual Configuration Guide](./01_manual_configuration.md) - Step-by-step setup process
 
 ## Service Architecture
 
 Our SMS integration is implemented through:
+
 - **Provider**: Vonage (Nexmo dashboard interface)
 - **API**: Vonage Messages API v1
 - **Integration**: Webhook-based with JWT signing

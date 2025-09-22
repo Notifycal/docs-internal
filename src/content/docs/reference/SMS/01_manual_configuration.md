@@ -34,6 +34,7 @@ Navigate to the Vonage portal using the Nexmo dashboard interface.
 #### Application Configuration
 
 **Required fields:**
+
 - **Application Name**: Use descriptive naming (e.g., `notifycal-{environment}`)
 - **Authentication**: Configure public/private key pair (see next section)
 
@@ -44,14 +45,16 @@ Navigate to the Vonage portal using the Nexmo dashboard interface.
 You have two options for authentication:
 
 **Option A: Generate new key pair**
+
 - Let Vonage generate a public/private key pair automatically
 - Download and securely store the private key
 
 **Option B: Provide existing key pair**
+
 - Upload your existing public key
 - Ensure you have the corresponding private key securely stored
 
-*Note: This uses symmetric cryptography for secure communication*
+_Note: This uses symmetric cryptography for secure communication_
 
 ### 4. Enable Messages API
 
@@ -59,16 +62,19 @@ You have two options for authentication:
 2. Configure the required webhook URLs:
 
 **Inbound URL:**
+
 ```
 https://api{environment}.notifycal.com/webhook/vonage/inbound
 ```
 
 **Status URL:**
+
 ```
 https://api{environment}.notifycal.com/webhook/vonage/status
 ```
 
 **Examples:**
+
 - Production: `https://api.notifycal.com/webhook/vonage/inbound`
 - Dev: `https://apidev.notifycal.com/webhook/vonage/inbound`
 
@@ -95,11 +101,13 @@ From the API Settings panel, you'll need to collect:
 After completing the configuration, collect the following values for Terragrunt integration:
 
 #### Application-Specific Credentials
+
 - **Application ID**: Generated when application is created
 - **Private Key**: Downloaded during key pair generation
 - **Public Key**: Used for authentication setup
 
 #### Shared Credentials
+
 - **API Key**: Found in API Settings
 - **Webhook JWT Signing Secret**: Found in API Settings
 
