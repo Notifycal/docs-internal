@@ -33,7 +33,7 @@ We maintain direct relationships with Vonage representatives for both business a
 
 ### Technical Support
 
-- **Crist�bal** - Technical Contact
+- **Cristobal** - Technical Contact
 - Primary point of contact for integration questions and technical support
 - Has assisted with implementation doubts and API-related queries
 
