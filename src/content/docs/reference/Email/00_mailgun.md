@@ -3,8 +3,6 @@ title: Email integration - Mailgun
 description: Vendor choice and setup
 ---
 
-# Email integration - Mailgun
-
 ## Overview
 
 This document outlines our email provider setup using Mailgun, including account configurations, security practices, DNS settings, and environment-specific implementation details.
