@@ -20,8 +20,9 @@ This document provides a comprehensive guide for creating new environments in th
 If you desire to separate environments with a solid wall you might want a separate AWS account. For us, prod env uses a separate account.
 
 Refer to the comprehensive AWS multi-account setup documentation:
-- [Multi-Account Overview](../AWS/Multi-account\ setup/00_multi_account_overview.md)
-- [AWS Account Setup](../AWS/Multi-account\ setup/10_aws_account_setup.md)
+
+- [Multi-Account Overview](<../AWS/Multi-account\ setup/00_multi_account_overview.md>)
+- [AWS Account Setup](<../AWS/Multi-account\ setup/10_aws_account_setup.md>)
 
 ### Step 1: Prepare Base Environment
 
@@ -97,7 +98,7 @@ Configure the following 6 providers (secrets replacement will guide you through 
    ![OAuth client](./images/google-cloud-oauth-client.png)
 
 6. **Google Tag Manager**
-   - Follow: [Analytics guide](../../website/analytics/20_analytics/) 
+   - Follow: [Analytics guide](../../website/analytics/20_analytics/)
    - Set GTM id in the new secret.auto.tfvars
 
 ### Step 5: Environment Instantiation
@@ -122,10 +123,10 @@ terragrunt apply
 #### CI/CD Handoff
 
 After the local components are applied:
+
 1. Push your changes to the repository
 2. CI/CD pipeline should handle remaining infrastructure deployment
 3. Monitor the pipeline for any issues
-
 
 ## Security Notes
 
