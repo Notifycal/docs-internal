@@ -29,7 +29,7 @@ jobs:
       infra: ${{ steps.filter.outputs.tf }}
       web: ${{ steps.filter.outputs.web }}
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
         with:
           ref: ${{ github.head_ref || github.ref_name }}
 
@@ -53,7 +53,7 @@ jobs:
     if: |
       needs.changes.outputs.infra == 'true' || github.event_name != 'pull_request'
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
 
       # TODO: Extract from here
       - name: Get GH token from Github App
@@ -142,7 +142,7 @@ jobs:
     if: |
       needs.changes.outputs.web == 'true' || github.event_name != 'pull_request'
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
       - uses: actions/setup-node@v6
         with:
           node-version-file: '.nvmrc'
@@ -184,7 +184,7 @@ jobs:
       site_url: ${{ steps.get_site_url.outputs.site_url }}
     if: github.event_name != 'pull_request'
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
 
       - name: Get GH token from Github App
         id: gh-app-auth
