@@ -152,6 +152,34 @@ description: Document containing all test cases/spec that defines how the platfo
 
 - [x] 8.1. Testear escenario out-of-credits. El usuario tiene creditos para mandar 1 solo mensaje (o incluso menos creditos). El user status debe cambiar a out-of-credits la siguiente vez que intente mandar un mensaje. Debido a esto, se puede estar a 0 creditos y no estar en out-of-credits todavia (no se ha intentado mandar otro mensaje).
 
+## 9. Free Trial
+
+- [ ] 9.1. El Free Trial dura 30 días naturales desde el momento de activación
+
+- [ ] 9.2. El Free Trial incluye los mismos créditos que el plan Good
+
+- [ ] 9.3. El Free Trial NO requiere método de pago para ser activado
+
+- [ ] 9.4. El Free Trial expira cuando se cumpla la primera de estas condiciones:
+  - Se agotan todos los créditos
+  - Transcurren 30 días desde la activación
+
+- [ ] 9.5. El sistema debe solicitar los datos de pago 7 días antes de que expire el Free Trial (solo si se está acercando la fecha límite de 30 días)
+
+- [ ] 9.6. Si el usuario NO introduce datos de pago antes de que expire el Free Trial, la suscripción se cancela automáticamente
+
+- [ ] 9.7. Si el usuario introduce datos de pago antes de que expire el Free Trial, pasa automáticamente al plan Good al finalizar el período de prueba
+
+- [ ] 9.8. Una vez el usuario tiene datos de pago y ha convertido a Good, puede hacer upgrade a planes superiores
+
+- [ ] 9.9. Un usuario puede optar por crear directamente una suscripción al plan Good sin pasar por el Free Trial
+
+- [ ] 9.10. Si ya ha usado un Free Trial previamente (mismo email, mismo userId, etc.), no puede volver a activar otro
+
+- [ ] 9.11. Durante el Free Trial, el usuario puede ver cuántos días y/o créditos le quedan
+
+- [ ] 9.12. Al introducir datos de pago durante el Free Trial, no se realiza ningún cargo hasta que finalice el período de prueba
+
 ---
 
 ## Sin implementar
