@@ -154,21 +154,19 @@ description: Document containing all test cases/spec that defines how the platfo
 
 ## 9. Free Trial
 
-- [ ] 9.1. El Free Trial dura 30 días naturales desde el momento de activación
+- [ ] 9.1. El Free Trial incluye los mismos créditos que el plan Good
 
-- [ ] 9.2. El Free Trial incluye los mismos créditos que el plan Good
+- [ ] 9.2. El Free Trial NO requiere método de pago para ser activado
 
-- [ ] 9.3. El Free Trial NO requiere método de pago para ser activado
+- [ ] 9.3. Si se agotan todos los créditos, no se mandan recordatorios, y se recibe un email al respecto.
 
-- [ ] 9.4. El Free Trial expira cuando se cumpla la primera de estas condiciones:
-  - Se agotan todos los créditos
-  - Transcurren 30 días desde la activación
+- [ ] 9.4. El sistema debe solicitar los datos de pago 7 días antes de que expire el Free Trial (solo si se está acercando la fecha límite de 30 días)
 
-- [ ] 9.5. El sistema debe solicitar los datos de pago 7 días antes de que expire el Free Trial (solo si se está acercando la fecha límite de 30 días)
+- [ ] 9.5. Si el usuario introduce datos de pago antes de que expire el Free Trial, pasa automáticamente al plan Good al finalizar el período de prueba
 
-- [ ] 9.6. Si el usuario NO introduce datos de pago antes de que expire el Free Trial, la suscripción se cancela automáticamente
+- [ ] 9.6. El Free Trial expira (la subscripción acaba) cuando transcurren 30 días desde la activación.
 
-- [ ] 9.7. Si el usuario introduce datos de pago antes de que expire el Free Trial, pasa automáticamente al plan Good al finalizar el período de prueba
+- [ ] 9.7. Si el usuario NO introduce datos de pago antes de que expire el Free Trial, la suscripción se cancela automáticamente
 
 - [ ] 9.8. Una vez el usuario tiene datos de pago y ha convertido a Good, puede hacer upgrade a planes superiores
 
