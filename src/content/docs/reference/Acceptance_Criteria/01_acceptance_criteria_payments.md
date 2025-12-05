@@ -154,29 +154,33 @@ description: Document containing all test cases/spec that defines how the platfo
 
 ## 9. Free Trial
 
-- [ ] 9.1. El Free Trial incluye los mismos créditos que el plan Good
+- [x] 9.1. El Free Trial incluye los mismos créditos que el plan Good
 
-- [ ] 9.2. El Free Trial NO requiere método de pago para ser activado
+- [x] 9.2. El Free Trial NO requiere método de pago para ser activado
 
-- [ ] 9.3. Si se agotan todos los créditos, no se mandan recordatorios, y se recibe un email al respecto.
+- [x] 9.3. Durante el Free Trial, el usuario puede ver cuántos días y/o créditos le quedan
 
-- [ ] 9.4. El sistema debe solicitar los datos de pago 7 días antes de que expire el Free Trial (solo si se está acercando la fecha límite de 30 días)
+- [x] 9.4. Si se agotan todos los créditos, no se mandan recordatorios, y se recibe un email al respecto.
 
-- [ ] 9.5. Si el usuario introduce datos de pago antes de que expire el Free Trial, pasa automáticamente al plan Good al finalizar el período de prueba
+- [x] 9.5. El sistema debe solicitar los datos de pago 7 días antes de que expire el Free Trial (solo si se está acercando la fecha límite de 30 días)
 
-- [ ] 9.6. El Free Trial expira (la subscripción acaba) cuando transcurren 30 días desde la activación.
+- [x] 9.6. Si el usuario introduce datos de pago antes de que expire el Free Trial, pasa automáticamente al plan Good inmediatamente (el billing cycle empieza cuando se introducen los datos de pago).
 
-- [ ] 9.7. Si el usuario NO introduce datos de pago antes de que expire el Free Trial, la suscripción se cancela automáticamente
+- [x] 9.7. Al introducir datos de pago durante el Free Trial, se realiza un cargo al metodo de pago inmediatamente, cambiando el billing cycle de tal manera que empiece cuando se ha introducido el metodo de pago.
 
-- [ ] 9.8. Una vez el usuario tiene datos de pago y ha convertido a Good, puede hacer upgrade a planes superiores
+- [x] 9.8. Una vez el usuario tiene datos de pago y ha convertido a Good, puede hacer upgrade a planes superiores
 
-- [ ] 9.9. Un usuario puede optar por crear directamente una suscripción al plan Good sin pasar por el Free Trial
+- [x] 9.9. Si ya ha usado un Free Trial previamente (mismo email, mismo userId, etc.), no puede volver a activar otro
 
-- [ ] 9.10. Si ya ha usado un Free Trial previamente (mismo email, mismo userId, etc.), no puede volver a activar otro
+- [x] 9.10. El Free Trial expira (la subscripción acaba) cuando transcurren 30 días desde la activación.
 
-- [ ] 9.11. Durante el Free Trial, el usuario puede ver cuántos días y/o créditos le quedan
+- [x] 9.11. Si el usuario NO introduce datos de pago antes de que expire el Free Trial, la suscripción se cancela automáticamente
 
-- [ ] 9.12. Al introducir datos de pago durante el Free Trial, no se realiza ningún cargo hasta que finalice el período de prueba
+- [x] 9.12. El usuario puede realizar un top-up pese a estar en la free tier.
+
+- [x] 9.13. Si el usuario hace un topup (teniendo que añadir un metodo de pago, si o si) no implica que su suscripcion continue una vez se acabe el periodo de prueba.
+
+- [x] 9.14. Un usuario puede optar por crear directamente una suscripción al plan Good sin pasar por el Free Trial
 
 ---
 
