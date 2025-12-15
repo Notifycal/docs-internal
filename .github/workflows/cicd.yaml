@@ -224,7 +224,7 @@ jobs:
         with:
           tofu_version: ${{ steps.get_tofu_version.outputs.tofu_version }}
           tofu_wrapper: false # https://github.com/jqlang/jq/issues/2287
-      - uses: actions/download-artifact@v6
+      - uses: actions/download-artifact@v7
         with:
           name: tf
           path: tf/
@@ -232,7 +232,7 @@ jobs:
         env:
           TF_VAR_cloudflare_api_token: ${{ secrets.CLOUDFLARE_API_TOKEN }}
         working-directory: tf
-      - uses: actions/download-artifact@v6
+      - uses: actions/download-artifact@v7
         with:
           name: build
           path: dist/
