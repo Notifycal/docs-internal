@@ -66,7 +66,7 @@ jobs:
         run: git config --global url."https://foo:${{ steps.gh-app-auth.outputs.token }}@github.com".insteadOf ssh://git@github.com
 
       - name: Configure AWS Credentials (OIDC Role)
-        uses: aws-actions/configure-aws-credentials@v5
+        uses: aws-actions/configure-aws-credentials@v6
         with:
           aws-region: ${{ env.AWS_REGION }}
           role-to-assume: ${{ secrets.AWS_IAM_OIDC_ROLE_CI }}
@@ -76,7 +76,7 @@ jobs:
 
       - name: Configure AWS Credentials (CI/CD Role)
         id: config_aws_credentials_ci_role
-        uses: aws-actions/configure-aws-credentials@v5
+        uses: aws-actions/configure-aws-credentials@v6
         with:
           aws-region: ${{ env.AWS_REGION }}
           role-to-assume: ${{ secrets.AWS_IAM_ROLE_CI_NONPROD }}
@@ -196,7 +196,7 @@ jobs:
         run: git config --global url."https://foo:${{ steps.gh-app-auth.outputs.token }}@github.com".insteadOf ssh://git@github.com
 
       - name: Configure AWS Credentials (OIDC Role)
-        uses: aws-actions/configure-aws-credentials@v5
+        uses: aws-actions/configure-aws-credentials@v6
         with:
           aws-region: ${{ env.AWS_REGION }}
           role-to-assume: ${{ secrets.AWS_IAM_OIDC_ROLE_CI }}
@@ -206,7 +206,7 @@ jobs:
 
       - name: Configure AWS Credentials (CI/CD Role)
         id: config_aws_credentials_ci_role
-        uses: aws-actions/configure-aws-credentials@v5
+        uses: aws-actions/configure-aws-credentials@v6
         with:
           aws-region: ${{ env.AWS_REGION }}
           role-to-assume: ${{ secrets.AWS_IAM_ROLE_CI_NONPROD }}
