@@ -220,7 +220,7 @@ jobs:
         run: echo "tofu_version=$(cat .opentofu-version)" >> "${GITHUB_OUTPUT}"
         id: get_tofu_version
         working-directory: tf
-      - uses: opentofu/setup-opentofu@v1
+      - uses: opentofu/setup-opentofu@v2
         with:
           tofu_version: ${{ steps.get_tofu_version.outputs.tofu_version }}
           tofu_wrapper: false # https://github.com/jqlang/jq/issues/2287
